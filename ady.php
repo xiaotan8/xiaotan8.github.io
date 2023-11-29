@@ -172,13 +172,11 @@ $n = [
   'kpsh' => [1435,1132], // 开平生活
   //广西
   'lpzh' => [3080,4107], // 荔浦综合 桂林
-  'lzxwzh' => [1902,3370,1], //柳州新闻综合
-  'lzkj' => [1808,3370,1], //柳州科教
   //云南
   'kmzh' => [3143,4148], // 昆明新闻综合 云南
   'kmys' => [3185,4148], // 昆明影视综艺
   'kmjj' => [3192,4148], // 昆明经济生活
-  'kmkj' => [3193,4148], // 昆明science教育
+  'kmkj' => [3193,4148], // 昆明科学教育
   'kmms' => [3194,4148], // 昆明春城民生
 
  //贵州
@@ -193,10 +191,14 @@ $n = [
   'shtv' => [391,1743], //射洪综合 遂宁
   //新疆
   'akstv1' => [2229,3643], // 阿克苏1套汉语综合
-  'akstv3' => [2233,3643], // 阿克苏3套维语综合
+  'akstv2' => [2233,3643], // 阿克苏2套维语综合
+  'aksdj' => [2234,3643], // 阿克苏党员远程教育
   'cjzh' => [3111,2687], // 昌吉综合
   'cjcssh' => [3057,2687], // 昌吉城市生活
   'cjcssh2' => [3058,2687], // 昌吉城市生活2
+  'bejhyzh' => [3366,4239], // 布尔津汉语综合
+  'bejhayzh' => [3377,4239], // 布尔津哈语综合
+
   //海南
   'dztv' => [1330,1669], // 儋州台 海南        
 ];
@@ -211,21 +213,8 @@ $extra_key = $arr[array_rand($arr)];
 $str = json_decode(get($url))->data->hlsUrl;
 $m3u8 = preg_split("/&extra/",$str)[0]."&extra_key=".$extra_key;
 
-if($n[$id][2] == null){
-   header('Location:'.$m3u8);
-   echo $m3u8;
-   }
-
-if($n[$id][2] == 1){
-  $ts = $_GET['ts'];
-  if(!$ts) {
-  $burl = preg_split("/tv_channel/",$str)[0];
-  print_r(preg_replace("/(.*?.ts)/i","http://".$_SERVER[HTTP_HOST].$_SERVER[PHP_SELF]."?ts=$burl$1",get($m3u8)));
-  } else {
-    $data = get($ts);
-    echo $data;
-    }
-}
+header('Location:'.$m3u8);
+//echo $m3u8;
 
 function get($url){
     $ch = curl_init($url);
@@ -237,4 +226,5 @@ function get($url){
     curl_close($ch);
     return $data;
 }
+
 ?>
