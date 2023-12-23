@@ -1,4 +1,19 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 tvg-name="玉林新闻综合" tvg-logo="https://live.fanmingming.com/tv/玉林新闻综合.png" group-title="本地频道",玉林新闻综合高清
+http://220.173.254.227:6666/rtp/239.81.0.177:4056
+#EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://live.fanmingming.com/tv/广西卫视.png" group-title="本地频道",广西卫视高清
+http://220.173.254.227:6666/rtp/239.81.0.107:4056
+#EXTINF:-1 tvg-name="广西综艺" tvg-logo="https://live.fanmingming.com/tv/广西综艺.png" group-title="本地频道",广西综艺旅游高清
+http://220.173.254.227:6666/rtp/239.81.0.214:4056
+#EXTINF:-1 tvg-name="广西都市" tvg-logo="https://live.fanmingming.com/tv/广西都市.png" group-title="本地频道",广西都市高清
+http://220.173.254.227:6666/rtp/239.81.0.247:4056
+#EXTINF:-1 tvg-name="广西影视" tvg-logo="https://live.fanmingming.com/tv/广西影视.png" group-title="本地频道",广西影视高清
+http://220.173.254.227:6666/rtp/239.81.0.250:4056
+#EXTINF:-1 tvg-name="广西乐思购" tvg-logo="https://live.fanmingming.com/tv/广西乐思购.png" group-title="本地频道",广西乐思购
+http://220.173.254.227:6666/rtp/239.81.0.9:4056
+#EXTINF:-1 tvg-name="广西移动电视" tvg-logo="https://live.fanmingming.com/tv/广西移动电视.png" group-title="本地频道",广西移动电视
+http://220.173.254.227:6666/rtp/239.81.0.10:4056
 #EXTINF:-1 ,tvg-id=“CCTV4K” tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="4K频道",CCTV.4K
 http://[2409:8087:2001:20:2800:0:df6e:eb13]/ott.mobaibox.com/PLTV/3/224/3221228228/index.m3u8
 #EXTINF:-1 ,tvg-id=“CCTV1” tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="4K频道",CCTV-1 .4K
