@@ -33,10 +33,12 @@ http://10.10.10.1:4022/rtp/239.81.1.15:4056
 http://10.10.10.1:4022/rtp/239.81.1.16:4056
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png",CCTV-16奥林匹克4K
 http://10.10.10.1:4022/rtp/239.81.1.17:4056
-#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png",CCTV-5+体育赛事
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png",CCTV-5+体育赛事
 http://10.10.10.1:4022/rtp/239.81.1.18:4056
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png",CCTV-17农业农村
 http://10.10.10.1:4022/rtp/239.81.1.19:4056
+#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png",CCTV-4K超高清
+http://10.10.10.1:4022/rtp/239.81.1.78:4056
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.com/tv/CGTN.png",CGTN
 http://10.10.10.1:4022/rtp/239.81.1.20:4056
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png",广东卫视
