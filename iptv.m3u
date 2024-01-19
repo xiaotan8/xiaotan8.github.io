@@ -59,6 +59,8 @@ http://10.10.10.1:4022/rtp/239.81.0.231:4056
 http://10.10.10.1:4022/rtp/239.81.0.96:4056
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" group-title="央视频道",CCTV-5体育高清
 http://10.10.10.1:4022/rtp/239.81.0.232:4056
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png" group-title="央视频道",CCTV-5＋体育赛事高清
+http://10.10.10.1:4022/rtp/239.81.0.101:4056
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" group-title="央视频道",CCTV-6电影高清
 http://10.10.10.1:4022/rtp/239.81.0.233:4056
 #EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png" group-title="央视频道",CCTV-7国防军事高清
@@ -79,8 +81,6 @@ http://10.10.10.1:4022/rtp/239.81.0.206:4056
 http://10.10.10.1:4022/rtp/239.81.0.120:4056
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" group-title="央视频道",CCTV-15音乐高清
 http://10.10.10.1:4022/rtp/239.81.0.230:4056
-#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png" group-title="央视频道",CCTV-5＋体育赛事高清
-http://10.10.10.1:4022/rtp/239.81.0.101:4056
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" group-title="央视频道",CCTV-16奥林匹克高清
 http://10.10.10.1:4022/rtp/239.81.0.142:4056
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="央视频道",CCTV-17农业农村高清
