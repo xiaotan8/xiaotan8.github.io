@@ -11,6 +11,8 @@ http://10.10.10.1:4022/rtp/239.81.1.4:4056
 http://10.10.10.1:4022/rtp/239.81.1.5:4056
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png",CCTV-5体育
 http://10.10.10.1:4022/rtp/239.81.1.6:4056
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png",CCTV-5+体育赛事
+http://10.10.10.1:4022/rtp/239.81.1.18:4056
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png",CCTV-6电影
 http://10.10.10.1:4022/rtp/239.81.1.7:4056
 #EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://live.fanmingming.com/tv/CCTV7.png",CCTV-7国防军事
@@ -33,8 +35,6 @@ http://10.10.10.1:4022/rtp/239.81.1.15:4056
 http://10.10.10.1:4022/rtp/239.81.1.16:4056
 #EXTINF:-1 tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png",CCTV-16奥林匹克4K
 http://10.10.10.1:4022/rtp/239.81.1.17:4056
-#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.com/tv/CCTV5+.png",CCTV-5+体育赛事
-http://10.10.10.1:4022/rtp/239.81.1.18:4056
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png",CCTV-17农业农村
 http://10.10.10.1:4022/rtp/239.81.1.19:4056
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png",CCTV-4K超高清
@@ -127,7 +127,7 @@ http://10.10.10.1:4022/rtp/239.81.1.61:4056
 http://10.10.10.1:4022/rtp/239.81.1.62:4056
 #EXTINF:-1 tvg-name="中国教育4台" tvg-logo="https://live.fanmingming.com/tv/CETV4.png",中国教育4台
 http://10.10.10.1:4022/rtp/239.81.1.63:4056
-#EXTINF:-1 tvg-name="KAKU少儿" tvg-logo="https://live.fanmingming.com/tv/卡酷少儿.png",KAKU少儿
+#EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://live.fanmingming.com/tv/卡酷少儿.png",KAKU少儿
 http://10.10.10.1:4022/rtp/239.81.1.64:4056
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://live.fanmingming.com/tv/金鹰卡通.png",金鹰卡通
 http://10.10.10.1:4022/rtp/239.81.1.65:4056
