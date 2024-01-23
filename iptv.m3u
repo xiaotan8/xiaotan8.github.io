@@ -271,6 +271,14 @@ http://10.10.10.1:4022/rtp/239.81.0.85:4056
 http://10.10.10.1:4022/rtp/239.81.0.83:4056
 #EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://live.fanmingming.com/tv/爱上4K.png" group-title="其它频道",爱上4K
 http://10.10.10.1:4022/rtp/239.81.0.123:4056
+#EXTINF:-1 tvg-name="晴彩竞技" tvg-logo="https://live.fanmingming.com/tv/晴彩竞技.png" group-title="测试频道",晴彩竞技
+http://10.10.10.1:4022/rtp/239.81.0.190:4056
+#EXTINF:-1 tvg-name="晴彩篮球" tvg-logo="https://live.fanmingming.com/tv/晴彩篮球.png" group-title="测试频道",晴彩篮球
+http://10.10.10.1:4022/rtp/239.81.0.191:4056
+#EXTINF:-1 tvg-name="晴彩羽毛球" tvg-logo="https://live.fanmingming.com/tv/晴彩羽毛球.png" group-title="测试频道",晴彩羽毛球
+http://10.10.10.1:4022/rtp/239.81.0.192:4056
+#EXTINF:-1 tvg-name="晴彩广场舞" tvg-logo="https://live.fanmingming.com/tv/晴彩广场舞.png" group-title="测试频道",晴彩广场舞
+http://10.10.10.1:4022/rtp/239.81.0.193:4056
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://live.fanmingming.com/tv/凤凰卫视中文台.png" group-title="香港频道",凤凰中文
 http://[2409:8087:2001:20:2800:0:df6e:eb24]:80/wh7f454c46tw3553140416_-2021535160/ott.mobaibox.com/PLTV/3/224/3221228527/index.m3u8
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://live.fanmingming.com/tv/凤凰卫视资讯台.png" group-title="香港频道",凤凰资讯
