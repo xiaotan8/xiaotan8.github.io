@@ -1,9 +1,9 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
-#EXTINF:-1 tvg-name="G导视高清" tvg-logo="https://live.fanmingming.com/tv/G导视高清.png",G导视高清
+#EXTINF:-1 tvg-name="导视高清" tvg-logo="https://live.fanmingming.com/tv/导视.png",导视高清
 http://r.jdshipin.com/ihkmX?id=gdds
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png",翡翠台
 http://r.jdshipin.com/ihkmX?id=fcthd
-#EXTINF:-1 tvg-name="翡翠台.720" tvg-logo="https://live.fanmingming.com/tv/翡翠台.720.png",翡翠台.720
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png",翡翠台
 http://r.jdshipin.com/ihkmX?id=fct720
 #EXTINF:-1 tvg-name="明珠台" tvg-logo="https://live.fanmingming.com/tv/明珠台.png",明珠台
 http://r.jdshipin.com/ihkmX?id=mzthd
@@ -15,8 +15,6 @@ http://r.jdshipin.com/ihkmX?id=fhzw
 http://r.jdshipin.com/ihkmX?id=xkws
 #EXTINF:-1 tvg-name="澳亚卫视" tvg-logo="https://live.fanmingming.com/tv/澳亚卫视.png",澳亚卫视
 http://r.jdshipin.com/ihkmX?id=ayws
-#EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.com/tv/重温经典.png",重温经典
-http://r.jdshipin.com/ihkmX?id=cwjd
 #EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png",广东珠江
 http://r.jdshipin.com/ihkmX?id=gdzj
 #EXTINF:-1 tvg-name="广东体育" tvg-logo="https://live.fanmingming.com/tv/广东体育.png",广东体育
@@ -177,3 +175,5 @@ http://r.jdshipin.com/ihkmX?id=zqzh
 http://r.jdshipin.com/ihkmX?id=zqsh
 #EXTINF:-1 tvg-name="怀集综合" tvg-logo="https://live.fanmingming.com/tv/怀集综合.png",怀集综合
 http://r.jdshipin.com/ihkmX?id=hjzh
+#EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.com/tv/重温经典.png",重温经典
+http://r.jdshipin.com/ihkmX?id=cwjd
