@@ -1,7 +1,7 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png",广东卫视超清
 http://14.121.146.88:554/rtp/239.77.0.166:5146
-#EXTINF:-1 tvg-name="经济科教" tvg-logo="https://live.fanmingming.com/tv/经济科教.png",经济科教超清
+#EXTINF:-1 tvg-name="经济科教" tvg-logo="https://live.fanmingming.com/tv/广东经济科教.png",经济科教超清
 http://14.121.146.88:554/rtp/239.77.0.167:5146
 #EXTINF:-1 tvg-name="广东体育" tvg-logo="https://live.fanmingming.com/tv/广东体育.png",广东体育超清
 http://14.121.146.88:554/rtp/239.77.0.168:5146
@@ -12,7 +12,7 @@ http://14.121.146.88:554/rtp/239.77.0.1:5146
 #EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png",广东珠江超清
 http://14.121.146.88:554/rtp/239.77.0.114:5146
 #EXTINF:-1 tvg-name="广东综艺" tvg-logo="https://live.fanmingming.com/tv/广东综艺.png",广东综艺4K
-http://14.121.146.88:554/rtp/239.77.0.246:5146
+http://14.121.146.88:554/rtp/239.77.0.245:5146
 #EXTINF:-1 tvg-name="广东南国都市" tvg-logo="https://live.fanmingming.com/tv/广东南国都市.png",南国都市 4K
 http://14.121.146.88:554/rtp/239.253.43.99:5146
 #EXTINF:-1 tvg-name="广东新闻" tvg-logo="https://live.fanmingming.com/tv/广东新闻.png",广东新闻高清
@@ -27,7 +27,7 @@ http://14.121.146.88:554/rtp/239.77.0.217:5146
 http://14.121.146.88:554/rtp/239.77.0.225:5146
 #EXTINF:-1 tvg-name="广东新闻" tvg-logo="https://live.fanmingming.com/tv/广东新闻.png",广东新闻高清
 http://14.121.146.88:554/rtp/239.77.0.173:5146
-#EXTINF:-1 tvg-name="广东移动" tvg-logo="https://live.fanmingming.com/tv/广东移动.png",广东移动
+#EXTINF:-1 tvg-name="广东移动电视" tvg-logo="https://live.fanmingming.com/tv/广东移动.png",广东移动
 http://14.121.146.88:554/rtp/239.77.0.20:5146
 #EXTINF:-1 tvg-name="广州综合" tvg-logo="https://live.fanmingming.com/tv/广州综合.png",广州综合HD
 http://14.121.146.88:554/rtp/239.253.43.71:5146
@@ -213,7 +213,7 @@ http://14.121.146.88:554/rtp/239.77.0.128:5146
 http://14.121.146.88:554/rtp/239.77.0.131:5146
 #EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png",山东卫视高清
 http://14.121.146.88:554/rtp/239.77.0.94:5146
-#EXTINF:-1 tvg-name="辽宁卫视 " tvg-logo="https://live.fanmingming.com/tv/辽宁卫视 .png",辽宁卫视 高清
+#EXTINF:-1 tvg-name="辽宁卫视" tvg-logo="https://live.fanmingming.com/tv/辽宁卫视.png",辽宁卫视 高清
 http://14.121.146.88:554/rtp/239.77.0.123:5146
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.com/tv/四川卫视.png",四川卫视高清
 http://14.121.146.88:554/rtp/239.77.0.159:5146
@@ -269,7 +269,7 @@ http://14.121.146.88:554/rtp/239.77.0.189:5146
 http://14.121.146.88:554/rtp/239.77.0.77:5146
 #EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://live.fanmingming.com/tv/三沙卫视.png",三沙卫视高清
 http://14.121.146.88:554/rtp/239.253.43.113:5146
-#EXTINF:-1 tvg-name="吉林延边卫视" tvg-logo="https://live.fanmingming.com/tv/吉林延边卫视.png",吉林延边卫视
+#EXTINF:-1 tvg-name="延边卫视" tvg-logo="https://live.fanmingming.com/tv/延边卫视.png",延边卫视
 http://14.121.146.88:554/rtp/239.77.0.10:5146
 #EXTINF:-1 tvg-name="CHC高清电影" tvg-logo="https://live.fanmingming.com/tv/CHC高清电影.png",CHC高清电影
 http://14.121.146.88:554/rtp/239.77.0.27:5146
