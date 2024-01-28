@@ -2,11 +2,11 @@
 
 #EXTINF:-1 ,G导视高清
 http://10.10.10.5:8080/gudou.php?id=gdds
-#EXTINF:-1 ,翡翠台
+#EXTINF:-1 ,翡翠台高清
 http://10.10.10.5:8080/gudou.php?id=fcthd
-#EXTINF:-1 ,翡翠台.720
-http://10.10.10.5:8080/gudou.php?id=fct720
-#EXTINF:-1 ,明珠台
+#EXTINF:-1 ,翡翠台
+http://10.10.10.5:8080/gudou.php?id=fct
+#EXTINF:-1 ,明珠台高清
 http://10.10.10.5:8080/gudou.php?id=mzthd
 #EXTINF:-1 ,澳视澳门
 http://10.10.10.5:8080/gudou.php?id=asam
@@ -42,11 +42,11 @@ http://10.10.10.5:8080/gudou.php?id=lnxq
 http://10.10.10.5:8080/gudou.php?id=gzzh
 #EXTINF:-1 ,广州新闻
 http://10.10.10.5:8080/gudou.php?id=gzxw
-#EXTINF:-1 ,广州影视.576
+#EXTINF:-1 ,广州影视
 http://10.10.10.5:8080/gudou.php?id=gzys
-#EXTINF:-1 ,广州竞赛.576
+#EXTINF:-1 ,广州竞赛
 http://10.10.10.5:8080/gudou.php?id=gzjs
-#EXTINF:-1 ,广州法治.576
+#EXTINF:-1 ,广州法治
 http://10.10.10.5:8080/gudou.php?id=gzfz
 #EXTINF:-1 ,增城台
 http://10.10.10.5:8080/gudou.php?id=zctv
@@ -78,7 +78,7 @@ http://10.10.10.5:8080/gudou.php?id=hz2
 http://10.10.10.5:8080/gudou.php?id=blzh
 #EXTINF:-1 ,惠东综合
 http://10.10.10.5:8080/gudou.php?id=hdzh
-#EXTINF:-1 ,惠阳台.576
+#EXTINF:-1 ,惠阳台
 http://10.10.10.5:8080/gudou.php?id=hyzh
 #EXTINF:-1 ,潮州综合
 http://10.10.10.5:8080/gudou.php?id=czzh
@@ -108,11 +108,11 @@ http://10.10.10.5:8080/gudou.php?id=zsxswh
 http://10.10.10.5:8080/gudou.php?id=zsjy
 #EXTINF:-1 ,江门综合
 http://10.10.10.5:8080/gudou.php?id=jmzh
-#EXTINF:-1 ,江门侨乡生活.576
+#EXTINF:-1 ,江门侨乡生活
 http://10.10.10.5:8080/gudou.php?id=jmqx
-#EXTINF:-1 ,鹤山综合
+#EXTINF:-1 ,鹤山综合高清
 http://10.10.10.5:8080/gudou.php?id=hszh
-#EXTINF:-1 ,新会综合.576
+#EXTINF:-1 ,新会综合
 http://10.10.10.5:8080/gudou.php?id=xhzh
 #EXTINF:-1 ,梅州1
 http://10.10.10.5:8080/gudou.php?id=mz1
@@ -124,9 +124,9 @@ http://10.10.10.5:8080/gudou.php?id=mzds
 http://10.10.10.5:8080/gudou.php?id=mxzh
 #EXTINF:-1 ,平远综合
 http://10.10.10.5:8080/gudou.php?id=pyzh
-#EXTINF:-1 ,五华台.576
+#EXTINF:-1 ,五华台
 http://10.10.10.5:8080/gudou.php?id=whzh
-#EXTINF:-1 ,兴宁台.576
+#EXTINF:-1 ,兴宁台
 http://10.10.10.5:8080/gudou.php?id=xnzh
 #EXTINF:-1 ,茂名综合
 http://10.10.10.5:8080/gudou.php?id=mmzh
@@ -134,23 +134,23 @@ http://10.10.10.5:8080/gudou.php?id=mmzh
 http://10.10.10.5:8080/gudou.php?id=mmwhsh
 #EXTINF:-1 ,信宜台
 http://10.10.10.5:8080/gudou.php?id=xyzh
-#EXTINF:-1 ,化州综合.360
+#EXTINF:-1 ,化州综合
 http://10.10.10.5:8080/gudou.php?id=hzzh
 #EXTINF:-1 ,云浮综合
 http://10.10.10.5:8080/gudou.php?id=yfzh
-#EXTINF:-1 ,云浮文旅.576
+#EXTINF:-1 ,云浮文旅
 http://10.10.10.5:8080/gudou.php?id=yfwl
 #EXTINF:-1 ,河源综合
 http://10.10.10.5:8080/gudou.php?id=hy1
-#EXTINF:-1 ,河源公共.576
+#EXTINF:-1 ,河源公共
 http://10.10.10.5:8080/gudou.php?id=hy2
 #EXTINF:-1 ,清远新闻综合
 http://10.10.10.5:8080/gudou.php?id=qyzh
-#EXTINF:-1 ,清远文旅生活.576
+#EXTINF:-1 ,清远文旅生活
 http://10.10.10.5:8080/gudou.php?id=qywl
-#EXTINF:-1 ,佛冈综合.576
+#EXTINF:-1 ,佛冈综合
 http://10.10.10.5:8080/gudou.php?id=fgzh
-#EXTINF:-1 ,英德综合.360
+#EXTINF:-1 ,英德综合
 http://10.10.10.5:8080/gudou.php?id=ydzh
 #EXTINF:-1 ,汕尾新闻综合
 http://10.10.10.5:8080/gudou.php?id=swzh
@@ -162,19 +162,19 @@ http://10.10.10.5:8080/gudou.php?id=hfzh
 http://10.10.10.5:8080/gudou.php?id=ljzh1
 #EXTINF:-1 ,廉江综合-2
 http://10.10.10.5:8080/gudou.php?id=ljzh2
-#EXTINF:-1 ,湛江综合.576
+#EXTINF:-1 ,湛江综合
 http://10.10.10.5:8080/gudou.php?id=zjzh
-#EXTINF:-1 ,湛江公共.576
+#EXTINF:-1 ,湛江公共
 http://10.10.10.5:8080/gudou.php?id=zjgg
-#EXTINF:-1 ,韶关新闻综合.576
+#EXTINF:-1 ,韶关新闻综合
 http://10.10.10.5:8080/gudou.php?id=sgzh
-#EXTINF:-1 ,韶关绿色生活.576
+#EXTINF:-1 ,韶关绿色生活
 http://10.10.10.5:8080/gudou.php?id=sglssh
-#EXTINF:-1 ,始兴综合.576
+#EXTINF:-1 ,始兴综合
 http://10.10.10.5:8080/gudou.php?id=sxzh
-#EXTINF:-1 ,肇庆综合.576
+#EXTINF:-1 ,肇庆综合
 http://10.10.10.5:8080/gudou.php?id=zqzh
-#EXTINF:-1 ,肇庆生活服务.576
+#EXTINF:-1 ,肇庆生活服务
 http://10.10.10.5:8080/gudou.php?id=zqsh
-#EXTINF:-1 ,怀集综合.576
+#EXTINF:-1 ,怀集综合
 http://10.10.10.5:8080/gudou.php?id=hjzh
