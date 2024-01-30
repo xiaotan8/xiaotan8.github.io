@@ -5,7 +5,7 @@ import requests
 import json
 import re
 
-Guangxi = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iR3Vhbmd4aSBaaHVhbmd6dSIg"        #广西
+guangxi = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iR3Vhbmd4aSBaaHVhbmd6dSIg"        #广西
 guangdong = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iZ3Vhbmdkb25nIg%3D%3D"    #广东
 
 
@@ -101,8 +101,8 @@ def save_results(results, filename):
             print(result)
 
 # 处理第1个URL
-results_hebei = process_url(Guangxi)
-save_results(results_Guangxi, "guangxi.txt")
+results_guangxi = process_url(guangxi)
+save_results(results_guangxi, "guangxi.txt")
 
 # 处理第3个URL
 results_guangdong = process_url(guangdong)
