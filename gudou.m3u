@@ -1,7 +1,7 @@
-#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 #EXTINF:-1 tvg-name="广东导视" tvg-logo="https://live.fanmingming.com/tv/广东导视.png",广东导视
 http://10.10.10.5:8080/gudou.php?id=gdds
-#EXTINF:-1 tvg-name="广东综艺4K" tvg-logo="https://live.fanmingming.com/tv/广东综艺4K.png",广东综艺4K
+#EXTINF:-1 tvg-name="广东4K" tvg-logo="https://live.fanmingming.com/tv/广东4K.png",广东4K
 http://10.10.10.5:8080/gudou.php?id=gdzy4k
 #EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png",广东珠江
 http://10.10.10.5:8080/gudou.php?id=gdzj
