@@ -123,6 +123,8 @@ http://10.10.10.1:4022/rtp/239.81.0.207:4056
 http://10.10.10.1:4022/rtp/239.81.0.204:4056
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.com/tv/四川卫视.png" group-title="卫视频道",四川卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.130:4056
+#EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://live.fanmingming.com/tv/吉林卫视.png" group-title="卫视频道",吉林卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.143:4056
 #EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://live.fanmingming.com/tv/大湾区卫视.png"" group-title="卫视频道",大湾区卫视
 http://10.10.10.1:4022/rtp/239.81.0.32:4056
 #EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://live.fanmingming.com/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
@@ -145,8 +147,6 @@ http://10.10.10.1:4022/rtp/239.81.0.53:4056
 http://10.10.10.1:4022/rtp/239.81.0.54:4056
 #EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://live.fanmingming.com/tv/西藏卫视.png" group-title="卫视频道",西藏卫视
 http://10.10.10.1:4022/rtp/239.81.0.55:4056
-#EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://live.fanmingming.com/tv/吉林卫视.png" group-title="卫视频道",吉林卫视高清
-http://10.10.10.1:4022/rtp/239.81.0.143:4056
 #EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://live.fanmingming.com/tv/宁夏卫视.png" group-title="卫视频道",宁夏卫视
 http://10.10.10.1:4022/rtp/239.81.0.60:4056
 #EXTINF:-1 tvg-name="山东教育卫视" tvg-logo="https://live.fanmingming.com/tv/山东教育.png" group-title="卫视频道",山东教育卫视
@@ -157,8 +157,6 @@ http://10.10.10.1:4022/rtp/239.81.0.242:4056
 http://10.10.10.1:4022/rtp/239.81.0.212:4056
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://live.fanmingming.com/tv/兵团卫视.png" group-title="卫视频道",兵团卫视
 http://10.10.10.1:4022/rtp/239.81.0.213:4056
-#EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://live.fanmingming.com/tv/金鹰纪实.png" group-title="卫视频道",金鹰纪实高清
-http://10.10.10.1:4022/rtp/239.81.0.91:4056
 #EXTINF:-1 tvg-name="中国教育1台" tvg-logo="https://live.fanmingming.com/tv/CETV1.png" group-title="卫视频道",中国教育1台高清
 http://10.10.10.1:4022/rtp/239.81.0.92:4056
 #EXTINF:-1 tvg-name="中国教育2台" tvg-logo="https://live.fanmingming.com/tv/CETV2.png" group-title="卫视频道",中国教育2台
@@ -167,6 +165,8 @@ http://10.10.10.1:4022/rtp/239.81.0.245:4056
 http://10.10.10.1:4022/rtp/239.81.1.62:4056
 #EXTINF:-1 tvg-name="中国教育4台" tvg-logo="https://live.fanmingming.com/tv/CETV4.png" group-title="卫视频道",中国教育4台高清
 http://10.10.10.1:4022/rtp/239.81.0.188:4056
+#EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://live.fanmingming.com/tv/金鹰纪实.png" group-title="卫视频道",金鹰纪实高清
+http://10.10.10.1:4022/rtp/239.81.0.91:4056
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://live.fanmingming.com/tv/金鹰卡通.png" group-title="卫视频道",金鹰卡通高清
 http://10.10.10.1:4022/rtp/239.81.0.148:4056
 #EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://live.fanmingming.com/tv/卡酷少儿.png" group-title="卫视频道",卡酷动画
