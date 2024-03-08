@@ -279,19 +279,31 @@ http://10.10.10.1:4022/rtp/239.81.0.191:4056
 http://10.10.10.1:4022/rtp/239.81.0.192:4056
 #EXTINF:-1 tvg-name="晴彩广场舞" tvg-logo="https://live.fanmingming.com/tv/晴彩广场舞.png" group-title="测试频道",晴彩广场舞
 http://10.10.10.1:4022/rtp/239.81.0.193:4056
-#EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png"group-title="无线频道",無線新聞台
+#EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台
 http://10.10.10.5:8080/tv.php?channel=C
-#EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png"group-title="无线频道",無線新聞台·海外版
+#EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台·海外版
 http://10.10.10.5:8080/tv.php?channel=I-NEWS
-#EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png"group-title="无线频道",無線新聞台
+#EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台
 http://10.10.10.5:8080/tvb.php?id=0&hq
-#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png"group-title="无线频道",無線財經·體育·資訊台
+#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png" group-title="无线频道",無線財經·體育·資訊台
 http://10.10.10.5:8080/tv.php?channel=A
-#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png"group-title="无线频道",無線財經體育資訊台·海外版
+#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png" group-title="无线频道",無線財經體育資訊台·海外版
 http://10.10.10.5:8080/tv.php?channel=I-FINA
-#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png"group-title="无线频道",無線財經·體育·資訊台
+#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png" group-title="无线频道",無線財經·體育·資訊台
 http://10.10.10.5:8080/tvb.php?id=2&hq
-#EXTINF:-1 tvg-name="事件直播頻道1" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png"group-title="无线频道",事件直播頻道1
+#EXTINF:-1 tvg-name="事件直播頻道1" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",事件直播頻道1
 http://10.10.10.5:8080/tvb.php?id=4&hq
-#EXTINF:-1 tvg-name="事件直播頻道2" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png"group-title="无线频道",事件直播頻道2
+#EXTINF:-1 tvg-name="事件直播頻道2" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",事件直播頻道2
 http://10.10.10.5:8080/tvb.php?id=6&hq
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="无线频道",翡翠台
+http://10.10.10.5:8080/mytv.php?id=J
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="无线频道",翡翠台 4K
+http://10.10.10.5:8080/mytv.php?id=JUHD
+#EXTINF:-1 tvg-name="J2" tvg-logo="https://live.fanmingming.com/tv/J2.png" group-title="无线频道",J2
+http://10.10.10.5:8080/mytv.php?id=J2
+#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://live.fanmingming.com/tv/明珠台.png" group-title="无线频道",明珠台
+http://10.10.10.5:8080/mytv.php?id=P
+#EXTINF:-1 tvg-name="Super Free" tvg-logo="https://live.fanmingming.com/tv/SuperFree.png" group-title="无线频道",Super Free
+http://10.10.10.5:8080/mytv.php?id=CWIN
+#EXTINF:-1 tvg-name="黄金翡翠台" tvg-logo="https://live.fanmingming.com/tv/黄金翡翠台.png" group-title="无线频道",黄金翡翠台
+http://10.10.10.5:8080/mytv.php?id=TVG
