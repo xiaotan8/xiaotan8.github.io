@@ -85,7 +85,7 @@ http://10.10.10.1:4022/rtp/239.81.0.230:4056
 http://10.10.10.1:4022/rtp/239.81.0.142:4056
 #EXTINF:-1 tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="央视频道",CCTV-17农业农村高清
 http://10.10.10.1:4022/rtp/239.81.0.228:4056
-#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="央视频道",CCTV4K-HDR-HEVC
+#EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="央视频道",CCTV4K超高清
 http://10.10.10.1:4022/rtp/239.81.0.196:4056
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="卫视频道",广东卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.104:4056
@@ -282,15 +282,15 @@ http://10.10.10.1:4022/rtp/239.81.0.192:4056
 #EXTINF:-1 tvg-name="晴彩广场舞" tvg-logo="https://live.fanmingming.com/tv/晴彩广场舞.png" group-title="测试频道",晴彩广场舞
 http://10.10.10.1:4022/rtp/239.81.0.193:4056
 #EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台
-http://10.10.10.5/tv.php?channel=C
+https://tvb.livednow.com/C
 #EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台·海外版
-http://10.10.10.5/tv.php?channel=I-NEWS
+https://tvb.livednow.com/I-NEWS
 #EXTINF:-1 tvg-name="无线新闻台" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台
 http://10.10.10.5/tvb.php?id=0&hq
 #EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png" group-title="无线频道",無線財經·體育·資訊台
-http://10.10.10.5/tv.php?channel=A
+https://tvb.livednow.com/A
 #EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png" group-title="无线频道",無線財經體育資訊台·海外版
-http://10.10.10.5/tv.php?channel=I-FINA
+https://tvb.livednow.com/I-FINA
 #EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://live.fanmingming.com/tv/无线财经台.png" group-title="无线频道",無線財經·體育·資訊台
 http://10.10.10.5/tvb.php?id=2&hq
 #EXTINF:-1 tvg-name="事件直播頻道1" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",事件直播頻道1
