@@ -87,6 +87,8 @@ http://10.10.10.1:4022/rtp/239.81.0.142:4056
 http://10.10.10.1:4022/rtp/239.81.0.228:4056
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="央视频道",CCTV4K超高清
 http://10.10.10.1:4022/rtp/239.81.0.196:4056
+#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="卫视频道",广东珠江高清
+https://z88.ubtvfans.com/live/rx1/1034/ea91e47e0ce349e1923cbcb373067494/index.m3u8
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="卫视频道",广东卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.104:4056
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" group-title="卫视频道",湖南卫视高清
@@ -284,7 +286,7 @@ http://10.10.10.1:4022/rtp/239.81.0.193:4056
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/翡翠台.png" group-title="无线频道",翡翠台
 https://cdn-iptv.hiper25.com/TVB/video.m3u8
 #EXTINF:-1 tvg-name="明珠台" tvg-logo="https://live.fanmingming.com/tv/明珠台.png" group-title="无线频道",明珠台
-https://cdn-iptv.hiper25.com/Pearl/video.m3u8
+https://z88.ubtvfans.com/live/rx1/2437/43f3e7d06eeb53f3057cb2780fd11a50/index.m3u8
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台
 https://tvb.livednow.com/C
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",無線新聞台·海外版
@@ -297,5 +299,5 @@ https://tvb.livednow.com/I-FINA
 http://10.10.10.5/tvb.php?id=4&hq
 #EXTINF:-1 tvg-name="事件直播頻道2" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="无线频道",事件直播頻道2
 http://10.10.10.5/tvb.php?id=6&hq
-#EXTINF:-1 tvg-name="澳视澳门" tvg-logo="https://live.fanmingming.com/tv/澳视澳门.png" group-title="无线频道",澳视澳门
-https://cdn-iptv.hiper25.com/TDM/video.m3u8
+#EXTINF:-1 tvg-name="澳门澳视" tvg-logo="https://live.fanmingming.com/tv/澳视澳门.png" group-title="无线频道",澳视澳门
+https://z88.ubtvfans.com/live/rx1/23/2461dc775e41aa30e9d1e941702fc5b7/index.m3u8
