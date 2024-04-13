@@ -12,7 +12,7 @@ eventlet.monkey_patch()
 
 urls = [
     "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgcmVnaW9uPSJHdWFuZ3hpIFpodWFuZ3p1IiAmJiBjaXR5PSJZdWxpbiI%3D", #广西
-    "https://www.zoomeye.hk/searchResult?q=%2Fiptv%2Flive%2Fzh_cn.js%20%2Bcountry%3A%22CN%22%20%2Bsubdivisions%3A%22guangxi%22", #广西
+    "https://www.zoomeye.hk/searchResult?q=%2Fiptv%2Flive%2Fzh_cn.js%20%2Bcountry%3A%22CN%22%20%2Bsubdivisions%3A%22guangxi%22%2Bcity%3A%22Yulin%22", #广西
 ]
 
 def modify_urls(url):
