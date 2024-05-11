@@ -1,27 +1,19 @@
 #EXTM3U
-#EXTINF:-1 group-title="卫视频道",三沙卫视
-http://171.108.74.123:8181/tsfile/live/2096_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",云南卫视
-http://171.108.74.123:8181/tsfile/live/2079_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",内蒙古卫视
-http://171.108.74.123:8181/tsfile/live/2097_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",海南卫视
-http://171.108.74.123:8181/tsfile/live/2078_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",湖北卫视
-http://171.108.74.123:8181/tsfile/live/2052_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",湖南卫视
-http://171.108.74.123:8181/tsfile/live/2062_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",中国气象
-http://171.108.74.123:8181/tsfile/live/2005_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",南宁生活
-http://171.108.74.123:8181/tsfile/live/2042_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",博白客家
-http://171.108.74.123:8181/tsfile/live/2103_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",广东新闻
-http://171.108.74.123:8181/tsfile/live/2108_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="央视频道",CCTV2
+http://171.38.43.236:8181/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="央视频道",CCTV9
+http://171.38.43.236:8181/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="央视频道",CCTV15
+http://171.38.43.236:8181/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="卫视频道",东南卫视
+http://171.38.43.236:8181/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="卫视频道",广东卫视
+http://171.38.43.236:8181/tsfile/live/0125_2.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",中国MTV
+http://171.38.43.236:8181/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",凤凰资讯
+http://171.38.43.236:8181/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="其他频道",广州台
-http://171.108.74.123:8181/tsfile/live/2106_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",摄影
-http://171.108.74.123:8181/tsfile/live/2127_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",生态环境
-http://171.108.74.123:8181/tsfile/live/2128_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.38.43.236:8181/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",廉江公共
+http://171.38.43.236:8181/tsfile/live/1048_1.m3u8?key=txiptv&playlive=1&authid=0
