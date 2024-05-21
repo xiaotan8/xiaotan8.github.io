@@ -1,0 +1,31 @@
+name: Run mytvsuper.py every 6 hours
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  run_mytvsuper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # 可以根据你的 Python 版本进行修改
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt # 如果有依赖可以在这里安装
+      
+      - name: Run mytvsuper.py
+        run: python mytvsuper.py
+      
+      - name: Save generated file to GitHub
+        run: |
+          git config --global user.email "bsexing@gmail.com"
+          git config --global user.name "xiaotan8"
+          git add mytvsuper.m3u
+          git commit -m "Update mytvsuper.m3u"
+          git push
