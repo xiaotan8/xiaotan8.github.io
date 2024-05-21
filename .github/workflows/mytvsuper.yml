@@ -1,15 +1,7 @@
 name: Run mytvsuper.py every 6 hours
 on:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: '编译OpenWrt固件-SSH远程：改为“ssh”打开SSH连接'
-        required: false
-        default: 'ssh-actions'
-
-
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: '0 8,20 * * *'
 
 jobs:
   run_mytvsuper:
