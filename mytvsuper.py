@@ -15,7 +15,7 @@ CHANNEL_LIST = {
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=2c045f5adb26d391cc41cd01f00416fa&key=fc146771a9b096fc4cb57ffe769861be'
     },
     'B': {
-        'name': 'TVBplus',
+        'name': 'TVB plus',
         'license': '56603b65fa1d7383b6ef0e73b9ae69fa:5d9d8e957d2e45d8189a56fe8665aaaa',
         'logo': 'https://img.sky4k.top/TVB_Plus_CheerVisionTV.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=56603b65fa1d7383b6ef0e73b9ae69fa&key=5d9d8e957d2e45d8189a56fe8665aaaa'
