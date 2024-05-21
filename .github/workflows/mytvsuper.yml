@@ -27,4 +27,4 @@ jobs:
           git config --global user.name "xiaotan8"
           git add mytvsuper.m3u
           git commit -m "Update mytvsuper.m3u"
-          git push
+          git push -f
