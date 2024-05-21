@@ -1,7 +1,13 @@
-name: Run mytvsuper.py every 6 hours
+name: Run mytvsuper
 on:
   schedule:
     - cron: '0 8,20 * * *'
+  push:
+    branches:
+      - main
+      
+permissions:
+  contents: write
 
 jobs:
   run_mytvsuper:
