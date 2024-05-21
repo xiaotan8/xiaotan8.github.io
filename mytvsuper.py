@@ -17,7 +17,7 @@ CHANNEL_LIST = {
     'B': {
         'name': 'TVBplus',
         'license': '56603b65fa1d7383b6ef0e73b9ae69fa:5d9d8e957d2e45d8189a56fe8665aaaa',
-        'logo': 'https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/TVB3.png',
+        'logo': 'https://img.sky4k.top/TVB_Plus_CheerVisionTV.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=56603b65fa1d7383b6ef0e73b9ae69fa&key=5d9d8e957d2e45d8189a56fe8665aaaa'
     },
     'P': {
