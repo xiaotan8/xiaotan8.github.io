@@ -21,7 +21,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8' # 可以根据你的 Python 版本进行修改
+          python-version: '3.x' # 可以根据你的 Python 版本进行修改
       
       - name: Install dependencies
         run: pip install -r requirements.txt # 如果有依赖可以在这里安装
