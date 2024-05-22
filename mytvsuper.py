@@ -4,7 +4,7 @@ import json
 CHANNEL_LIST = {
 
     'JUHD': {
-        'name': '翡翠台(超高清)',
+        'name': '翡翠台超高清',
         'license': '2c045f5adb26d391cc41cd01f00416fa:fc146771a9b096fc4cb57ffe769861be',
         'logo': 'https://assets.livednow.com/logo/翡翠台.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=2c045f5adb26d391cc41cd01f00416fa&key=fc146771a9b096fc4cb57ffe769861be'
