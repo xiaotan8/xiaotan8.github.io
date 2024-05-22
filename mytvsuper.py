@@ -5,13 +5,13 @@ CHANNEL_LIST = {
     'J': {
         'name': '翡翠台',
         'license': '0958b9c657622c465a6205eb2252b8ed:2d2fd7b1661b1e28de38268872b48480',
-        'logo': 'https://github.com/wanglindl/TVlogo/blob/main/img/TVB1.png?raw=true',
+        'logo': 'https://assets.livednow.com/logo/翡翠台.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=0958b9c657622c465a6205eb2252b8ed&key=2d2fd7b1661b1e28de38268872b48480'
     },
     'JUHD': {
         'name': '翡翠台 4K',
         'license': '2c045f5adb26d391cc41cd01f00416fa:fc146771a9b096fc4cb57ffe769861be',
-        'logo': 'https://github.com/wanglindl/TVlogo/blob/main/img/TVB1.png?raw=true',
+        'logo': 'https://assets.livednow.com/logo/翡翠台.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=2c045f5adb26d391cc41cd01f00416fa&key=fc146771a9b096fc4cb57ffe769861be'
     },
     'B': {
@@ -23,7 +23,7 @@ CHANNEL_LIST = {
     'P': {
         'name': '明珠台',
         'license': 'e04facdd91354deee318c674993b74c1:8f97a629de680af93a652c3102b65898',
-        'logo': 'https://github.com/wanglindl/TVlogo/blob/main/img/TVB1.png?raw=true',
+        'logo': 'https://assets.livednow.com/logo/明珠台.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=e04facdd91354deee318c674993b74c1&key=8f97a629de680af93a652c3102b65898'
     },
     'CWIN': {
@@ -41,7 +41,7 @@ CHANNEL_LIST = {
     'C': {
         'name': '无线新闻台',
         'license': '90a0bd01d9f6cbb39839cd9b68fc26bc:51546d1f2af0547f0e961995b60a32a1',
-        'logo': 'https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/TVB4.png',
+        'logo': 'https://assets.livednow.com/logo/無線新聞台.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=90a0bd01d9f6cbb39839cd9b68fc26bc&key=51546d1f2af0547f0e961995b60a32a1'
     },
     'CTVE': {
@@ -53,19 +53,19 @@ CHANNEL_LIST = {
     'PCC': {
         'name': '凤凰卫视中文台',
         'license': '7bca0771ba9205edb5d467ce2fdf0162:eb19c7e3cea34dc90645e33f983b15ab',
-        'logo': 'https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/Phoenix1.png',
+        'logo': 'https://assets.livednow.com/logo/鳳凰中文.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=7bca0771ba9205edb5d467ce2fdf0162&key=eb19c7e3cea34dc90645e33f983b15ab'
     },
     'PIN': {
         'name': '凤凰卫视资讯台',
         'license': '83f7d313adfc0a5b978b9efa0421ce25:ecdc8065a46287bfb58e9f765e4eec2b',
-        'logo': 'https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/Phoenix2.png',
+        'logo': 'https://assets.livednow.com/logo/鳳凰資訊.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=83f7d313adfc0a5b978b9efa0421ce25&key=ecdc8065a46287bfb58e9f765e4eec2b'
     },
     'PHK': {
         'name': '凤凰卫视香港台',
         'license': 'cde62e1056eb3615dab7a3efd83f5eb4:b8685fbecf772e64154630829cf330a3',
-        'logo': 'https://raw.githubusercontent.com/wanglindl/TVlogo/main/img/Phoenix3.png',
+        'logo': 'https://assets.livednow.com/logo/鳳凰香港.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=cde62e1056eb3615dab7a3efd83f5eb4&key=b8685fbecf772e64154630829cf330a3'
     },
     'EVT1': {
