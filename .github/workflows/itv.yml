@@ -30,7 +30,7 @@ jobs:
         run: python ${{ github.workspace }}/itv_all.py
 
       - name: Run gdiptv.py
-        #run: python ${{ github.workspace }}/gdiptv.py
+        run: python ${{ github.workspace }}/gdiptv.py
         
       #- name: Run weishi
         #run: python ${{ github.workspace }}/weishi.py
