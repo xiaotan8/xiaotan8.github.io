@@ -1,0 +1,49 @@
+name: gdiptv
+
+on:
+  schedule:
+    - cron: '0 9,21 * * *'
+  push:
+    branches:
+      - main
+      
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+    
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install selenium requests futures eventlet opencv-python
+
+      #- name: Run itv_all
+        #run: python ${{ github.workspace }}/itv_all.py
+
+      - name: Run gdiptv.py
+        run: python ${{ github.workspace }}/gdiptv.py
+        
+      #- name: Run mytvsuper.py
+        #run: python ${{ github.workspace }}/mytvsuper.py
+        
+      #- name: Run qita
+        #run: python ${{ github.workspace }}/qita.py
+        
+      - name: 提交更改
+        run: |
+          git config --local user.email "bsexing@gmail.com"
+          git config --local user.name "xiaotan8"
+          git add .
+          git commit *.txt -m "Add generated file"
+          git commit *.m3u -m "Add generated file"
+          #git pull --rebase
+          git push -f
