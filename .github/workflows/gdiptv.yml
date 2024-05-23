@@ -1,7 +1,7 @@
 name: gdiptv
 on:
   schedule:
-    - cron: '0 9,21 * * *'
+    - cron: '0 10,22 * * *'
   push:
     branches:
       - main
@@ -14,13 +14,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@main
-        with:
-          token: ${{ secrets.SUPER_TOKEN }} 
-          repository: ${{ github.repository }}
-          retain_days: 2
-          keep_minimum_runs: 20
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -41,3 +34,10 @@ jobs:
           else
             echo "No changes detected, skipping commit."
           fi
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.SUPER_TOKEN }} 
+          repository: ${{ github.repository }}
+          retain_days: 2
+          keep_minimum_runs: 20
