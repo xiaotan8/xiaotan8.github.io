@@ -24,13 +24,13 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install selenium requests futures eventlet
+        run: pip install selenium requests futures eventlet opencv-python
 
       - name: Run itv_all
         run: python ${{ github.workspace }}/itv_all.py
 
-      #- name: Run cctv
-        #run: python ${{ github.workspace }}/cctv.py
+      - name: Run gdiptv.py
+        #run: python ${{ github.workspace }}/gdiptv.py
         
       #- name: Run weishi
         #run: python ${{ github.workspace }}/weishi.py
