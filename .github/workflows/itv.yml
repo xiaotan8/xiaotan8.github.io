@@ -29,11 +29,11 @@ jobs:
       - name: Run itv_all
         run: python ${{ github.workspace }}/itv_all.py
 
-      - name: Run gdiptv.py
-        run: python ${{ github.workspace }}/gdiptv.py
+      #- name: Run gdiptv.py
+        #run: python ${{ github.workspace }}/gdiptv.py
         
-      - name: Run mytvsuper.py
-        run: python ${{ github.workspace }}/mytvsuper.py
+      #- name: Run mytvsuper.py
+        #run: python ${{ github.workspace }}/mytvsuper.py
         
       #- name: Run qita
         #run: python ${{ github.workspace }}/qita.py
