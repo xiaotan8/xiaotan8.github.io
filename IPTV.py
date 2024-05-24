@@ -5,8 +5,8 @@ import requests
 import json
 import re
 
-guangxi = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgcmVnaW9uPSJHdWFuZ3hpIFpodWFuZ3p1IiAmJiBjaXR5PSJZdWxpbiI%3D"        #广西
-guangdong = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgcmVnaW9uPSJHdWFuZ2Rvbmci"    #广东
+guangxi = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgcmVnaW9uPSJHdWFuZ3hpIFpodWFuZ3p1IiA%3D"  # 广西
+guangdong = "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgcmVnaW9uPSJHdWFuZ2Rvbmci"  # 广东
 
 
 def process_url(url):
@@ -40,6 +40,11 @@ def process_url(url):
             json_url = f"{url}/iptv/live/1000.json?key=txiptv"
             response = requests.get(json_url, timeout=3)
             json_data = response.json()
+
+            # 检查返回的JSON数据结构
+            if 'data' not in json_data:
+                print(f"No 'data' key found in JSON data for URL {url}. Skipping.")
+                continue
 
             # 解析JSON文件，获取name和url字段
             for item in json_data['data']:
@@ -93,12 +98,15 @@ def process_url(url):
             continue
 
     return results
+
+
 def save_results(results, filename):
     # 将结果保存到文本文件
     with open(filename, "w", encoding="utf-8") as file:
         for result in results:
             file.write(result + "\n")
             print(result)
+
 
 # 处理第1个URL
 results_guangxi = process_url(guangxi)
@@ -118,4 +126,4 @@ for file_path in file_paths:
 
 # 写入合并后的文件
 with open("IPTV.txt", "w", encoding="utf-8") as output:
-    output.write('\n'.join(file_contents))
+    output.write('\n'.
