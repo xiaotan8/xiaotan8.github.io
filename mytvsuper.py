@@ -30,13 +30,13 @@ CHANNEL_LIST = {
     'CWIN': {
         'name': 'Super Free',
         'license': '0737b75ee8906c00bb7bb8f666da72a0:15f515458cdb5107452f943a111cbe89',
-        'logo': 'https://raw.githubusercontent.com/sparkssssssssss/epg/main/logo/黄金翡翠台.png',
+        'logo': 'https://assets.mytvsuper.com/channel/1651032648621471_TVG.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=0737b75ee8906c00bb7bb8f666da72a0&key=15f515458cdb5107452f943a111cbe89'
     },
     'TVG': {
         'name': '黃金翡翠台',
         'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
-        'logo': 'https://github.com/sparkssssssssss/epg/blob/main/logo/%E9%BB%84%E9%87%91%E7%BF%A1%E7%BF%A0%E5%8F%B0.png?raw=true',
+        'logo': 'https://assets.mytvsuper.com/channel/1651032648621471_TVG.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=8fe3db1a24969694ae3447f26473eb9f&key=5cce95833568b9e322f17c61387b306f'
     },
     'C': {
@@ -84,7 +84,7 @@ CHANNEL_LIST = {
     'EVT1': {
         'name': 'myTV SUPER直播足球1台',
         'license': 'e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4',
-        'logo': 'https://raw.githubusercontent.com/sparkssssssssss/epg/main/logo/黄金翡翠台.png',
+        'logo': 'https://assets.mytvsuper.com/channel/1651032648621471_TVG.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=e8ca7903e25450d85cb32b3057948522&key=d5db5c03608f5f6c8a382c6abcb829e4'
     }
 }
