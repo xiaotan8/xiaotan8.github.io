@@ -78,7 +78,7 @@ CHANNEL_LIST = {
     'CRE': {
         'name': '創世電視',
         'license': 'adef00c5ba927d01642b1e6f3cedc9fb:b45d912fec43b5bbd418ea7ea1fbcb60',
-        'logo': 'https://upload.wikimedia.org/wikipedia/zh/9/91/Creation-tv_logo.png',
+        'logo': 'https://xiaotan8.github.io/%E5%89%B5%E4%B8%96%E9%9B%BB%E8%A6%96.png',
         'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=adef00c5ba927d01642b1e6f3cedc9fb&key=b45d912fec43b5bbd418ea7ea1fbcb60'
     },
     'EVT1': {
