@@ -3,7 +3,7 @@ name: gdiptv
 on:
   schedule:
     - cron: '0 9,21 * * *'
-  #push:
+  push:
     branches:
       - main
       
