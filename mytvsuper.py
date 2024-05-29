@@ -30,13 +30,13 @@ CHANNEL_LIST = {
     'CWIN': {
         'name': 'Super Free',
         'license': '0737b75ee8906c00bb7bb8f666da72a0:15f515458cdb5107452f943a111cbe89',
-        'logo': 'https://xiaotan8.github.io/mytvsuper.png',
+        'logo': 'https://xiaotan.860775.xyz/mytvsuper.png',
         'license_key': 'https://json.860775.xyz/api/results.php?keyid=0737b75ee8906c00bb7bb8f666da72a0&key=15f515458cdb5107452f943a111cbe89'
     },
     'TVG': {
         'name': '黃金翡翠台',
         'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
-        'logo': 'https://xiaotan8.github.io/mytvsuper.png',
+        'logo': 'https://xiaotan.860775.xyz/mytvsuper.png',
         'license_key': 'https://json.860775.xyz/api/results.php?keyid=8fe3db1a24969694ae3447f26473eb9f&key=5cce95833568b9e322f17c61387b306f'
     },
     'C': {
@@ -78,13 +78,13 @@ CHANNEL_LIST = {
     'CRE': {
         'name': '創世電視',
         'license': 'adef00c5ba927d01642b1e6f3cedc9fb:b45d912fec43b5bbd418ea7ea1fbcb60',
-        'logo': 'https://xiaotan8.github.io/%E5%89%B5%E4%B8%96%E9%9B%BB%E8%A6%96.png',
+        'logo': 'https://xiaotan.860775.xyz/%E5%89%B5%E4%B8%96%E9%9B%BB%E8%A6%96.png',
         'license_key': 'https://json.860775.xyz/api/results.php?keyid=adef00c5ba927d01642b1e6f3cedc9fb&key=b45d912fec43b5bbd418ea7ea1fbcb60'
     },
     'EVT1': {
         'name': 'myTV SUPER直播足球1台',
         'license': 'e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4',
-        'logo': 'https://xiaotan8.github.io/mytvsuper.png',
+        'logo': 'https://xiaotan.860775.xyz/mytvsuper.png',
         'license_key': 'https://json.860775.xyz/api/results.php?keyid=e8ca7903e25450d85cb32b3057948522&key=d5db5c03608f5f6c8a382c6abcb829e4'
     }
 }
