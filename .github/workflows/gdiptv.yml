@@ -46,4 +46,4 @@ jobs:
           git commit *.txt -m "Add generated file"
           git commit *.m3u -m "Add generated file"
           #git pull --rebase
-          git push -f
+          git push --force
