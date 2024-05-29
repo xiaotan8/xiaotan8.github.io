@@ -7,85 +7,85 @@ CHANNEL_LIST = {
         'name': '翡翠台超高清',
         'license': '2c045f5adb26d391cc41cd01f00416fa:fc146771a9b096fc4cb57ffe769861be',
         'logo': 'https://assets.livednow.com/logo/翡翠台.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=2c045f5adb26d391cc41cd01f00416fa&key=fc146771a9b096fc4cb57ffe769861be'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=2c045f5adb26d391cc41cd01f00416fa&key=fc146771a9b096fc4cb57ffe769861be'
     },
     'J': {
         'name': '翡翠台',
         'license': '0958b9c657622c465a6205eb2252b8ed:2d2fd7b1661b1e28de38268872b48480',
         'logo': 'https://assets.livednow.com/logo/翡翠台.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=0958b9c657622c465a6205eb2252b8ed&key=2d2fd7b1661b1e28de38268872b48480'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=0958b9c657622c465a6205eb2252b8ed&key=2d2fd7b1661b1e28de38268872b48480'
     },
     'B': {
         'name': 'TVB plus',
         'license': '56603b65fa1d7383b6ef0e73b9ae69fa:5d9d8e957d2e45d8189a56fe8665aaaa',
         'logo': 'https://img.sky4k.top/TVB_Plus_CheerVisionTV.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=56603b65fa1d7383b6ef0e73b9ae69fa&key=5d9d8e957d2e45d8189a56fe8665aaaa'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=56603b65fa1d7383b6ef0e73b9ae69fa&key=5d9d8e957d2e45d8189a56fe8665aaaa'
     },
     'P': {
         'name': '明珠台',
         'license': 'e04facdd91354deee318c674993b74c1:8f97a629de680af93a652c3102b65898',
         'logo': 'https://assets.livednow.com/logo/明珠台.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=e04facdd91354deee318c674993b74c1&key=8f97a629de680af93a652c3102b65898'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=e04facdd91354deee318c674993b74c1&key=8f97a629de680af93a652c3102b65898'
     },
     'CWIN': {
         'name': 'Super Free',
         'license': '0737b75ee8906c00bb7bb8f666da72a0:15f515458cdb5107452f943a111cbe89',
         'logo': 'https://xiaotan8.github.io/mytvsuper.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=0737b75ee8906c00bb7bb8f666da72a0&key=15f515458cdb5107452f943a111cbe89'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=0737b75ee8906c00bb7bb8f666da72a0&key=15f515458cdb5107452f943a111cbe89'
     },
     'TVG': {
         'name': '黃金翡翠台',
         'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
         'logo': 'https://xiaotan8.github.io/mytvsuper.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=8fe3db1a24969694ae3447f26473eb9f&key=5cce95833568b9e322f17c61387b306f'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=8fe3db1a24969694ae3447f26473eb9f&key=5cce95833568b9e322f17c61387b306f'
     },
     'C': {
         'name': '無綫新聞台',
         'license': '90a0bd01d9f6cbb39839cd9b68fc26bc:51546d1f2af0547f0e961995b60a32a1',
         'logo': 'https://assets.livednow.com/logo/無線新聞台.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=90a0bd01d9f6cbb39839cd9b68fc26bc&key=51546d1f2af0547f0e961995b60a32a1'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=90a0bd01d9f6cbb39839cd9b68fc26bc&key=51546d1f2af0547f0e961995b60a32a1'
     },
     'CTVE': {
         'name': '娛樂新聞台',
         'license': '6fa0e47750b5e2fb6adf9b9a0ac431a3:a256220e6c2beaa82f4ca5fba4ec1f95',
         'logo': 'https://github.com/sparkssssssssss/epg/blob/main/logo/%E5%A8%B1%E4%B9%90%E6%96%B0%E9%97%BB%E5%8F%B0.png?raw=true',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=6fa0e47750b5e2fb6adf9b9a0ac431a3&key=a256220e6c2beaa82f4ca5fba4ec1f95'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=6fa0e47750b5e2fb6adf9b9a0ac431a3&key=a256220e6c2beaa82f4ca5fba4ec1f95'
     },
     'PCC': {
         'name': '鳳凰衛視中文台',
         'license': '7bca0771ba9205edb5d467ce2fdf0162:eb19c7e3cea34dc90645e33f983b15ab',
         'logo': 'https://assets.livednow.com/logo/鳳凰中文.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=7bca0771ba9205edb5d467ce2fdf0162&key=eb19c7e3cea34dc90645e33f983b15ab'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=7bca0771ba9205edb5d467ce2fdf0162&key=eb19c7e3cea34dc90645e33f983b15ab'
     },
     'PIN': {
         'name': '鳳凰衛視資訊台',
         'license': '83f7d313adfc0a5b978b9efa0421ce25:ecdc8065a46287bfb58e9f765e4eec2b',
         'logo': 'https://assets.livednow.com/logo/鳳凰資訊.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=83f7d313adfc0a5b978b9efa0421ce25&key=ecdc8065a46287bfb58e9f765e4eec2b'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=83f7d313adfc0a5b978b9efa0421ce25&key=ecdc8065a46287bfb58e9f765e4eec2b'
     },
     'PHK': {
         'name': '鳳凰衛視香港台',
         'license': 'cde62e1056eb3615dab7a3efd83f5eb4:b8685fbecf772e64154630829cf330a3',
         'logo': 'https://assets.livednow.com/logo/鳳凰香港.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=cde62e1056eb3615dab7a3efd83f5eb4&key=b8685fbecf772e64154630829cf330a3'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=cde62e1056eb3615dab7a3efd83f5eb4&key=b8685fbecf772e64154630829cf330a3'
     },
     'CC1': {
         'name': '中央電視台綜合頻道 (港澳版)',
         'license': 'e50b18fee7cab76b9f2822e2ade8773a:2e2e8602b6d835ccf10ee56a9a7d91a2',
         'logo': 'https://assets.livednow.com/logo/CCTV1.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=e50b18fee7cab76b9f2822e2ade8773a&key=2e2e8602b6d835ccf10ee56a9a7d91a2'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=e50b18fee7cab76b9f2822e2ade8773a&key=2e2e8602b6d835ccf10ee56a9a7d91a2'
     },
     'CRE': {
         'name': '創世電視',
         'license': 'adef00c5ba927d01642b1e6f3cedc9fb:b45d912fec43b5bbd418ea7ea1fbcb60',
         'logo': 'https://xiaotan8.github.io/%E5%89%B5%E4%B8%96%E9%9B%BB%E8%A6%96.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=adef00c5ba927d01642b1e6f3cedc9fb&key=b45d912fec43b5bbd418ea7ea1fbcb60'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=adef00c5ba927d01642b1e6f3cedc9fb&key=b45d912fec43b5bbd418ea7ea1fbcb60'
     },
     'EVT1': {
         'name': 'myTV SUPER直播足球1台',
         'license': 'e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4',
         'logo': 'https://xiaotan8.github.io/mytvsuper.png',
-        'license_key': 'https://vercel-php-clearkey-hex-base64-json.vercel.app/api/results.php?keyid=e8ca7903e25450d85cb32b3057948522&key=d5db5c03608f5f6c8a382c6abcb829e4'
+        'license_key': 'json.860775.xyz/api/results.php?keyid=e8ca7903e25450d85cb32b3057948522&key=d5db5c03608f5f6c8a382c6abcb829e4'
     }
 }
 
