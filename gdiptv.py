@@ -139,9 +139,10 @@ files_to_update = [
 
 #定义正则
 ip_port_pattern = r'((?<=\[A\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
+ip_port_pattern_mz = r'((?<=\[B\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
 ip_port_pattern_fs = r'((?<=\[E\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
 ip_port_pattern_jm = r'((?<=\[J\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
-ip_port_pattern_mz = r'((?<=\[B\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
+
 
 
 
@@ -160,6 +161,15 @@ try:
 except requests.RequestException as e:
     print(f"错误: {e}")
 try:
+    unique_ips_ports_mz = extract_unique_ip_ports(fofa_url_mz)
+    print(unique_ips_ports_mz)
+    valid_ip_mz = findtheone(unique_ips_ports_mz)
+    ip_port_repl_mz = valid_ip_mz
+    print(valid_ip_mz)
+    update_files(valid_ip_mz,ip_port_pattern_mz,ip_port_repl_mz)
+except requests.RequestException as e:
+    print(f"错误: {e}")
+try:
     unique_ips_ports_fs = extract_unique_ip_ports(fofa_url_fs)
     print(unique_ips_ports_fs)
     valid_ip_fs = findtheone(unique_ips_ports_fs)
@@ -175,15 +185,6 @@ try:
     ip_port_repl_jm = valid_ip_jm
     print(valid_ip_jm)
     update_files(valid_ip_jm,ip_port_pattern_jm,ip_port_repl_jm)
-except requests.RequestException as e:
-    print(f"错误: {e}")
-try:
-    unique_ips_ports_mz = extract_unique_ip_ports(fofa_url_mz)
-    print(unique_ips_ports_mz)
-    valid_ip_mz = findtheone(unique_ips_ports_mz)
-    ip_port_repl_mz = valid_ip_mz
-    print(valid_ip_mz)
-    update_files(valid_ip_mz,ip_port_pattern_mz,ip_port_repl_mz)
 except requests.RequestException as e:
     print(f"错误: {e}")
 
