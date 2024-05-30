@@ -139,10 +139,9 @@ files_to_update = [
 
 #定义正则
 ip_port_pattern = r'((?<=\[A\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
-ip_port_pattern_mz = r'((?<=\[B\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
 ip_port_pattern_fs = r'((?<=\[E\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
 ip_port_pattern_jm = r'((?<=\[J\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
-
+ip_port_pattern_mz = r'((?<=\[B\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
 
 
 
@@ -158,15 +157,6 @@ try:
     ip_port_repl = valid_ip
     print(valid_ip)
     update_files(valid_ip,ip_port_pattern,ip_port_repl)
-except requests.RequestException as e:
-    print(f"错误: {e}")
-try:
-    unique_ips_ports_mz = extract_unique_ip_ports(fofa_url_mz)
-    print(unique_ips_ports_mz)
-    valid_ip_mz = findtheone(unique_ips_ports_mz)
-    ip_port_repl_mz = valid_ip_mz
-    print(valid_ip_mz)
-    update_files(valid_ip_mz,ip_port_pattern_mz,ip_port_repl_mz)
 except requests.RequestException as e:
     print(f"错误: {e}")
 try:
@@ -187,4 +177,12 @@ try:
     update_files(valid_ip_jm,ip_port_pattern_jm,ip_port_repl_jm)
 except requests.RequestException as e:
     print(f"错误: {e}")
-
+try:
+    unique_ips_ports_mz = extract_unique_ip_ports(fofa_url_mz)
+    print(unique_ips_ports_mz)
+    valid_ip_mz = findtheone(unique_ips_ports_mz)
+    ip_port_repl_mz = valid_ip_mz
+    print(valid_ip_mz)
+    update_files(valid_ip_mz,ip_port_pattern_mz,ip_port_repl_mz)
+except requests.RequestException as e:
+    print(f"错误: {e}")
