@@ -43,24 +43,6 @@ http://113.68.63.37:8848/udp/239.253.43.53:5146
 http://113.68.63.37:8848/udp/239.253.43.56:5146
 #EXTINF:-1 tvg-name="佛山综合" tvg-logo="https://live.fanmingming.com/tv/佛山综合.png" group-title="广东频道[A]",佛山综合
 http://113.68.63.37:8848/udp/239.253.43.57:5146
-#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="广东频道[E失效]",广东珠江
-http://88.88.88.88:8888/udp/239.77.0.1:5146
-#EXTINF:-1 tvg-name="岭南戏曲" tvg-logo="https://live.fanmingming.com/tv/岭南戏曲.png" group-title="广东频道[E失效]",岭南戏曲
-http://88.88.88.88:8888/udp/239.77.0.122:5146
-#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://live.fanmingming.com/tv/广东体育.png" group-title="广东频道[E失效]",广东体育
-http://88.88.88.88:8888/udp/239.77.0.112:5146
-#EXTINF:-1 tvg-name="广东新闻" tvg-logo="https://live.fanmingming.com/tv/广东新闻.png" group-title="广东频道[E失效]",广东新闻
-http://88.88.88.88:8888/udp/239.77.0.173:5146
-#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://live.fanmingming.com/tv/大湾区卫视.png" group-title="广东频道[E失效]",大湾区卫视
-http://88.88.88.88:8888/udp/239.77.0.215:5146
-#EXTINF:-1 tvg-name="广东影视" tvg-logo="https://live.fanmingming.com/tv/广东影视.png" group-title="广东频道[E失效]",广东影视
-http://88.88.88.88:8888/udp/239.77.0.217:5146
-#EXTINF:-1 tvg-name="广东民生" tvg-logo="https://live.fanmingming.com/tv/广东民生.png" group-title="广东频道[E失效]",广东民生
-http://88.88.88.88:8888/udp/239.77.0.225:5146
-#EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://live.fanmingming.com/tv/广东少儿.png" group-title="广东频道[E失效]",广东少儿
-http://88.88.88.88:8888/udp/239.77.0.250:5146
-#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="广东频道[E失效]",广东卫视
-http://88.88.88.88:8888/udp/239.77.1.19:5146
 #EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="广东频道[B]",广东珠江
 http://113.90.244.104:4000/udp/239.77.0.1:5146
 #EXTINF:-1 tvg-name="岭南戏曲" tvg-logo="https://live.fanmingming.com/tv/岭南戏曲.png" group-title="广东频道[B]",岭南戏曲
@@ -105,7 +87,24 @@ http://113.90.244.104:4000/udp/239.253.43.53:5146
 http://113.90.244.104:4000/udp/239.253.43.56:5146
 #EXTINF:-1 tvg-name="佛山综合" tvg-logo="https://live.fanmingming.com/tv/佛山综合.png" group-title="广东频道[B]",佛山综合
 http://113.90.244.104:4000/udp/239.253.43.57:5146
-#EXTINF:-1 tvg-name="广东4k" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C4K.png" group-title="广东频道[E失效]",广东4k
+#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://live.fanmingming.com/tv/广东珠江.png" group-title="广东频道[E失效]",广东珠江
+http://88.88.88.88:8888/udp/239.77.0.1:5146
+#EXTINF:-1 tvg-name="岭南戏曲" tvg-logo="https://live.fanmingming.com/tv/岭南戏曲.png" group-title="广东频道[E失效]",岭南戏曲
+http://88.88.88.88:8888/udp/239.77.0.122:5146
+#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://live.fanmingming.com/tv/广东体育.png" group-title="广东频道[E失效]",广东体育
+http://88.88.88.88:8888/udp/239.77.0.112:5146
+#EXTINF:-1 tvg-name="广东新闻" tvg-logo="https://live.fanmingming.com/tv/广东新闻.png" group-title="广东频道[E失效]",广东新闻
+http://88.88.88.88:8888/udp/239.77.0.173:5146
+#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://live.fanmingming.com/tv/大湾区卫视.png" group-title="广东频道[E失效]",大湾区卫视
+http://88.88.88.88:8888/udp/239.77.0.215:5146
+#EXTINF:-1 tvg-name="广东影视" tvg-logo="https://live.fanmingming.com/tv/广东影视.png" group-title="广东频道[E失效]",广东影视
+http://88.88.88.88:8888/udp/239.77.0.217:5146
+#EXTINF:-1 tvg-name="广东民生" tvg-logo="https://live.fanmingming.com/tv/广东民生.png" group-title="广东频道[E失效]",广东民生
+http://88.88.88.88:8888/udp/239.77.0.225:5146
+#EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://live.fanmingming.com/tv/广东少儿.png" group-title="广东频道[E失效]",广东少儿
+http://88.88.88.88:8888/udp/239.77.0.250:5146
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="广东频道[E失效]",广东卫视
+http://88.88.88.88:8888/udp/239.77.1.19:5146#EXTINF:-1 tvg-name="广东4k" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C4K.png" group-title="广东频道[E失效]",广东4k
 http://88.88.88.88:8888/rtp/239.77.0.245:5146
 #EXTINF:-1 tvg-name="广东经济科教" tvg-logo="https://live.fanmingming.com/tv/广东经济科教.png" group-title="广东频道[E失效]",广东经济科教
 http://88.88.88.88:8888/rtp/239.77.0.167:5146
