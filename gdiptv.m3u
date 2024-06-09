@@ -16,7 +16,7 @@ http://113.109.250.69:9999/udp/239.77.0.225:5146
 #EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://live.fanmingming.com/tv/广东少儿.png" group-title="广东频道[A]",广东少儿[A]
 http://113.109.250.69:9999/udp/239.77.0.250:5146
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="广东频道[A]",广东卫视[A]
-http://113.109.250.69:9999/udp/239.77.1.19:5146
+http://113.109.250.69:9999/udp/239.77.0.166:5146
 #EXTINF:-1 tvg-name="广东4k" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C4K.png" group-title="广东频道[A]",广东4K[A]
 http://113.109.250.69:9999/rtp/239.77.0.245:5146
 #EXTINF:-1 tvg-name="广东经济科教" tvg-logo="https://live.fanmingming.com/tv/广东经济科教.png" group-title="广东频道[A]",广东经济科教[A]
@@ -60,7 +60,7 @@ http://113.90.247.46:4000/udp/239.77.0.225:5146
 #EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://live.fanmingming.com/tv/广东少儿.png" group-title="广东频道[B]",广东少儿[B]
 http://113.90.247.46:4000/udp/239.77.0.250:5146
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="广东频道[B]",广东卫视[B]
-http://113.90.247.46:4000/udp/239.77.1.19:5146
+http://113.90.247.46:4000/udp/239.77.0.166:5146
 #EXTINF:-1 tvg-name="广东4k" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C4K.png" group-title="广东频道[B]",广东4k[B]
 http://113.90.247.46:4000/rtp/239.77.0.245:5146
 #EXTINF:-1 tvg-name="广东经济科教" tvg-logo="https://live.fanmingming.com/tv/广东经济科教.png" group-title="广东频道[B]",广东经济科教[B]
@@ -104,7 +104,7 @@ http://88.88.88.88:8888/udp/239.77.0.225:5146
 #EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://live.fanmingming.com/tv/广东少儿.png" group-title="广东频道[E失效]",广东少儿[E]
 http://88.88.88.88:8888/udp/239.77.0.250:5146
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="广东频道[E失效]",广东卫视[E]
-http://88.88.88.88:8888/udp/239.77.1.19:5146
+http://88.88.88.88:8888/udp/239.77.0.166:5146
 #EXTINF:-1 tvg-name="广东4k" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C4K.png" group-title="广东频道[E失效]",广东4k[E]
 http://88.88.88.88:8888/rtp/239.77.0.245:5146
 #EXTINF:-1 tvg-name="广东经济科教" tvg-logo="https://live.fanmingming.com/tv/广东经济科教.png" group-title="广东频道[E失效]",广东经济科教[E]
@@ -148,7 +148,7 @@ http://88.88.88.88:8888/udp/239.77.0.225:5146
 #EXTINF:-1 tvg-name="广东少儿" tvg-logo="https://live.fanmingming.com/tv/广东少儿.png" group-title="广东频道[J失效]",广东少儿[J]
 http://88.88.88.88:8888/udp/239.77.0.250:5146
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" group-title="广东频道[J失效]",广东卫视[J]
-http://88.88.88.88:8888/udp/239.77.1.19:5146
+http://88.88.88.88:8888/udp/239.77.0.166:5146
 #EXTINF:-1 tvg-name="广东4k" tvg-logo="https://live.fanmingming.com/tv/%E5%B9%BF%E4%B8%9C4K.png" group-title="广东频道[J失效]",广东4k[J]
 http://88.88.88.88:8888/rtp/239.77.0.245:5146
 #EXTINF:-1 tvg-name="广东经济科教" tvg-logo="https://live.fanmingming.com/tv/广东经济科教.png" group-title="广东频道[J失效]",广东经济科教[J]
