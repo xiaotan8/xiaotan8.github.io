@@ -293,16 +293,22 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbp
 https://tvb.livednow.com/C
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="香港频道",無線新聞台·海外版
 https://tvb.livednow.com/I-NEWS
-#EXTINF:-1 tvg-name="HOY国际财经台" tvg-logo="https://upload.112114.xyz/logo/HOYTV.png" group-title="香港频道",HOY国际财经台
+#EXTINF:-1 tvg-name="HOY国际财经台" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/2/2b/HoYIBC_logo.png" group-title="香港频道",HOY76 国际财经台
 https://hoytv-live-stream.hoy.tv/ch76/va2-index.m3u8
-#EXTINF:-1 tvg-name="HOYTV" tvg-logo="https://upload.112114.xyz/logo/HOYTV.png" group-title="香港频道",HOY TV
+#EXTINF:-1 tvg-name="HOYTV" tvg-logo="https://iptv-pro.github.io/logo/HOYTV.png" group-title="香港频道",HOYTV77
 https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
-#EXTINF:-1 tvg-name="HOY资讯台" tvg-logo="https://upload.112114.xyz/logo/HOY资讯台.png" group-title="香港频道",HOY资讯台
+#EXTINF:-1 tvg-name="HOY资讯台" tvg-logo="https://iptv-pro.github.io/logo/HOY%E8%B5%84%E8%AE%AF%E5%8F%B0.png" group-title="香港频道",HOY78 资讯台
 https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
-#EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://live.fanmingming.com/tv/RTHK31.png" group-title="香港频道",港台电视31
+#EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
-#EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://live.fanmingming.com/tv/RTHK32.png" group-title="香港频道",港台电视32
+#EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
+#EXTINF:-1 tvg-name="RTHK33" tvg-logo="https://iptv-pro.github.io/logo/RTHK33.png" group-title="香港频道",港台电视33
+https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
+#EXTINF:-1 tvg-name="RTHK34" tvg-logo="https://iptv-pro.github.io/logo/RTHK34.png" group-title="香港频道",港台电视34
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
+#EXTINF:-1 tvg-name="RTHK35" tvg-logo="https://iptv-pro.github.io/logo/RTHK35.png" group-title="香港频道",港台电视35
+https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
 #EXTINF:-1 tvg-name="凤凰卫视中文台" tvg-logo="https://live.fanmingming.com/tv/凤凰卫视中文台.png" group-title="香港频道",凤凰卫视中文台
 http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
 #EXTINF:-1 tvg-name="凤凰卫视资讯台" tvg-logo="https://live.fanmingming.com/tv/凤凰卫视资讯台.png" group-title="香港频道",凤凰卫视资讯台
