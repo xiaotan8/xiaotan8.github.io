@@ -1,1 +1,17 @@
 #EXTM3U
+#EXTINF:-1 group-title="卫视频道",三沙卫视
+http://171.108.74.138:8181/tsfile/live/2096_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="卫视频道",海南卫视
+http://171.108.74.138:8181/tsfile/live/2078_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="卫视频道",湖北卫视
+http://171.108.74.138:8181/tsfile/live/2052_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="卫视频道",湖南卫视
+http://171.108.74.138:8181/tsfile/live/2062_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",中国气象
+http://171.108.74.138:8181/tsfile/live/2005_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",南宁生活
+http://171.108.74.138:8181/tsfile/live/2042_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",博白客家
+http://171.108.74.138:8181/tsfile/live/2103_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",摄影
+http://171.108.74.138:8181/tsfile/live/2127_1.m3u8?key=txiptv&playlive=1&authid=0
