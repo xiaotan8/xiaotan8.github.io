@@ -299,8 +299,18 @@ https://hoytv-live-stream.hoy.tv/ch76/va2-index.m3u8
 https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
 #EXTINF:-1 tvg-name="HOY78" tvg-logo="https://iptv-pro.github.io/logo/HOY%E8%B5%84%E8%AE%AF%E5%8F%B0.png" group-title="香港频道",HOY78 资讯台
 https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
+#EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31（mpd）
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/bba574b22adb328fad3e0496157d4568:749d60e3e0c7bc24aeaa21c29c2ec854
+https://rthktv31-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch31)/master.mpd
 #EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
+#EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32（mpd）
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/451d2f5521f03118ab0b08fff91b7bce:c1997f65812cdf0c0651991c6c5a8c5b
+https://rthktv32-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch32)/master.mpd
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
 #EXTINF:-1 tvg-name="RTHK33" tvg-logo="https://iptv-pro.github.io/logo/RTHK33.png" group-title="香港频道",港台电视33
