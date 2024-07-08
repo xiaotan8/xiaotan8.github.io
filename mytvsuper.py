@@ -273,7 +273,7 @@ CHANNEL_LIST = {
     },
     'EVT3': {
         'name': 'myTV SUPER 直播足球3台',
-        'license': 'fddbd3771eac81f4e293fb2a982bf53e:ee83f18204accf860fc59cee3fde61d2',
+        'license': '84f456002b780253dab5534e9713323c:65aeb769264f41037cec607813e91bae',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     },
     'EVT4': {
