@@ -25,6 +25,8 @@ jobs:
         run: pip install  requests simplejson # 如果有依赖可以在这里安装
       
       - name: Run mytvsuper.py
+        env:
+         MYTVSUPER_API_TOKEN: ${{ secrets.MYTVSUPER_API_TOKEN }}
         run: python mytvsuper.py
       
       - name: Save generated file to GitHub
