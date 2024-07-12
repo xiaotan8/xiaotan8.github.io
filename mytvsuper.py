@@ -1,3 +1,4 @@
+import os
 import requests
 
 CHANNEL_LIST = {
@@ -39,7 +40,7 @@ CHANNEL_LIST = {
     'CTVE': {
         'name': '娛樂新聞台',
         'license': '6fa0e47750b5e2fb6adf9b9a0ac431a3:a256220e6c2beaa82f4ca5fba4ec1f95',
-        'logo': 'https://github.com/sparkssssssssss/epg/blob/main/logo/%E5%A8%B1%E4%B9%90%E6%96%B0%E9%97%BB%E5%8F%B0.png?raw=true'
+        'logo': 'https://github.com/sparkssssssssss/epg/blob/main/logo/娱乐新闻台.png?raw=true'
     },
     'PCC': {
         'name': '鳳凰衛視中文台',
@@ -64,7 +65,7 @@ CHANNEL_LIST = {
     'CRE': {
         'name': '創世電視',
         'license': 'adef00c5ba927d01642b1e6f3cedc9fb:b45d912fec43b5bbd418ea7ea1fbcb60',
-        'logo': 'https://xiaotan.860775.xyz/%E5%89%B5%E4%B8%96%E9%9B%BB%E8%A6%96.png'
+        'logo': 'https://xiaotan.860775.xyz/創世電視.png'
     }
 }
 
@@ -72,7 +73,10 @@ def get_mytvsuper(channel):
     if channel not in CHANNEL_LIST:
         return '频道代号错误'
 
-    api_token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJib3NzX2lkIjoiODUwNDY0NTgwIiwiZGV2aWNlX3Rva2VuIjoiWHp6anMzYTVKTms2TFpnZmJQeFZHR2QzIiwiZGV2aWNlX2lkIjoiTldGalptSmxNREF0TkRJNU5TMDBaakV3TFRrNFl6QXRNbUkwT0RCbFpXRTJaVEV3IiwiZGV2aWNlX3R5cGUiOiJ3ZWIiLCJkZXZpY2Vfb3MiOiJicm93c2VyIiwiZHJtX2lkIjoiTldGalptSmxNREF0TkRJNU5TMDBaakV3TFRrNFl6QXRNbUkwT0RCbFpXRTJaVEV3IiwiZXh0cmEiOnsicHJvZmlsZV9pZCI6MX0sImlhdCI6MTcwOTgwNTA3NywiZXhwIjoxNzA5ODA4Njc3fQ.XG-C6gWxLgbBRQ3ttKn68AKMQLOg6SxTpbmHxXl_qI2dbjd1eFFmwB9kD1yd2N_X8HxLPBwJukD4lygIKxbBGrQQDY_1vNd76TldllaeE2BC3fUtc-kAFOU4JwbUkfFYsWVm3v2JP-YGM2GGlhFqN_3170WDAi2Gq-R0tZckeFNWk7jOSShqkE0E7L3eqJ09sDG76R-PCbdpnCIxaY_NXtoYRfIoVQZA9QysExUyO6hQGUxLaTvJDtflX_ZM3OiqTMndHp1p0cDsINnpFokD6Yby5XS18RjQ-Dn1XJznj7-sRjlaGgyIIBoJjxsR2oD5S8teA5S6x7w3Dv6uTO3bWVV9J60E6jguGVqKnSYJ4Rx8A1TgyUTT_g57key6UFIiEhkHYqk7s3H01V-lHffNp5zDo9UrCdaO6maW_ZeA85ohR6P1PMh9EakQ5A-vok60s2oqyokKHfyrQvcodsI-MTC9mKegjJzgV2-HBgyylyj6B2ewvE4icDD25UdspWgbc33NrRpe_kgPxgVKF4cgKCD-S1AT3WrOaqKnPfPvhqmlciwlpZrUqZg09BqcazWPoyWAp2nqf93H6tlDqMrtAQgvft3Nd8-cM7jYx-WvzqRrCRpZ8vRSv11UdezKzR2Jm4H64KTWbs3GxB5vboZaeypdEzQW6PipPpftqRnNMQU'  # Replace with your actual API token
+    api_token = os.getenv('MYTVSUPER_API_TOKEN')
+    if not api_token:
+        return 'API token 未设置'
+
     headers = {
         'Accept': 'application/json',
         'Authorization': 'Bearer ' + api_token,
@@ -90,10 +94,11 @@ def get_mytvsuper(channel):
     }
 
     url = 'https://user-api.mytvsuper.com/v1/channel/checkout'
-    response = requests.get(url, headers=headers, params=params)
-
-    if response.status_code != 200:
-        return '请求失败'
+    try:
+        response = requests.get(url, headers=headers, params=params)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        return f'请求失败: {e}'
 
     response_json = response.json()
     profiles = response_json.get('profiles', [])
