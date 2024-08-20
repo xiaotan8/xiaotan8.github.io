@@ -20,7 +20,7 @@ CHANNEL_LIST = {
     'B': {
         'name': 'TVB Plus',
         'license': '56603b65fa1d7383b6ef0e73b9ae69fa:5d9d8e957d2e45d8189a56fe8665aaaa',
-        'logo': 'https://img.sky4k.top/TVB_Plus_CheerVisionTV.png'
+        'logo': 'https://xiaotan.860775.xyz/TVB Plus.png'
     },
     'C': {
         'name': '無線新聞台',
