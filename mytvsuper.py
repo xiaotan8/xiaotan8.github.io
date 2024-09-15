@@ -27,6 +27,16 @@ CHANNEL_LIST = {
         'license': '90a0bd01d9f6cbb39839cd9b68fc26bc:51546d1f2af0547f0e961995b60a32a1',
         'logo': 'https://assets.livednow.com/logo/無線新聞台.png'
     },
+    'C3': {
+        'name': '互動窗 1',
+        'license': 'f07372db27b162d69adf9aa612ae3364:da1631a2b2a836c5b7a3d044a18a4f16',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'C2': {
+        'name': '互動窗 2',
+        'license': '1ba88eacde780c7567255b8b33026ae5:f7df792aab8992b79d72a8d01987ecb5',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
     'CWIN': {
         'name': 'myTV SUPER FREE',
         'license': '0737b75ee8906c00bb7bb8f666da72a0:15f515458cdb5107452f943a111cbe89',
@@ -37,6 +47,10 @@ CHANNEL_LIST = {
         'license': '72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef',
         'logo': 'https://assets.livednow.com/logo/myTV-SUPER-18.png'
     },
+    'EVT1': {
+        'name': '28AI智慧賽馬',
+        'license': 'e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     'TVG': {
         'name': '黃金翡翠台',
         'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
@@ -281,17 +295,8 @@ CHANNEL_LIST = {
         'name': 'myTV SUPER 直播足球6台',
         'license': 'e069fc056280e4caa7d0ffb99024c05a:d3693103f232f28b4781bbc7e499c43a',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
-    },
-        'C3': {
-        'name': '互動窗 1',
-        'license': 'f07372db27b162d69adf9aa612ae3364:da1631a2b2a836c5b7a3d044a18a4f16',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
-    },
-    'C2': {
-        'name': '互動窗 2',
-        'license': '1ba88eacde780c7567255b8b33026ae5:f7df792aab8992b79d72a8d01987ecb5',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     }
+
 }
 
 def get_mytvsuper(channel):
