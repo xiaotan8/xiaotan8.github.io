@@ -296,7 +296,6 @@ CHANNEL_LIST = {
         'license': 'e069fc056280e4caa7d0ffb99024c05a:d3693103f232f28b4781bbc7e499c43a',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     }
-
 }
 
 def get_mytvsuper(channel):
