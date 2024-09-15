@@ -51,6 +51,7 @@ CHANNEL_LIST = {
         'name': '28AI智慧賽馬',
         'license': 'e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
     'TVG': {
         'name': '黃金翡翠台',
         'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
