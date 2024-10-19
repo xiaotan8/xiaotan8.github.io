@@ -47,9 +47,9 @@ CHANNEL_LIST = {
         'license': '72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef',
         'logo': 'https://assets.livednow.com/logo/myTV-SUPER-18.png'
     },
-    'EVT1': {
+    'C28': {
         'name': '28AI智慧賽馬',
-        'license': 'e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4',
+        'license': '1b778a3241e5fa3bb97d1cb9b57f9e09:3b1f318259fcf0dccd04742cd679fd25',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     },
     'TVG': {
