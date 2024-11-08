@@ -345,15 +345,34 @@ def get_mytvsuper(channel):
     play_url = play_url.split('&p=')[0]
 
     license_key = CHANNEL_LIST[channel]['license']
+    license_data = encode_keys(license_key)  
+    print(f"hexTOBase64：{license_data}")
     channel_name = CHANNEL_LIST[channel]['name']
     channel_logo = CHANNEL_LIST[channel]['logo']
     m3u_content = f"#EXTINF:-1 tvg-id=\"{channel}\" tvg-name=\"{channel_name}\" tvg-logo=\"{channel_logo}\",{channel_name}\n"
     m3u_content += "#KODIPROP:inputstream.adaptive.manifest_type=mpd\n"
     m3u_content += "#KODIPROP:inputstream.adaptive.license_type=clearkey\n"
-    m3u_content += f"#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/{license_key}\n"
+    m3u_content += f"#KODIPROP:inputstream.adaptive.license_key={license_data}\n"
     m3u_content += f"{play_url}\n"
 
     return m3u_content
+
+def encode_keys(hex_keyi_key):  
+    hex_keyid, hex_key = hex_keyi_key.split(':')  
+    bin_keyid = bytes.fromhex(hex_keyid)  
+    keyid64 = base64.b64encode(bin_keyid).decode('utf-8').rstrip('=')  
+    bin_key = bytes.fromhex(hex_key)  
+    key64 = base64.b64encode(bin_key).decode('utf-8').rstrip('=')  
+  
+    
+    keys = [{"kty": "oct", "k": key64, "kid": keyid64}]  
+  
+    
+    license = {"keys": keys, "type": "temporary"}  
+  
+    
+    return json.dumps(license)
+
 
 # 创建或打开文件用于写入
 with open('mytvsuper.m3u', 'w', encoding='utf-8') as m3u_file:
