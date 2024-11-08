@@ -39,6 +39,16 @@ CHANNEL_LIST = {
         'license': '1ba88eacde780c7567255b8b33026ae5:f7df792aab8992b79d72a8d01987ecb5',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     },
+    'CTVE': {
+        'name': '娛樂新聞台',
+        'license': '6fa0e47750b5e2fb6adf9b9a0ac431a3:a256220e6c2beaa82f4ca5fba4ec1f95',
+        'logo': 'https://assets.livednow.com/logo/娛樂新聞台.png'
+    },
+    'TVG': {
+        'name': '黃金翡翠台',
+        'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
+        'logo': 'https://assets.livednow.com/logo/黃金翡翠台.png'
+    },
     'CWIN': {
         'name': 'myTV SUPER FREE',
         'license': '0737b75ee8906c00bb7bb8f666da72a0:15f515458cdb5107452f943a111cbe89',
@@ -79,11 +89,6 @@ CHANNEL_LIST = {
         'license': '72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef',
         'logo': 'https://assets.livednow.com/logo/myTV-SUPER-18.png'
     },
-    'TVG': {
-        'name': '黃金翡翠台',
-        'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
-        'logo': 'https://assets.livednow.com/logo/黃金翡翠台.png'
-    },
     'CTVC': {
         'name': '千禧經典台',
         'license': '6c308490b3198b62a988917253653692:660578b8966fe8012ad51b9aae7a5d78',
@@ -108,11 +113,6 @@ CHANNEL_LIST = {
         'name': '黃金華劇台',
         'license': 'acd93a5f665efd4feadb26f5ed48fd96:c6ce58ef9cce30638e0c2e9fc45a6dbd',
         'logo': 'https://assets.livednow.com/logo/黃金華劇台.png'
-    },
-    'CTVE': {
-        'name': '娛樂新聞台',
-        'license': '6fa0e47750b5e2fb6adf9b9a0ac431a3:a256220e6c2beaa82f4ca5fba4ec1f95',
-        'logo': 'https://assets.livednow.com/logo/娛樂新聞台.png'
     },
     'CCOC': {
         'name': '戲曲台',
