@@ -44,15 +44,40 @@ CHANNEL_LIST = {
         'license': '0737b75ee8906c00bb7bb8f666da72a0:15f515458cdb5107452f943a111cbe89',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
     },
-    'C18': {
-        'name': 'myTV SUPER 18台',
-        'license': '72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef',
-        'logo': 'https://assets.livednow.com/logo/myTV-SUPER-18.png'
-    },
     'C28': {
         'name': '28AI智慧賽馬',
         'license': '1b778a3241e5fa3bb97d1cb9b57f9e09:3b1f318259fcf0dccd04742cd679fd25',
         'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'CRE': {
+        'name': '創世電視',
+        'license': 'adef00c5ba927d01642b1e6f3cedc9fb:b45d912fec43b5bbd418ea7ea1fbcb60',
+        'logo': 'https://xiaotan.860775.xyz/創世電視.png'
+    },
+    'PCC': {
+        'name': '鳳凰衛視中文台',
+        'license': '7bca0771ba9205edb5d467ce2fdf0162:eb19c7e3cea34dc90645e33f983b15ab',
+        'logo': 'https://assets.livednow.com/logo/鳳凰中文.png'
+    },
+    'PIN': {
+        'name': '鳳凰衛視資訊台',
+        'license': '83f7d313adfc0a5b978b9efa0421ce25:ecdc8065a46287bfb58e9f765e4eec2b',
+        'logo': 'https://assets.livednow.com/logo/鳳凰資訊.png'
+    },
+    'PHK': {
+        'name': '鳳凰衛視香港台',
+        'license': 'cde62e1056eb3615dab7a3efd83f5eb4:b8685fbecf772e64154630829cf330a3',
+        'logo': 'https://assets.livednow.com/logo/鳳凰香港.png'
+    },
+    'CC1': {
+        'name': '中央電視台綜合頻道 (港澳版)',
+        'license': 'e50b18fee7cab76b9f2822e2ade8773a:2e2e8602b6d835ccf10ee56a9a7d91a2',
+        'logo': 'https://assets.livednow.com/logo/中央電視台綜合頻道-港澳版.png'
+    },
+    'C18': {
+        'name': 'myTV SUPER 18台',
+        'license': '72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef',
+        'logo': 'https://assets.livednow.com/logo/myTV-SUPER-18.png'
     },
     'TVG': {
         'name': '黃金翡翠台',
@@ -184,11 +209,6 @@ CHANNEL_LIST = {
         'license': 'ad7b06658e8a36a06def6b3550bde35c:b672f89570a630abb1d2abb5030e6303',
         'logo': 'https://assets.livednow.com/logo/無線衛星亞洲台.png'
     },
-    'CRE': {
-        'name': '創世電視',
-        'license': 'adef00c5ba927d01642b1e6f3cedc9fb:b45d912fec43b5bbd418ea7ea1fbcb60',
-        'logo': 'https://xiaotan.860775.xyz/創世電視.png'
-    },
     'FBX': {
         'name': 'FashionBox',
         'license': '4df52671ef55d2a7ac03db75e9bba2f7:4a3c16e8098c5021f32c7d4f66122477',
@@ -204,30 +224,11 @@ CHANNEL_LIST = {
         'license': '9d6a139158dd1fcd807d1cfc8667e965:f643ba9204ebba7a5ffd3970cfbc794c',
         'logo': 'https://assets.livednow.com/logo/東方衛視國際頻道.png'
     },
-    'PCC': {
-        'name': '鳳凰衛視中文台',
-        'license': '7bca0771ba9205edb5d467ce2fdf0162:eb19c7e3cea34dc90645e33f983b15ab',
-        'logo': 'https://assets.livednow.com/logo/鳳凰中文.png'
-    },
-    'PIN': {
-        'name': '鳳凰衛視資訊台',
-        'license': '83f7d313adfc0a5b978b9efa0421ce25:ecdc8065a46287bfb58e9f765e4eec2b',
-        'logo': 'https://assets.livednow.com/logo/鳳凰資訊.png'
-    },
-    'PHK': {
-        'name': '鳳凰衛視香港台',
-        'license': 'cde62e1056eb3615dab7a3efd83f5eb4:b8685fbecf772e64154630829cf330a3',
-        'logo': 'https://assets.livednow.com/logo/鳳凰香港.png'
-    },
+
     'POPC': {
         'name': 'PopC',
         'license': '221591babff135a71961d09399d2c922:c80ca4c7b801a76a07179dfb7debb57d',
         'logo': 'https://assets.livednow.com/logo/PopC.png'
-    },
-    'CC1': {
-        'name': '中央電視台綜合頻道 (港澳版)',
-        'license': 'e50b18fee7cab76b9f2822e2ade8773a:2e2e8602b6d835ccf10ee56a9a7d91a2',
-        'logo': 'https://assets.livednow.com/logo/中央電視台綜合頻道-港澳版.png'
     },
     'CGD': {
         'name': 'CGTN (中國環球電視網)記錄頻道',
