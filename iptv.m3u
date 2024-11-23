@@ -313,7 +313,7 @@ https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"wZl/ZYEs3wwGUZkcbFqMWw","kid":"RR0vVSHwMRirCwj/+Rt7zg"}],"type":"t
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"wZl/ZYEs3wwGUZkcbFqMWw","kid":"RR0vVSHwMRirCwj/+Rt7zg"}],"type":"temporary"}
 https://rthktv32-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch32)/master.mpd
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
