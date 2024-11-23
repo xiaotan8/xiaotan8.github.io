@@ -297,23 +297,23 @@ https://tvb.860775.xyz/I-NEWS
 https://tvb.860775.xyz/NEVT1
 #EXTINF:-1 tvg-name="事件直播頻道2" tvg-logo="https://live.fanmingming.com/tv/无线新闻台.png" group-title="香港频道",事件直播頻道2
 https://tvb.860775.xyz/NEVT2
-#EXTINF:-1 tvg-name="HOY76" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/2/2b/HoYIBC_logo.png" group-title="香港频道",HOY76 国际财经台
+#EXTINF:-1 tvg-name="HOY76" tvg-logo="https://assets.livednow.com/logo/HOY-國際財經台.png" group-title="香港频道",HOY76 国际财经台
 https://hoytv-live-stream.hoy.tv/ch76/va2-index.m3u8
-#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://iptv-pro.github.io/logo/HOYTV.png" group-title="香港频道",HOYTV77
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://assets.livednow.com/logo/HOYTV.png" group-title="香港频道",HOYTV77
 https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
-#EXTINF:-1 tvg-name="HOY78" tvg-logo="https://iptv-pro.github.io/logo/HOY%E8%B5%84%E8%AE%AF%E5%8F%B0.png" group-title="香港频道",HOY78 资讯台
+#EXTINF:-1 tvg-name="HOY78" tvg-logo="https://assets.livednow.com/logo/HOYTV-資訊台.png" group-title="香港频道",HOY78 资讯台
 https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
 #EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/bba574b22adb328fad3e0496157d4568:749d60e3e0c7bc24aeaa21c29c2ec854
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"dJ1g4+DHvCSuqiHCnC7IVA","kid":"u6V0sirbMo+tPgSWFX1FaA"}],"type":"temporary"}
 https://rthktv31-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch31)/master.mpd
 #EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/451d2f5521f03118ab0b08fff91b7bce:c1997f65812cdf0c0651991c6c5a8c5b
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"wZl/ZYEs3wwGUZkcbFqMWw","kid":"RR0vVSHwMRirCwj/+Rt7zg"}],"type":"t
 https://rthktv32-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch32)/master.mpd
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
@@ -323,8 +323,6 @@ https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
 #EXTINF:-1 tvg-name="RTHK35" tvg-logo="https://iptv-pro.github.io/logo/RTHK35.png" group-title="香港频道",港台电视35
 https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
-#EXTINF:-1 tvg-name="RTHK36" tvg-logo="https://xiaotan.860775.xyz/RTHK36.png" group-title="香港频道",港台电视36
-https://rthktv36-live.akamaized.net/hls/live/2112176/RTHKTV36/master.m3u8
 #EXTINF:-1 tvg-name="凤凰卫视中文台" tvg-logo="https://live.fanmingming.com/tv/凤凰卫视中文台.png" group-title="香港频道",凤凰卫视中文台
 http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
 #EXTINF:-1 tvg-name="凤凰卫视资讯台" tvg-logo="https://live.fanmingming.com/tv/凤凰卫视资讯台.png" group-title="香港频道",凤凰卫视资讯台
@@ -337,17 +335,3 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=xinghe
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=viutv
 #EXTINF:-1 tvg-name="viusix" tvg-logo="https://live.fanmingming.com/tv/viutv6.png" group-title="香港频道",ViuTV6
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=viusix
-#EXTINF:-1 tvg-name="now1332" tvg-logo="https://www.nowtv.now.com/media/logo/331-wbg-e.png" group-title="香港频道",now 331
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/c236ef44730935c5a25b470be0b8231d:35cc1579b2b3944baf79db7e339d2161
-https://ewcdn103.nowe.com/session/10-5dc7bf329cdca128653d90e8d9a8b/Content/DASH_VOS3/Live/channel(VOS_CH331)/manifest.mpd?token=1ff2ded69272a5bc4c71e969ce2605f2_1723279620
-#EXTINF:-1 tvg-name="now332" tvg-logo="https://www.nowtv.now.com/media/logo/332-wbg-e.png" group-title="香港频道",now 332
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://h2j.860775.xyz/2e20eb9aafa33ef5a5279c3994812ead:09ab6682efeee58b7c884f03a4915bbc
-https://ewcdn03.nowe.com/session/10-4c896f8e0941055f8f1e7fdcb933d/Content/DASH_VOS3/Live/channel(VOS_CH332N)/manifest.mpd?token=84166533ef2618e070f2c62e5eea68db_1723279553
-#EXTINF:-1 tvg-name="now332" tvg-logo="https://www.nowtv.now.com/media/logo/332-wbg-e.png" group-title="香港频道",now 332
-https://ffmpeg.btjson.us.kg/stream/tvb/now/master.m3u8?u=btjson&p=213f2541f159ac2ec56f4173f3731fdd6ac1ea725a0c7892870cf85ea22cb3cc
-#EXTINF:-1 tvg-name="now333" tvg-logo="https://www.nowtv.now.com/media/logo/333-wbg-e.png" group-title="香港频道",now 333
-https://now.860775.xyz/333
