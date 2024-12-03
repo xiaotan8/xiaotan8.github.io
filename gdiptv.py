@@ -8,10 +8,10 @@ now = (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('[%m/%d %
 # 定义组播地址和端口 
 urls_udp = "/udp/239.77.0.1:5146"
 # 定义fofa链接
-fofa_url = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iR3Vhbmd6aG91IiAmJiBzZXJ2ZXI9PSJ1ZHB4eSAxLjAtMjUuMCAocHJvZCkgc3RhbmRhcmQgW0xpbnV4IDUuMTAuMTk0IHg4Nl82NF0i'
-fofa_url_jm = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iSmlhbmdtZW4iICYmIHNlcnZlcj09InVkcHh5IDEuMC0yNS4wIChwcm9kKSBzdGFuZGFyZCBbTGludXggNS4xMC4xOTQgeDg2XzY0XSI%3D'
-fofa_url_fs = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iRm9zaGFuIiAmJiBzZXJ2ZXI9PSJ1ZHB4eSAxLjAtMjUuMCAocHJvZCkgc3RhbmRhcmQgW0xpbnV4IDUuMTAuMTk0IHg4Nl82NF0i'
-fofa_url_mz = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjaXR5PSJTaGVuemhlbiIgJiYgc2VydmVyPT0idWRweHkgMS4wLTI1LjAgKHByb2QpIHN0YW5kYXJkIFtMaW51eCA1LjEwLjE5NCB4ODZfNjRdIg=='
+fofa_url = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgcmVnaW9uPSJHdWFuZ2RvbmciICYmIG9yZz0iQ2hpbmFuZXQi'
+fofa_url_jm = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iSmlhbmdtZW4iICYmIG9yZz0iQ2hpbmFuZXQi'
+fofa_url_fs = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iRm9zaGFuIiAmJiBvcmc9IkNoaW5hbmV0Ig%3D%3D'
+fofa_url_mz = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjaXR5PSJTaGVuemhlbiIgICYmIG9yZz0iQ2hpbmFuZXQi'
 
 # 尝试从fofa链接提取IP地址和端口号，并去除重复项
 def extract_unique_ip_ports(fofa_url):
@@ -20,8 +20,10 @@ def extract_unique_ip_ports(fofa_url):
         html_content = response.text
         # 使用正则表达式匹配IP地址和端口号
         middle = re.findall(r'Array.*</script>', html_content)
-        
-        ips_ports = re.findall(r'(\d+\.\d+\.\d+\.\d+:\d+)',middle[0])
+        if not middle:
+            print(f"未能提取到有效数据，FOFA URL: {fofa_url}")
+            return None
+        ips_ports = re.findall(r'(\d+\.\d+\.\d+\.\d+:\d+)', middle[0])
         return ips_ports if ips_ports else None
     except requests.RequestException as e:
         print(f"请求错误: {e}")
