@@ -331,16 +331,14 @@ http://php.jdshipin.com:8880/smt.php?id=phoenixinfo_hd
 http://php.jdshipin.com:8880/smt.php?id=hkphoenix_twn
 #EXTINF:-1 tvg-name="TVB星河" tvg-logo="https://live.fanmingming.com/tv/TVB星河.png" group-title="香港频道",TVB星河
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=xinghe
-#EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://live.fanmingming.com/tv/viutv.png" group-title="香港频道",ViuTV（mpd）
+#EXTINF:-1 tvg-name="ViuTV6" tvg-logo="https://live.fanmingming.com/tv/viutv6.png" group-title="香港频道",ViuTV6（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?id=96
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://live.fanmingming.com/tv/viutv.png" group-title="香港频道",ViuTV
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=viutv
-#EXTINF:-1 tvg-name="viusix" tvg-logo="https://live.fanmingming.com/tv/viutv6.png" group-title="香港频道",ViuTV6
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=viusix
 #EXTINF:-1 tvg-name="NOW新闻台" tvg-logo="https://www.nowtv.now.com/media/logo/332-wbg-e.png" group-title="香港频道",NOW新闻台
 http://10.10.10.5/now.php?id=332
-#EXTINF:-1 tvg-name="Now財經台" tvg-logo="https://www.nowtv.now.com/media/logo/333-wbg-e.png" group-title="香港频道",Now財經台
+#EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://www.nowtv.now.com/media/logo/333-wbg-e.png" group-title="香港频道",NOW財經台
 http://10.10.10.5/now.php?id=333
