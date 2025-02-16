@@ -189,7 +189,7 @@ http://10.10.10.1:4022/rtp/239.81.0.79:4056
 http://10.10.10.1:4022/rtp/239.81.0.80:4056
 #EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://live.fanmingming.com/tv/都市剧场.png" group-title="其它频道",都市剧场
 http://10.10.10.1:4022/rtp/239.81.0.81:4056
-#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://live.fanmingming.com/tv/精彩影视.png" group-title="其它频道",精彩影视高清
+#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/JCYS.png?raw=true" group-title="其它频道",精彩影视高清
 http://10.10.10.1:4022/rtp/239.81.0.152:4056
 #EXTINF:-1 tvg-name="求索纪录" tvg-logo="https://live.fanmingming.com/tv/求索纪录.png" group-title="其它频道",求索纪录高清
 http://10.10.10.1:4022/rtp/239.81.0.153:4056
@@ -253,7 +253,7 @@ http://10.10.10.1:4022/rtp/239.81.0.1:4056
 http://10.10.10.1:4022/rtp/239.81.0.66:4056
 #EXTINF:-1 tvg-name="爱大剧" tvg-logo="https://live.fanmingming.com/tv/爱大剧.png" group-title="其它频道",爱大剧
 http://10.10.10.1:4022/rtp/239.81.0.67:4056
-#EXTINF:-1 tvg-name="IPTV相声小品" tvg-logo="https://live.fanmingming.com/tv/IPTV相声小品.png" group-title="其它频道",IPTV相声小品
+#EXTINF:-1 tvg-name="IPTV相声小品" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/IPTV%E7%9B%B8%E5%A3%B0%E5%B0%8F%E5%93%81.png?raw=true" group-title="其它频道",IPTV相声小品
 http://10.10.10.1:4022/rtp/239.81.0.17:4056
 #EXTINF:-1 tvg-name="IPTV谍战剧场" tvg-logo="https://live.fanmingming.com/tv/IPTV谍战剧场.png" group-title="其它频道",IPTV谍战剧场
 http://10.10.10.1:4022/rtp/239.81.0.15:4056
@@ -265,15 +265,15 @@ http://10.10.10.1:4022/rtp/239.81.0.18:4056
 http://10.10.10.1:4022/rtp/239.81.0.97:4056
 #EXTINF:-1 tvg-name="爱体育高清" tvg-logo="https://live.fanmingming.com/tv/爱体育高清.png" group-title="其它频道",爱体育高清
 http://10.10.10.1:4022/rtp/239.81.0.133:4056
-#EXTINF:-1 tvg-name="经典电影" tvg-logo="https://live.fanmingming.com/tv/经典电影.png" group-title="其它频道",经典电影
+#EXTINF:-1 tvg-name="经典电影" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/IPTV%E7%BB%8F%E5%85%B8%E7%94%B5%E5%BD%B1.png?raw=true" group-title="其它频道",经典电影
 http://10.10.10.1:4022/rtp/239.81.0.84:4056
-#EXTINF:-1 tvg-name="少儿动画" tvg-logo="https://live.fanmingming.com/tv/少儿动画.png" group-title="其它频道",少儿动画
+#EXTINF:-1 tvg-name="少儿动画" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/IPTV%E5%B0%91%E5%84%BF%E5%8A%A8%E7%94%BB.png?raw=true" group-title="其它频道",少儿动画
 http://10.10.10.1:4022/rtp/239.81.0.82:4056
-#EXTINF:-1 tvg-name="热播剧场" tvg-logo="https://live.fanmingming.com/tv/热播剧场.png" group-title="其它频道",热播剧场
+#EXTINF:-1 tvg-name="热播剧场" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/IPTV%E7%83%AD%E6%92%AD%E5%89%A7%E5%9C%BA.png?raw=true" group-title="其它频道",热播剧场
 http://10.10.10.1:4022/rtp/239.81.0.85:4056
-#EXTINF:-1 tvg-name="魅力时尚" tvg-logo="https://live.fanmingming.com/tv/魅力时尚.png" group-title="其它频道",魅力时尚
+#EXTINF:-1 tvg-name="魅力时尚" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/IPTV%E9%AD%85%E5%8A%9B%E6%97%B6%E5%B0%9A.png?raw=true" group-title="其它频道",魅力时尚
 http://10.10.10.1:4022/rtp/239.81.0.83:4056
-#EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://live.fanmingming.com/tv/爱上4K.png" group-title="其它频道",爱上4K
+#EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/爱上4K.png?raw=true" group-title="其它频道",爱上4K
 http://10.10.10.1:4022/rtp/239.81.0.123:4056
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.com/tv/TVB翡翠台.png" group-title="香港频道",翡翠台
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
