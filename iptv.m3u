@@ -315,11 +315,6 @@ https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
 https://rthktv31-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch31)/master.mpd
 #EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
-#EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32（mpd）
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"wZl/ZYEs3wwGUZkcbFqMWw","kid":"RR0vVSHwMRirCwj/+Rt7zg"}],"type":"temporary"}
-https://rthktv32-vos-live.akamaized.net/Content/DASH/Live/channel(rthk_ch32)/master.mpd
 #EXTINF:-1 tvg-name="RTHK32" tvg-logo="https://iptv-pro.github.io/logo/RTHK32.png" group-title="香港频道",港台电视32
 https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
 #EXTINF:-1 tvg-name="RTHK33" tvg-logo="https://iptv-pro.github.io/logo/RTHK33.png" group-title="香港频道",港台电视33
@@ -349,7 +344,7 @@ https://mytv.860775.xyz/PHK
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?id=96
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv.png?raw=true" group-title="香港频道",ViuTV
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=viutv
+http://10.10.10.5/96.php?id=99
 #EXTINF:-1 tvg-name="NOW新闻台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch332_160_115" group-title="香港频道",NOW新闻台
 http://10.10.10.5/now.php?id=332
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
