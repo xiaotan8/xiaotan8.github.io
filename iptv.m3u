@@ -16,7 +16,7 @@ http://10.10.10.1:4022/rtp/239.81.0.8:4056
 #EXTINF:-1 tvg-name="广西乐思购" tvg-logo="https://xiaotan.860775.xyz/广西乐思购.png" group-title="本地频道",广西乐思购
 http://10.10.10.1:4022/rtp/239.81.0.9:4056
 #EXTINF:-1 tvg-name="广西移动" tvg-logo="https://xiaotan.860775.xyz/广西移动.png" group-title="本地频道",广西移动电视
-http://10.10.10.1:4022/rtp/239.81.0.10:4056
+http://10.10.10.1:4022/rtp/239.81.0.216:4056
 #EXTINF:-1 tvg-name="南宁新闻综合" tvg-logo="https://xiaotan.860775.xyz/广西南宁新闻综合.png" group-title="本地频道",南宁新闻综合
 http://10.10.10.1:4022/rtp/239.81.0.241:4056
 #EXTINF:-1 tvg-name="南宁文旅生活" tvg-logo="https://xiaotan.860775.xyz/广西南宁都市生活.png" group-title="本地频道",南宁文旅生活
@@ -43,12 +43,16 @@ http://10.10.10.1:4022/rtp/239.81.0.176:4056
 http://10.10.10.1:4022/rtp/239.81.0.175:4056
 #EXTINF:-1 tvg-name="桂林新闻综合" tvg-logo="https://xiaotan.860775.xyz/广西桂林新闻综合.png" group-title="本地频道",桂林新闻综合
 http://10.10.10.1:4022/rtp/239.81.0.174:4056
+#EXTINF:-1 tvg-name="桂林科教旅游" tvg-logo="https://xiaotan.860775.xyz/广西桂林科教旅游.png" group-title="本地频道",桂林科教旅游
+http://10.10.10.1:4022/rtp/239.81.0.221:4056
+#EXTINF:-1 tvg-name="桂林公共频道" tvg-logo="https://xiaotan.860775.xyz/广西桂林公共频道.png" group-title="本地频道",桂林公共频道
+http://10.10.10.1:4022/rtp/239.81.0.222:4056
 #EXTINF:-1 tvg-name="河池新闻综合" tvg-logo="https://xiaotan.860775.xyz/广西河池综合.png" group-title="本地频道",河池新闻综合
 http://10.10.10.1:4022/rtp/239.81.0.168:4056
 #EXTINF:-1 tvg-name="百色综合" tvg-logo="https://xiaotan.860775.xyz/广西百色综合.png" group-title="本地频道",百色综合
 http://10.10.10.1:4022/rtp/239.81.0.150:4056
 #EXTINF:-1 tvg-name="崇左综合" tvg-logo="https://xiaotan.860775.xyz/广西崇左综合.png" group-title="本地频道",崇左综合
-http://10.10.10.1:4022/rtp/239.81.0.171:4056
+http://10.10.10.1:4022/rtp/239.81.0.218:4056
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://assets.livednow.com/logo/CCTV1.png" group-title="央视频道",CCTV-1综合高清
 http://10.10.10.1:4022/rtp/239.81.0.102:4056
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://assets.livednow.com/logo/CCTV2.png" group-title="央视频道",CCTV-2财经高清
@@ -101,6 +105,8 @@ http://10.10.10.1:4022/rtp/239.81.0.110:4056
 http://10.10.10.1:4022/rtp/239.81.0.111:4056
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/北京卫视.png?raw=true" group-title="卫视频道",北京卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.109:4056
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/北京卫视.png?raw=true" group-title="卫视频道",北京卫视4K
+http://10.10.10.1:4022/rtp/239.81.0.133:4056
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/浙江卫视.png?raw=true" group-title="卫视频道",浙江卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.108:4056
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/江苏卫视.png?raw=true" group-title="卫视频道",江苏卫视高清
@@ -137,20 +143,20 @@ http://10.10.10.1:4022/rtp/239.81.0.130:4056
 http://10.10.10.1:4022/rtp/239.81.0.32:4056
 #EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/陕西卫视.png?raw=true" group-title="卫视频道",陕西卫视
 http://10.10.10.1:4022/rtp/239.81.0.89:4056
-#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/河南卫视.png?raw=true" group-title="卫视频道",河南卫视
-http://10.10.10.1:4022/rtp/239.81.0.44:4056
-#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/云南卫视.png?raw=true" group-title="卫视频道",云南卫视
-http://10.10.10.1:4022/rtp/239.81.0.45:4056
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/河南卫视.png?raw=true" group-title="卫视频道",河南卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.220:4056
+#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/云南卫视.png?raw=true" group-title="卫视频道",云南卫视高清
+http://10.10.10.1:4022/rtp/239.81.1.42:4056
 #EXTINF:-1 tvg-name="新疆卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/新疆卫视.png?raw=true" group-title="卫视频道",新疆卫视
 http://10.10.10.1:4022/rtp/239.81.0.46:4056
-#EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/重庆卫视.png?raw=true" group-title="卫视频道",重庆卫视
-http://10.10.10.1:4022/rtp/239.81.0.47:4056
-#EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/海南卫视.png?raw=true" group-title="卫视频道",海南卫视
-http://10.10.10.1:4022/rtp/239.81.0.48:4056
+#EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/重庆卫视.png?raw=true" group-title="卫视频道",重庆卫视高清
+http://10.10.10.1:4022/rtp/239.81.1.44:4056
+#EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/海南卫视.png?raw=true" group-title="卫视频道",海南卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.199:4056
 #EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/山西卫视.png?raw=true" group-title="卫视频道",山西卫视
 http://10.10.10.1:4022/rtp/239.81.0.49:4056
-#EXTINF:-1 tvg-name="青海卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/青海卫视.png?raw=true" group-title="卫视频道",青海卫视
-http://10.10.10.1:4022/rtp/239.81.0.53:4056
+#EXTINF:-1 tvg-name="青海卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/青海卫视.png?raw=true" group-title="卫视频道",青海卫视高清
+http://10.10.10.1:4022/rtp/239.81.1.47:4056
 #EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/内蒙古卫视.png?raw=true" group-title="卫视频道",内蒙古卫视
 http://10.10.10.1:4022/rtp/239.81.0.54:4056
 #EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/西藏卫视.png?raw=true" group-title="卫视频道",西藏卫视
@@ -159,8 +165,8 @@ http://10.10.10.1:4022/rtp/239.81.0.55:4056
 http://10.10.10.1:4022/rtp/239.81.0.60:4056
 #EXTINF:-1 tvg-name="山东教育卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/山东教育.png?raw=true" group-title="卫视频道",山东教育卫视
 http://10.10.10.1:4022/rtp/239.81.0.93:4056
-#EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/三沙卫视.png?raw=true" group-title="卫视频道",三沙卫视
-http://10.10.10.1:4022/rtp/239.81.0.242:4056
+#EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/三沙卫视.png?raw=true" group-title="卫视频道",三沙卫视高清
+http://10.10.10.1:4022/rtp/239.81.1.79:4056
 #EXTINF:-1 tvg-name="厦门卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/厦门卫视.png?raw=true" group-title="卫视频道",厦门卫视
 http://10.10.10.1:4022/rtp/239.81.0.212:4056
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/兵团卫视.png?raw=true" group-title="卫视频道",兵团卫视
@@ -177,22 +183,26 @@ http://10.10.10.1:4022/rtp/239.81.0.188:4056
 http://10.10.10.1:4022/rtp/239.81.0.91:4056
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/金鹰卡通.png?raw=true" group-title="卫视频道",金鹰卡通高清
 http://10.10.10.1:4022/rtp/239.81.0.148:4056
+#EXTINF:-1 tvg-name="茶频道" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/茶频道.png?raw=true" group-title="卫视频道",茶频道高清
+http://10.10.10.1:4022/rtp/239.81.1.95:4056
 #EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/卡酷少儿.png?raw=true" group-title="卫视频道",卡酷动画
 http://10.10.10.1:4022/rtp/239.81.0.62:4056
 #EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/嘉佳卡通.png?raw=true" group-title="卫视频道",嘉佳卡通
 http://10.10.10.1:4022/rtp/239.81.0.64:4056
-#EXTINF:-1 tvg-name="中国天气" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/中国天气.png?raw=true" group-title="卫视频道",中国天气
-http://10.10.10.1:4022/rtp/239.81.0.63:4056
+#EXTINF:-1 tvg-name="中国天气" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/中国天气.png?raw=true" group-title="卫视频道",中国天气高清
+http://10.10.10.1:4022/rtp/239.81.1.100:4056
+#EXTINF:-1 tvg-name="中国交通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/中国交通.png?raw=true" group-title="卫视频道",中国交通高清
+http://10.10.10.1:4022/rtp/239.81.0.219
 #EXTINF:-1 tvg-name="游戏风云" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/游戏风云.png?raw=true" group-title="其它频道",游戏风云
 http://10.10.10.1:4022/rtp/239.81.0.72:4056
 #EXTINF:-1 tvg-name="乐游" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/乐游.png?raw=true" group-title="其它频道",乐游
-http://10.10.10.1:4022/rtp/239.81.0.78:4056
+http://10.10.10.1:4022/rtp/239.81.1.87:4056
 #EXTINF:-1 tvg-name="法治天地" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/法治天地.png?raw=true" group-title="其它频道",法治天地
-http://10.10.10.1:4022/rtp/239.81.0.79:4056
+http://10.10.10.1:4022/rtp/239.81.1.88:4056
 #EXTINF:-1 tvg-name="金色学堂" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/金色学堂.png?raw=true" group-title="其它频道",金色学堂
-http://10.10.10.1:4022/rtp/239.81.0.80:4056
+http://10.10.10.1:4022/rtp/239.81.1.89:4056
 #EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/都市剧场.png?raw=true" group-title="其它频道",都市剧场
-http://10.10.10.1:4022/rtp/239.81.0.81:4056
+http://10.10.10.1:4022/rtp/239.81.1.90:4056
 #EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/JCYS.png?raw=true" group-title="其它频道",精彩影视高清
 http://10.10.10.1:4022/rtp/239.81.0.152:4056
 #EXTINF:-1 tvg-name="求索纪录" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/求索纪录.png?raw=true" group-title="其它频道",求索纪录高清
@@ -279,6 +289,16 @@ http://10.10.10.1:4022/rtp/239.81.0.85:4056
 http://10.10.10.1:4022/rtp/239.81.0.83:4056
 #EXTINF:-1 tvg-name="爱上4K" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/爱上4K.png?raw=true" group-title="其它频道",爱上4K
 http://10.10.10.1:4022/rtp/239.81.0.123:4056
+#EXTINF:-1 tvg-name="藤县新闻" tvg-logo="https://xiaotan.860775.xyz/藤县新闻.png?raw=true" group-title="县区频道",藤县新闻
+http://10.10.10.1:4022/rtp/239.81.0.1:4056
+#EXTINF:-1 tvg-name="灵山新闻" tvg-logo="https://xiaotan.860775.xyz/灵山新闻.png?raw=true" group-title="县区频道",灵山新闻
+http://10.10.10.1:4022/rtp/239.81.0.189:4056
+#EXTINF:-1 tvg-name="容县新闻" tvg-logo="https://xiaotan.860775.xyz/容县新闻.png?raw=true" group-title="县区频道",容县新闻
+http://10.10.10.1:4022/rtp/239.81.0.194:4056
+#EXTINF:-1 tvg-name="三江新闻" tvg-logo="https://xiaotan.860775.xyz/三江新闻.png?raw=true" group-title="县区频道",三江新闻
+http://10.10.10.1:4022/rtp/239.81.0.197:4056
+#EXTINF:-1 tvg-name="扶绥新闻" tvg-logo="https://xiaotan.860775.xyz/扶绥新闻.png?raw=true" group-title="县区频道",扶绥新闻
+http://10.10.10.1:4022/rtp/239.81.0.217:4056
 #EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/TVB翡翠台.png?raw=true" group-title="香港频道",翡翠台
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
