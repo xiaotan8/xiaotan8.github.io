@@ -364,13 +364,21 @@ https://mytv.860775.xyz/PIN
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "uGhfvs93LmQVRjCCnPMwow", "kid": "zeYuEFbrNhXat6Pv2D9etA"}], "type": "temporary"}
 https://mytv.860775.xyz/PHK
+#EXTINF:-1 tvg-name="ViuTV6" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV6（test）
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
+https://viu.860775.xyz/096
 #EXTINF:-1 tvg-name="ViuTV6" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV6（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
-http://10.10.10.5/96.php?id=96
-#EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv.png?raw=true" group-title="香港频道",ViuTV
-http://10.10.10.5/96.php?id=99
+http://10.10.10.5/96.php?channel=096
+#EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv.png?raw=true" group-title="香港频道",ViuTV（mpd）
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
+http://10.10.10.5/96.php?channel=099
 #EXTINF:-1 tvg-name="NOW新闻台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch332_160_115" group-title="香港频道",NOW新闻台
 http://10.10.10.5/now.php?id=332
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
