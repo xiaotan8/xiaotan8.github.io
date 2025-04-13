@@ -106,7 +106,7 @@ http://10.10.10.1:4022/rtp/239.81.0.111:4056
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/北京卫视.png?raw=true" group-title="卫视频道",北京卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.109:4056
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/北京卫视.png?raw=true" group-title="卫视频道",北京卫视4K
-http://10.10.10.1:4022/rtp/239.81.0.133:4056
+http://10.10.10.1:4022/rtp/239.81.0.225:4056
 #EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/北京纪实科教.png?raw=true" group-title="卫视频道",北京纪实科教高清
 http://10.10.10.1:4022/rtp/239.81.0.195:4056
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/浙江卫视.png?raw=true" group-title="卫视频道",浙江卫视高清
@@ -187,16 +187,6 @@ http://10.10.10.1:4022/rtp/239.81.0.245:4056
 http://10.10.10.1:4022/rtp/239.81.1.62:4056
 #EXTINF:-1 tvg-name="中国教育4台" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/CETV4.png?raw=true" group-title="卫视频道",中国教育4台高清
 http://10.10.10.1:4022/rtp/239.81.0.188:4056
-#EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/金鹰纪实.png?raw=true" group-title="卫视频道",金鹰纪实高清
-http://10.10.10.1:4022/rtp/239.81.0.91:4056
-#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/金鹰卡通.png?raw=true" group-title="卫视频道",金鹰卡通高清
-http://10.10.10.1:4022/rtp/239.81.0.148:4056
-#EXTINF:-1 tvg-name="茶" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/茶.png?raw=true" group-title="卫视频道",茶频道高清
-http://10.10.10.1:4022/rtp/239.81.1.95:4056
-#EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/卡酷少儿.png?raw=true" group-title="卫视频道",卡酷动画
-http://10.10.10.1:4022/rtp/239.81.0.62:4056
-#EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/嘉佳卡通.png?raw=true" group-title="卫视频道",嘉佳卡通
-http://10.10.10.1:4022/rtp/239.81.0.64:4056
 #EXTINF:-1 tvg-name="中国天气" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/中国天气.png?raw=true" group-title="卫视频道",中国天气高清
 http://10.10.10.1:4022/rtp/239.81.1.100:4056
 #EXTINF:-1 tvg-name="中国交通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/中国交通.png?raw=true" group-title="卫视频道",中国交通高清
@@ -209,12 +199,22 @@ http://10.10.10.1:4022/rtp/239.81.0.239:4056
 http://10.10.10.1:4022/rtp/239.81.0.240:4056
 #EXTINF:-1,tvg-id="精彩影视" tvg-name="精彩影视" tvg-logo="https://epg.112114.xyz/logo/精彩影视.png" group-title="其他频道",精彩影视·高清
 http://10.10.10.1:4022/rtp/239.81.0.152:4056
-#EXTINF:-1,tvg-id="新动漫" tvg-name="新动漫" tvg-logo="https://epg.112114.xyz/logo/新动漫.png" group-title="其他频道",新动漫·标清
-http://10.10.10.1:4022/rtp/239.81.0.235:4056
+#EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/金鹰纪实.png?raw=true" group-title="卫其他频道",金鹰纪实高清
+http://10.10.10.1:4022/rtp/239.81.0.91:4056
+#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/金鹰卡通.png?raw=true" group-title="其他频道",金鹰卡通高清
+http://10.10.10.1:4022/rtp/239.81.0.148:4056
+#EXTINF:-1 tvg-name="茶" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/茶.png?raw=true" group-title="其他频道",茶频道高清
+http://10.10.10.1:4022/rtp/239.81.1.95:4056
 #EXTINF:-1,tvg-id="先锋乒羽" tvg-name="先锋乒羽" tvg-logo="https://epg.112114.xyz/logo/先锋乒羽.png" group-title="其他频道",先锋乒羽·标清
 http://10.10.10.1:4022/rtp/239.81.0.236:4056
 #EXTINF:-1,tvg-id="求索纪录" tvg-name="求索纪录" tvg-logo="https://epg.112114.xyz/logo/求索纪录.png" group-title="其他频道",求索纪录·高清
 http://10.10.10.1:4022/rtp/239.81.0.153:4056
+#EXTINF:-1,tvg-id="新动漫" tvg-name="新动漫" tvg-logo="https://epg.112114.xyz/logo/新动漫.png" group-title="其他频道",新动漫·标清
+http://10.10.10.1:4022/rtp/239.81.0.235:4056
+#EXTINF:-1 tvg-name="卡酷动画" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/卡酷少儿.png?raw=true" group-title="其他频道",卡酷动画
+http://10.10.10.1:4022/rtp/239.81.0.62:4056
+#EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/嘉佳卡通.png?raw=true" group-title="其他频道",嘉佳卡通
+http://10.10.10.1:4022/rtp/239.81.0.64:4056
 #EXTINF:-1,tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://epg.112114.xyz/logo/哈哈炫动.png" group-title="其他频道",哈哈炫动·高清
 http://10.10.10.1:4022/rtp/239.81.1.66:4056
 #EXTINF:-1,tvg-id="动漫秀场" tvg-name="动漫秀场" tvg-logo="https://epg.112114.xyz/logo/动漫秀场.png" group-title="其他频道",动漫秀场·高清
