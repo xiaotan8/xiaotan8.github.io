@@ -112,52 +112,52 @@ CHANNEL_LIST = {
     'YNTV': {
         'name': '雲南瀾湄國際衛視',
         'license': '7ec2be4ec767b0a7b23bb9d665c39dab:738f330e2e319ee51ebcb8f2d0614f0a',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/澜湄国际卫视.png'
     },
     'AHTV': {
         'name': '安徽廣播電視台國際頻道',
         'license': '460151d2b91a7504c6e7fcdc2e5b3ccc:a2900973ab6de674a8535fd1627f8cce',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/安徽卫视.png'
     },
     'BJTV': {
         'name': '北京電視台國際頻道',
         'license': 'a8965a188153cee562c067ba66b0f0fb:c373bfab2e75b979beefbb6b370bcdc2',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/北京卫视.png'
     },
     'GXTV': {
         'name': '廣西電視台國際頻道',
         'license': 'e5d541db8252789f10a05d4b26325532:0b2fb5ab1b5c9df031e7086147a0f853',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/广西卫视.png'
     },
     'FJTV': {
         'name': '福建海峽衛視國際頻道',
         'license': '3d5e3a2fd144c5f196cbcb9d037b417d:7be2fcb0ee5efe52ff95b0866f183abb',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/海峡卫视.png'
     },
     'HNTV': {
         'name': '湖南電視台國際頻道',
         'license': 'a43885f5c495e3ce5b1162ecb5c35c03:e506caf7a71025850e8823c07a1b29dc',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/湖南卫视.png'
     },
     'JSTV': {
         'name': '江蘇電視台國際頻道',
         'license': '5287fd241995f7b097597c4349bea5b5:23398eb21eee12ddb9a9df1dd6373687',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/江苏国际频道.png'
     },
     'GBTV': {
         'name': '廣東廣播電視台大灣區衛視頻道',
         'license': '25049a9d742e24329e009d2a8a02b4bd:914a1b9442ba239aaa5a8f63c6e10f83',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/大湾区卫视.png'
     },
     'ZJTV': {
         'name': '浙江電視台國際頻道',
         'license': '8799940a2a97f5eb997753983be48fe5:53c4b68330f10e5507d3c0647703031e',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/浙江卫视.png'
     },
     'SZTV': {
         'name': '深圳衛視國際頻道',
         'license': 'a265a47191734322dc32596c771887cc:5d19d055e814b3fcc521afe772ecf110',
-        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+        'logo': 'https://assets.livednow.com/logo/深圳国际频道.png'
     },
    'DTV': {
         'name': '東方衛視國際頻道',
