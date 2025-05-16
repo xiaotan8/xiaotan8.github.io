@@ -87,17 +87,17 @@ CHANNEL_LIST = {
         'CC4': {
         'name': '中國中央電視台中文國際頻道',
         'license': '9b2762e6912e2f37a1cad1df9af6dc6e:f4edc1240a3e852661c0607db463a6dd',
-        'logo': 'https://assets.livednow.com/logo/CCTV4.png'
+        'logo': 'https://assets.livednow.com/logo/CCTV4-欧洲.png'
     },
     'CCE': {
         'name': '中國中央電視台娛樂頻道',
         'license': 'e173591f7ab25dbc47f6c05abcbb92c7:21c5e4987d1e255d0e171280ad13d815',
-        'logo': 'https://assets.livednow.com/logo/CCTV3.png'
+        'logo': 'https://upload.wikimedia.org/wikipedia/zh/8/88/CCTV_Entertainment_Channel_Logo.png'
     },
     'CCO': {
         'name': '中國中央電視台戲曲頻道',
         'license': '310ee76e894b8361fefdedf5c7b50983:f113fcca4a982e53ba2fc31e7fbf6e2c',
-        'logo': 'https://assets.livednow.com/logo/CCTV11.png'
+        'logo': 'https://upload.wikimedia.org/wikipedia/zh/6/68/CCTV_Opera_Channel_Logo.png'
     },
         'CGD': {
         'name': 'CGTN (中國環球電視網)記錄頻道',
