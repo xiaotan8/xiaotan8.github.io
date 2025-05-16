@@ -84,6 +84,136 @@ CHANNEL_LIST = {
         'license': 'e50b18fee7cab76b9f2822e2ade8773a:2e2e8602b6d835ccf10ee56a9a7d91a2',
         'logo': 'https://assets.livednow.com/logo/中央電視台綜合頻道-港澳版.png'
     },
+        'CC4': {
+        'name': '中國中央電視台中文國際頻道',
+        'license': '9b2762e6912e2f37a1cad1df9af6dc6e:f4edc1240a3e852661c0607db463a6dd',
+        'logo': 'https://assets.livednow.com/logo/CCTV4.png'
+    },
+    'CCE': {
+        'name': '中國中央電視台娛樂頻道',
+        'license': 'e173591f7ab25dbc47f6c05abcbb92c7:21c5e4987d1e255d0e171280ad13d815',
+        'logo': 'https://assets.livednow.com/logo/CCTV3.png'
+    },
+    'CCO': {
+        'name': '中國中央電視台戲曲頻道',
+        'license': '310ee76e894b8361fefdedf5c7b50983:f113fcca4a982e53ba2fc31e7fbf6e2c',
+        'logo': 'https://assets.livednow.com/logo/CCTV11.png'
+    },
+        'CGD': {
+        'name': 'CGTN (中國環球電視網)記錄頻道',
+        'license': 'b570ae67cb063428b158eb2f91c6d77c:c573dabca79a17f81755c0d4b33384bc',
+        'logo': 'https://assets.livednow.com/logo/中國環球電視網-記錄頻道.png'
+    },
+    'CGE': {
+        'name': 'CGTN (中國環球電視網)英語頻道',
+        'license': '4331903278b673916cc6940a8b8d9e7e:02a409115819de9acd9e907b053e3aa8',
+        'logo': 'https://assets.livednow.com/logo/中國環球電視網-英語頻道.png'
+    },
+    'YNTV': {
+        'name': '雲南瀾湄國際衛視',
+        'license': '7ec2be4ec767b0a7b23bb9d665c39dab:738f330e2e319ee51ebcb8f2d0614f0a',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'AHTV': {
+        'name': '安徽廣播電視台國際頻道',
+        'license': '460151d2b91a7504c6e7fcdc2e5b3ccc:a2900973ab6de674a8535fd1627f8cce',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'BJTV': {
+        'name': '北京電視台國際頻道',
+        'license': 'a8965a188153cee562c067ba66b0f0fb:c373bfab2e75b979beefbb6b370bcdc2',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'GXTV': {
+        'name': '廣西電視台國際頻道',
+        'license': 'e5d541db8252789f10a05d4b26325532:0b2fb5ab1b5c9df031e7086147a0f853',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'FJTV': {
+        'name': '福建海峽衛視國際頻道',
+        'license': '3d5e3a2fd144c5f196cbcb9d037b417d:7be2fcb0ee5efe52ff95b0866f183abb',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'HNTV': {
+        'name': '湖南電視台國際頻道',
+        'license': 'a43885f5c495e3ce5b1162ecb5c35c03:e506caf7a71025850e8823c07a1b29dc',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'JSTV': {
+        'name': '江蘇電視台國際頻道',
+        'license': '5287fd241995f7b097597c4349bea5b5:23398eb21eee12ddb9a9df1dd6373687',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'GBTV': {
+        'name': '廣東廣播電視台大灣區衛視頻道',
+        'license': '25049a9d742e24329e009d2a8a02b4bd:914a1b9442ba239aaa5a8f63c6e10f83',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'ZJTV': {
+        'name': '浙江電視台國際頻道',
+        'license': '8799940a2a97f5eb997753983be48fe5:53c4b68330f10e5507d3c0647703031e',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SZTV': {
+        'name': '深圳衛視國際頻道',
+        'license': 'a265a47191734322dc32596c771887cc:5d19d055e814b3fcc521afe772ecf110',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+   'DTV': {
+        'name': '東方衛視國際頻道',
+        'license': '9d6a139158dd1fcd807d1cfc8667e965:f643ba9204ebba7a5ffd3970cfbc794c',
+        'logo': 'https://assets.livednow.com/logo/東方衛視國際頻道.png'
+    },
+        'SVAR': {
+        'name': 'SUPER獎門人',
+        'license': '977869c9cd6aa804921a2e20724b9e6c:16f76fa19ae5199c920de5cfc1a6ca1e',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SEYT': {
+        'name': 'SUPER EYT',
+        'license': 'c83f061a8685a0071fc62c65b6ab7af3:b8cf98951b940dca9174230430faf10d',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SFOO': {
+        'name': 'SUPER識食',
+        'license': '2370118ce3d6fafe17502b0176abf9ae:357c7b5a9d01c25d8e30e46cc396de08',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'STRA': {
+        'name': 'SUPER識嘆',
+        'license': '206a559933b51efbba226fe939040d68:c671ac5afccd7f2d26839e6d9b91d130',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SMUS': {
+        'name': 'SUPER Music',
+        'license': '0d321fc47b49372df79500c8b7a5e9fc:0c4be4e8f7ccedced7de0b7434493be4',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SGOL': {
+        'name': 'SUPER金曲',
+        'license': 'd841bf650caca3bf4441a536ae8580d5:c401a71b63dfa7bab1be378605973c2c',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SSIT': {
+        'name': 'SUPER煲劇',
+        'license': '203638a2e2fd4786190a58393640de54:97e1ec12dda5ee64561e072d9825e3b0',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'STVM': {
+        'name': 'SUPER劇場',
+        'license': 'b6c020768505fa6c7910726b8ca302f0:4b5cba6d27559e6f28a232791f068824',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SDOC': {
+        'name': 'SUPER話當年',
+        'license': '248ed59a4671da39b3bb71f860760b91:b0bd7d1495e3df963ae21790551094e1',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
+    'SSPT': {
+        'name': 'SUPER Sports',
+        'license': '0d57dc882191c22a9f8185ab7e9a629b:0d2b2edbea04dde8ff880d20e20261ad',
+        'logo': 'https://assets.livednow.com/logo/MytvSuper.png'
+    },
     'C18': {
         'name': 'myTV SUPER 18台',
         'license': '72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef',
@@ -219,26 +349,12 @@ CHANNEL_LIST = {
         'license': 'e46f2747a9cf6822a608786bbc21d400:d8778fcf92c949e949a6700828f5f67e',
         'logo': 'https://assets.livednow.com/logo/Mezzo-Live-HK.png'
     },
-    'DTV': {
-        'name': '東方衛視國際頻道',
-        'license': '9d6a139158dd1fcd807d1cfc8667e965:f643ba9204ebba7a5ffd3970cfbc794c',
-        'logo': 'https://assets.livednow.com/logo/東方衛視國際頻道.png'
-    },
+
 
     'POPC': {
         'name': 'PopC',
         'license': '221591babff135a71961d09399d2c922:c80ca4c7b801a76a07179dfb7debb57d',
         'logo': 'https://assets.livednow.com/logo/PopC.png'
-    },
-    'CGD': {
-        'name': 'CGTN (中國環球電視網)記錄頻道',
-        'license': 'b570ae67cb063428b158eb2f91c6d77c:c573dabca79a17f81755c0d4b33384bc',
-        'logo': 'https://assets.livednow.com/logo/中國環球電視網-記錄頻道.png'
-    },
-    'CGE': {
-        'name': 'CGTN (中國環球電視網)英語頻道',
-        'license': '4331903278b673916cc6940a8b8d9e7e:02a409115819de9acd9e907b053e3aa8',
-        'logo': 'https://assets.livednow.com/logo/中國環球電視網-英語頻道.png'
     },
     'CMN1': {
         'name': '神州新聞台',
