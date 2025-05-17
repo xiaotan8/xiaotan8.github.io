@@ -496,7 +496,7 @@ def encode_keys(hex_keyi_key):
 # 创建或打开文件用于写入
 with open('mytvsuper.m3u', 'w', encoding='utf-8') as m3u_file:
     # 写入 M3U 文件的头部
-    m3u_file.write("#EXTM3U url-tvg=\"https://mytvsuperepg.860775.xyz/epg.xml catchup-time="10800" catchup-type="timeshift"\"\n")
+    m3u_file.write('#EXTM3U url-tvg="https://mytvsuperepg.860775.xyz/epg.xml" catchup-time="10800" catchup-type="timeshift"\n')
 
     # 遍历所有频道并写入每个频道的 M3U 内容
     for channel_code in CHANNEL_LIST.keys():
