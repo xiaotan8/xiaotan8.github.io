@@ -383,6 +383,18 @@ https://mytv.jscz.de/mytvsuper/POPC
 #KODIPROP:inputstream.adaptive.license_key=e50b18fee7cab76b9f2822e2ade8773a:2e2e8602b6d835ccf10ee56a9a7d91a2
 https://mytv.jscz.de/mytvsuper/CC1
 
+#EXTINF:-1 tvg-id="CCE" tvg-name="中國中央電視台娛樂頻道" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="娛樂",中國中央電視台娛樂頻道
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "IcXkmH0eJV0OFxKArRPYFQ", "kid": "4XNZH3qyXbxH9sBavLuSxw"}], "type": "temporary"}
+https://mytv.jscz.de/mytvsuper/CCE
+
+#EXTINF:-1 tvg-id="CCO" tvg-name="中國中央電視台戲曲頻道" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="音樂綜藝",中國中央電視台戲曲頻道
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "8RP8ykqYLlO6L8Mef79uLA", "kid": "MQ7nbolLg2H+/e31x7UJgw"}], "type": "temporary"}
+https://mytv.jscz.de/mytvsuper/CCO
+
 #EXTINF:-1 tvg-id="CGD" tvg-name="CGTN (中國環球電視網)記錄頻道" tvg-logo="https://assets.livednow.com/logo/中國環球電視網-記錄頻道.png" group-title="綜合", CGTN (中國環球電視網)記錄頻道
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -485,38 +497,38 @@ https://mytv.jscz.de/mytvsuper/ACTM
 #EXTINF:-1 tvg-id="RCM" tvg-name="Rialto Classic Movies (RCM)" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="電影戲劇",Rialto Classic Movies (RCM)
 https://mytv.jscz.de/mytvsuper/RCM
 
-#EXTINF:-1 tvg-id="TRSP" tvg-name="TRACE Sport Stars" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",TRACE Sport Stars
+#EXTINF:-1 tvg-id="TRSP" tvg-name="TRACE Sport Stars" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",TRACE Sport Stars
 https://mytv.jscz.de/mytvsuper/TRSP
 
-#EXTINF:-1 tvg-id="PETC" tvg-name="Pet Club TV" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",Pet Club TV
+#EXTINF:-1 tvg-id="PETC" tvg-name="Pet Club TV" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",Pet Club TV
 https://mytv.jscz.de/mytvsuper/PETC
 
-#EXTINF:-1 tvg-id="GLBT" tvg-name="Globetrotter" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",Globetrotter
+#EXTINF:-1 tvg-id="GLBT" tvg-name="Globetrotter" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",Globetrotter
 https://mytv.jscz.de/mytvsuper/GLBT
 
-#EXTINF:-1 tvg-id="DOCV" tvg-name="DocsVille" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",DocsVille
+#EXTINF:-1 tvg-id="DOCV" tvg-name="DocsVille" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",DocsVille
 https://mytv.jscz.de/mytvsuper/DOCV
 
-#EXTINF:-1 tvg-id="PULS" tvg-name="Pulse Documentaries" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",Pulse Documentaries
+#EXTINF:-1 tvg-id="PULS" tvg-name="Pulse Documentaries" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",Pulse Documentaries
 https://mytv.jscz.de/mytvsuper/PULS
 
-#EXTINF:-1 tvg-id="NOW7" tvg-name="NOW 70s" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",NOW 70s
+#EXTINF:-1 tvg-id="NOW7" tvg-name="NOW 70s" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",NOW 70s
 https://mytv.jscz.de/mytvsuper/NOW7
 
-#EXTINF:-1 tvg-id="NOW8" tvg-name="NOW 80s" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",NOW 80s
+#EXTINF:-1 tvg-id="NOW8" tvg-name="NOW 80s" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",NOW 80s
 https://mytv.jscz.de/mytvsuper/NOW8
 
-#EXTINF:-1 tvg-id="NOWR" tvg-name="NOW ROCK" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",NOW ROCK
+#EXTINF:-1 tvg-id="NOWR" tvg-name="NOW ROCK" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",NOW ROCK
 https://mytv.jscz.de/mytvsuper/NOWR
 
-#EXTINF:-1 tvg-id="NOW9" tvg-name="NOW 90s00s" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",NOW 90s00s
+#EXTINF:-1 tvg-id="NOW9" tvg-name="NOW 90s00s" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",NOW 90s00s
 https://mytv.jscz.de/mytvsuper/NOW9
 
-#EXTINF:-1 tvg-id="CONC" tvg-name="Concerto" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",Concerto
+#EXTINF:-1 tvg-id="CONC" tvg-name="Concerto" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",Concerto
 https://mytv.jscz.de/mytvsuper/CONC
 
-#EXTINF:-1 tvg-id="TRUR" tvg-name="TRACE Urban" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",TRACE Urban
+#EXTINF:-1 tvg-id="TRUR" tvg-name="TRACE Urban" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",TRACE Urban
 https://mytv.jscz.de/mytvsuper/TRUR
 
-#EXTINF:-1 tvg-id="NSWD" tvg-name="NewsWorld" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="綜合",NewsWorld
+#EXTINF:-1 tvg-id="NSWD" tvg-name="NewsWorld" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="其它",NewsWorld
 https://mytv.jscz.de/mytvsuper/NSWD
