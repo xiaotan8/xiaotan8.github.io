@@ -472,6 +472,12 @@ https://mytv.jscz.de/mytvsuper/CNHK
 #KODIPROP:inputstream.adaptive.license_key=f3ae14e72f585eaf14b18d8d9515d43f:ce0e375c3966263877078aadd815742e
 https://mytv.jscz.de/mytvsuper/CARI
 
+#EXTINF:-1 tvg-id="EVT2" tvg-name="myTV SUPER 直播足球2台" tvg-logo="https://assets.livednow.com/logo/myTV-SUPER-Football-3.png" group-title="體育運動", myTV SUPER 直播足球2台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=024f2733fb9afad23490149c601ce47c:034db34d56263c79c7f41448f2a6cfc1
+https://mytv.jscz.de/mytvsuper/EVT2
+
 #EXTINF:-1 tvg-id="EVT3" tvg-name="myTV SUPER 直播足球3台" tvg-logo="https://assets.livednow.com/logo/myTV-SUPER-Football-3.png" group-title="體育運動", myTV SUPER 直播足球3台
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -496,6 +502,11 @@ https://mytv.jscz.de/mytvsuper/EVT5
 #KODIPROP:inputstream.adaptive.license_key=e069fc056280e4caa7d0ffb99024c05a:d3693103f232f28b4781bbc7e499c43a
 https://mytv.jscz.de/mytvsuper/EVT6
 
+#EXTINF:-1 tvg-id="EVT7" tvg-name="myTV SUPER 直播足球6台" tvg-logo="https://assets.livednow.com/logo/myTV-SUPER-Football-6.png" group-title="體育運動", myTV SUPER 直播足球7台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4
+https://mytv.jscz.de/mytvsuper/EVT7
 
 #EXTINF:-1 tvg-id="ACTM" tvg-name="Action Hollywood Movies" tvg-logo="https://assets.livednow.com/logo/MytvSuper.png" group-title="電影戲劇",Action Hollywood Movies
 https://mytv.jscz.de/mytvsuper/ACTM
