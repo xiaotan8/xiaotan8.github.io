@@ -94,11 +94,7 @@ http://10.10.10.1:4022/rtp/239.81.0.228:4056
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://assets.livednow.com/logo/CCTV-4K.png" group-title="央视频道",CCTV4K超高清
 http://10.10.10.1:4022/rtp/239.81.0.196:4056
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/广东卫视.png?raw=true" group-title="卫视频道",广东卫视高清
-http://10.10.10.1:4022/rtp/239.81.0.104:4056
-#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/广东珠江.png?raw=true" group-title="卫视频道",广东珠江高清
-https://tv.cdn.com.mp/live/gdzj/stream.m3u8
-#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/广东体育.png?raw=true" group-title="卫视频道",广东体育高清
-https://tv.cdn.com.mp/live/gdty/stream.m3u8
+http://10.10.10.1:4022/rtp/239.81.0.252:4056
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/湖南卫视.png?raw=true" group-title="卫视频道",湖南卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.110:4056
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/东方卫视.png?raw=true" group-title="卫视频道",东方卫视高清
@@ -114,7 +110,7 @@ http://10.10.10.1:4022/rtp/239.81.0.108:4056
 #EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/江苏卫视.png?raw=true" group-title="卫视频道",江苏卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.106:4056
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/深圳卫视.png?raw=true" group-title="卫视频道",深圳卫视高清
-http://10.10.10.1:4022/rtp/239.81.0.103:4056
+http://10.10.10.1:4022/rtp/239.81.0.252:4056
 #EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/天津卫视.png?raw=true" group-title="卫视频道",天津卫视高清
 http://10.10.10.1:4022/rtp/239.81.0.113:4056
 #EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/湖北卫视.png?raw=true" group-title="卫视频道",湖北卫视高清
