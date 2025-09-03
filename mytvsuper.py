@@ -47,7 +47,7 @@ CHANNEL_LIST = {
     'TVG': {
         'name': '黃金翡翠台',
         'license': '8fe3db1a24969694ae3447f26473eb9f:5cce95833568b9e322f17c61387b306f',
-        'logo': 'https://php.946985.xyz/logo/黄金翡翠台.png'  # 已更新
+        'logo': 'https://php.946985.xyz/logo/MytvSuper.png'  # 已更新
     },
     'CWIN': {
         'name': 'myTV SUPER FREE',
@@ -507,4 +507,5 @@ with open('mytvsuper.m3u', 'w', encoding='utf-8') as m3u_file:
         m3u_file.write(m3u_content)
 
 print("所有频道的 M3U 播放列表已生成并保存为 'mytvsuper.m3u'。")
+
 
