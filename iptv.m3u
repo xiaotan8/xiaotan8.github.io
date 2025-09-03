@@ -316,16 +316,6 @@ https://mytv.860775.xyz/P
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "XZ2OlX0uRdgYmlb+hmWqqg", "kid": "VmA7Zfodc4O27w5zua5p+g"}], "type": "temporary"}
 https://mytv.860775.xyz/B
-#EXTINF:-1 tvg-name="美亞電影台" tvg-logo="https://assets.livednow.com/logo/美亞電影台-HK.png" group-title="香港频道",美亞電影台
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"7Lu0o/+iIArmkFjiDnHpGw","kid":"xdbyr71rJ2MSsEcaZTgo4Q"}],"type":"temporary"}
-https://mytv.jscz.de/mytvsuper/CMAM
-#EXTINF:-1 tvg-name="PopC" tvg-logo="https://assets.livednow.com/logo/PopC.png" group-title="香港频道",PopC
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"yAykx7gBp2oHF537feu1fQ","kid":"IhWRur/xNacZYdCTmdLJIg"}],"type":"temporary"}
-https://mytv.jscz.de/mytvsuper/POPC
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/无线新闻台.png?raw=true" group-title="香港频道",無線新聞台
 https://tvb.860775.xyz/C
 #EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/无线新闻台.png?raw=true" group-title="香港频道",無線新聞台·海外版
@@ -334,11 +324,11 @@ https://tvb.860775.xyz/I-NEWS
 https://tvb.860775.xyz/NEVT1
 #EXTINF:-1 tvg-name="事件直播頻道2" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/无线新闻台.png?raw=true" group-title="香港频道",事件直播頻道2
 https://tvb.860775.xyz/NEVT2
-#EXTINF:-1 tvg-name="HOY76" tvg-logo="https://assets.livednow.com/logo/HOY-國際財經台.png" group-title="香港频道",HOY76 国际财经台
+#EXTINF:-1 tvg-name="HOY76" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/HOYTV.png" group-title="香港频道",HOY76 国际财经台
 https://hoytv-live-stream.hoy.tv/ch76/va2-index.m3u8
-#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://assets.livednow.com/logo/HOYTV.png" group-title="香港频道",HOYTV77
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/HOYTV.png" group-title="香港频道",HOYTV77
 https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
-#EXTINF:-1 tvg-name="HOY78" tvg-logo="https://assets.livednow.com/logo/HOYTV-資訊台.png" group-title="香港频道",HOY78 资讯台
+#EXTINF:-1 tvg-name="HOY78" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/HOYTV.png" group-title="香港频道",HOY78 资讯台
 https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
 #EXTINF:-1 tvg-name="RTHK31" tvg-logo="https://iptv-pro.github.io/logo/RTHK31.png" group-title="香港频道",港台电视31（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -384,4 +374,5 @@ http://10.10.10.5/96.php?channel=099
 http://10.10.10.5/now.php?id=332
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
 http://10.10.10.5/now.php?id=333
+
 
