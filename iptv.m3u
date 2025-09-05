@@ -157,18 +157,18 @@ http://10.10.10.1:4022/rtp/239.81.0.49:4056
 http://10.10.10.1:4022/rtp/239.81.1.47:4056
 #EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/内蒙古卫视.png?raw=true" group-title="卫视频道",内蒙古卫视
 http://10.10.10.1:4022/rtp/239.81.0.54:4056
-#EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/西藏卫视.png?raw=true" group-title="卫视频道",西藏卫视
-http://10.10.10.1:4022/rtp/239.81.0.55:4056
-#EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/宁夏卫视.png?raw=true" group-title="卫视频道",宁夏卫视
-http://10.10.10.1:4022/rtp/239.81.0.60:4056
+#EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/西藏卫视.png?raw=true" group-title="卫视频道",西藏卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.90:4056
+#EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/宁夏卫视.png?raw=true" group-title="卫视频道",宁夏卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.200:4056
 #EXTINF:-1 tvg-name="山东教育卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/山东教育.png?raw=true" group-title="卫视频道",山东教育卫视
 http://10.10.10.1:4022/rtp/239.81.0.93:4056
 #EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/三沙卫视.png?raw=true" group-title="卫视频道",三沙卫视高清
 http://10.10.10.1:4022/rtp/239.81.1.79:4056
 #EXTINF:-1 tvg-name="厦门卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/厦门卫视.png?raw=true" group-title="卫视频道",厦门卫视
 http://10.10.10.1:4022/rtp/239.81.0.212:4056
-#EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/兵团卫视.png?raw=true" group-title="卫视频道",兵团卫视
-http://10.10.10.1:4022/rtp/239.81.0.213:4056
+#EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/兵团卫视.png?raw=true" group-title="卫视频道",兵团卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.223:4056
 #EXTINF:-1 tvg-name="康巴卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/康巴卫视.png?raw=true" group-title="卫视频道",康巴卫视
 http://10.10.10.1:4022/rtp/239.81.1.56:4056
 #EXTINF:-1 tvg-name="延边卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/延边卫视.png?raw=true" group-title="卫视频道",延边卫视
@@ -374,5 +374,6 @@ http://10.10.10.5/96.php?channel=099
 http://10.10.10.5/now.php?id=332
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
 http://10.10.10.5/now.php?id=333
+
 
 
