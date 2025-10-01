@@ -93,8 +93,10 @@ http://10.10.10.1:4022/rtp/239.81.0.144:4056
 http://10.10.10.1:4022/rtp/239.81.0.228:4056
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://github.com/Meroser/IPTV/blob/main/TVlogo/CCTV/CCTV4K.png?raw=true" group-title="央视频道",CCTV4K超高清
 http://10.10.10.1:4022/rtp/239.81.0.196:4056
-#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/广东卫视.png?raw=true" group-title="卫视频道",广东卫视高清
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/广东卫视.png?raw=true" group-title="卫视频道",广东卫视4K
 http://10.10.10.1:4022/rtp/239.81.0.252:4056
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/广东卫视.png?raw=true" group-title="卫视频道",广东卫视高清
+http://10.10.10.1:4022/rtp/239.81.0.104:4056
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/湖南卫视.png?raw=true" group-title="卫视频道",湖南卫视4K
 http://10.10.10.1:4022/rtp/239.81.0.72:4056
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/湖南卫视.png?raw=true" group-title="卫视频道",湖南卫视高清
@@ -386,6 +388,7 @@ http://10.10.10.5/96.php?channel=099
 http://10.10.10.5/now.php?id=332
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
 http://10.10.10.5/now.php?id=333
+
 
 
 
