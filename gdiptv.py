@@ -7,6 +7,7 @@
  - 从 FOFA 自动查询广东地区 udpxy 源。
  - 验证可用后替换 IPTV 文件中的每组 IP。
  - 更新 TXT/M3U 文件中的“失效”标记。
+ - 失效 IP 替换为 88.88.88.88:888，适合临时失效线路处理。
  - 使用 FOFA、GitHub API 自动更新远程仓库。
 """
 import os
@@ -24,15 +25,16 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_REPO = os.getenv("GITHUB_REPO")  # 形如 "username/repo"
 IPTV_TXT_URL = os.getenv("IPTV_TXT_URL", "gdiptv.txt")
 IPTV_M3U_URL = os.getenv("IPTV_M3U_URL", "gdiptv.m3u")
-TEMP_FAIL_IP = "88.88.88.88:888"
 
-# ============ 分组与 FOFA 查询绑定 ============ #
+# ============ FOFA 查询配置 ============ #
 GROUP_QUERIES = {
     "广东频道[A]": 'server="udpxy" && region="Guangdong" && org="Chinanet"',
     "广东频道[B]": 'server="udpxy" && city="Shenzhen" && org="Chinanet"',
-    "广东频道[C]": 'server="udpxy" && city="Guangzhou" && org="Chinanet"',
-    "广东频道[D]": 'server="udpxy" && city="Huizhou" && org="Chinanet"'
+    "广东频道[C]": 'server="udpxy" && city="Huizhou" && org="Chinanet"',
+    "广东频道[D]": 'server="udpxy" && city="Guangzhou" && org="Chinanet"'
 }
+
+TEMP_FAIL_IP = "88.88.88.88:888"  # 临时失效线路
 
 # ============ FOFA 查询 ============ #
 def query_fofa(query):
@@ -73,23 +75,35 @@ def download_file(url):
 
 def update_group_ips(content, group_name, new_ip_port, fail_ip=TEMP_FAIL_IP):
     """
-    替换分组内所有频道 IP，并更新失效标记。
-    如果 new_ip_port 为 None，则替换为 fail_ip 并加失效标记。
+    替换分组内所有频道 IP，并在分组名后添加“失效”标记（如果 IP 不可用）。
+    支持 TXT 和 M3U 文件：
+      - TXT: name,url 在同一行
+      - M3U: #EXTINF 行 + 下一行 URL
     """
     lines = content.splitlines()
     new_lines = []
     in_group = False
     has_valid_ip = new_ip_port is not None
+    skip_next = False
 
-    for line in lines:
+    for i, line in enumerate(lines):
+        if skip_next:
+            # 替换下一行 URL
+            url_line = line.strip()
+            if has_valid_ip:
+                url_line = re.sub(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+", f"http://{new_ip_port}", url_line)
+            else:
+                url_line = re.sub(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+", f"http://{fail_ip}", url_line)
+            new_lines.append(url_line)
+            skip_next = False
+            continue
+
         # 分组标题
         if line.startswith(group_name):
             in_group = True
-            if has_valid_ip:
-                line = re.sub(r"失效", "", line)
-            else:
-                if "失效" not in line:
-                    line = f"{line}失效"
+            line = line.split("失效")[0]  # 移除旧失效标记
+            if not has_valid_ip:
+                line = f"{line}失效"
             new_lines.append(line)
             continue
 
@@ -97,17 +111,22 @@ def update_group_ips(content, group_name, new_ip_port, fail_ip=TEMP_FAIL_IP):
         if any(line.startswith(g) for g in GROUP_QUERIES.keys()) and line != group_name:
             in_group = False
 
-        # 分组内频道行
-        if in_group and line.strip() and "," in line:
-            name, url = line.split(",", 1)
-            if has_valid_ip:
-                url = re.sub(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+", f"http://{new_ip_port}", url)
-                name = re.sub(r"失效", "", name)
+        # 分组内处理 TXT 或 M3U
+        if in_group:
+            if line.strip().startswith("#EXTINF"):
+                # M3U 格式，下一行是 URL，需要替换
+                new_lines.append(line)
+                skip_next = True
+            elif "," in line:
+                # TXT 格式
+                name, url = line.split(",", 1)
+                if has_valid_ip:
+                    url = re.sub(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+", f"http://{new_ip_port}", url)
+                else:
+                    url = re.sub(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+", f"http://{fail_ip}", url)
+                new_lines.append(f"{name},{url}")
             else:
-                url = re.sub(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+", f"http://{fail_ip}", url)
-                if "失效" not in name:
-                    name = f"{name}失效"
-            new_lines.append(f"{name},{url}")
+                new_lines.append(line)
         else:
             new_lines.append(line)
     return "\n".join(new_lines)
