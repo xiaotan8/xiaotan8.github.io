@@ -27,8 +27,9 @@ IPTV_M3U_URL = os.getenv("IPTV_M3U_URL", "gdiptv.m3u")
 # ============ FOFA 查询配置 ============ #
 FOFA_QUERIES = [
     'server="udpxy" && region="Guangdong" && org="Chinanet"',
-    'server="udpxy" && region="Shenzhen" && org="Chinanet"',
-    'server="udpxy" && region="Guangzhou" && org="Chinanet"'
+    'server="udpxy" && city="Shenzhen" && org="Chinanet"',
+    'server="udpxy" && city="Huizhou" && org="Chinanet"',
+    'server="udpxy" && city"Guangzhou" && org="Chinanet"'
 ]
 
 # ============ 辅助函数 ============ #
