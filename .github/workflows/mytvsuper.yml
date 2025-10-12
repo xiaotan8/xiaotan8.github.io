@@ -1,10 +1,8 @@
 name: Run mytvsuper
 on:
   schedule:
-    - cron: '0 8,20 * * *'
-  push:
-    branches:
-      - main
+    - cron: "0 */6 * * *"  # 每6小时运行
+  workflow_dispatch:
       
 permissions:
   contents: write
