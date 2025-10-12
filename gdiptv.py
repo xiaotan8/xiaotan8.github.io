@@ -213,7 +213,20 @@ if __name__ == "__main__":
     # 遍历所有 IP 任务组，直到找到可用的IP
     for group in IP_GROUPS:
         ips = get_ips_from_fofa_by_api(group["query"], group["name"])
-
+    
+    # 新增：打印调试信息
+    print(f"  [调试] 原始查询语句 (RAW_QUERY): {query}")
+    print(f"  [调试] FOFA_API_KEY (EMAIL): {FOFA_API_KEY}")
+    
+    encoded_query = query.encode("utf-8").hex() # 当前的编码逻辑
+    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_API_KEY}&qbase64={encoded_query}&size=500"
+    
+    # 新增：打印最终要请求的URL
+    # 注意：这里我们不打印完整URL，因为Key是敏感信息，只打印构造方式和查询部分
+    test_api_url = f"https://fofa.info/api/v1/search/all?email=YOUR_KEY&qbase64={encoded_query}&size=500"
+    print(f"  [调试] 构造的API URL (Key已隐藏): {test_api_url}")
+    
+    try:
         if not ips:
             continue # 如果当前组没有结果，继续下一个组
 
