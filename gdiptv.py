@@ -3,6 +3,10 @@
 """
 广东 IPTV 自动更新脚本 (适用于 GitHub Actions)
 作者: CCAV
+说明:
+ - 从 FOFA 自动查询广东地区 udpxy 源。
+ - 验证可用后替换 IPTV 文件中的全部 http://IP:PORT。
+ - 使用 FOFA、GitHub API 自动更新远程仓库。
 """
 import os
 import requests
@@ -39,12 +43,14 @@ def query_fofa(query):
             return []
         results = data.get("results", [])
         print(f"[FOFA] 返回 {len(results)} 条结果")
-        return [item[0] for item in results]
+        # 返回 host:port 格式
+        return [item[0].replace("http://", "").replace("https://", "").strip("/") for item in results]
     except Exception as e:
         print(f"[FOFA] 请求失败: {e}")
         return []
 
 def verify_udp(ip_port):
+    """尝试打开测试流，验证 udpxy 是否可用"""
     test_url = f"http://{ip_port}/udp/239.77.0.1:5146"
     try:
         cap = cv2.VideoCapture(test_url)
@@ -57,16 +63,22 @@ def verify_udp(ip_port):
     print(f"[验证失败] {ip_port}")
     return False
 
-def update_ip_in_file(content, new_ip):
-    pattern = r"http://([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+):([0-9]+)/udp/"
-    return re.sub(pattern, f"http://{new_ip}:\\2/udp/", content)
+def update_ip_in_file(content, new_ip_port):
+    """
+    替换所有 http://IP:PORT/udp/... 为 http://new_ip_port/udp/...
+    始终使用完整 ip:port 模式（不保留旧端口）
+    """
+    pattern = re.compile(r"http://\d{1,3}(?:\.\d{1,3}){3}:\d+(?=/udp/)")
+    return pattern.sub(f"http://{new_ip_port}", content)
 
 def download_file(url):
+    """下载远程文件"""
     r = requests.get(url, timeout=15)
     r.raise_for_status()
     return r.text
 
 def push_to_github(file_path, content, commit_message):
+    """上传文件到 GitHub"""
     api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
     headers = {"Authorization": f"token {GITHUB_TOKEN}"}
     get_resp = requests.get(api_url, headers=headers)
@@ -91,10 +103,9 @@ def main():
     all_ips = list(dict.fromkeys(all_ips))  # 去重
 
     valid_ip = None
-    for ip in all_ips:
-        host = ip.replace("http://", "").replace("https://", "").strip("/")
-        if verify_udp(host):
-            valid_ip = host
+    for ip_port in all_ips:
+        if verify_udp(ip_port):
+            valid_ip = ip_port
             break
 
     if not valid_ip:
