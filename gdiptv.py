@@ -11,7 +11,7 @@ import urllib.parse
 # --- 全局配置 ---
 # 请将您的 FOFA API Token 填写在这里
 # 获取方式：登录 FOFA -> 用户中心 -> 我的 API Token
-FOFA_API_KEY = "b3f3d61ce850e02076fec41f70a203f6" 
+FOFA_API_KEY = "cd379ca375a49aaf366c1ec867c4d20c" 
 
 # --- 全局常量 ---
 now = (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('[%m/%d %H:%M]Updated.')
