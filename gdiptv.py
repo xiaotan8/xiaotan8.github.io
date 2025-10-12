@@ -32,7 +32,7 @@ GROUP_QUERIES = {
 # ===================== FOFA 查询 ===================== #
 def query_fofa(query):
     qbase64 = base64.b64encode(query.encode()).decode()
-    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_EMAIL}&key={FOFA_KEY}&qbase64={qbase64}&size=1000"
+    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_EMAIL}&key={FOFA_KEY}&qbase64={qbase64}&size=100"
     try:
         r = requests.get(api_url, timeout=15)
         data = r.json()
