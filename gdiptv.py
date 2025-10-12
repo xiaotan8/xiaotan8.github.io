@@ -17,8 +17,8 @@ VERIFY_UDP_PATH = "/udp/239.77.0.1:5146"
 TEST_UDP_PATH = "/udp/239.77.0.112:5146"
 
 # 远程文件 URL (您的 GitHub Pages 文件)
-REMOTE_TXT_URL = 'https://xiaotan8.github.io/gdiptv.txt'
-REMOTE_M3U_URL = 'https://xiaotan8.github.io/gdiptv.m3u'
+REMOTE_TXT_URL = "https://xiaotan8.github.io/gdiptv.txt"
+REMOTE_M3U_URL = "https://xiaotan8.github.io/gdiptv.m3u"
 
 # 用于在播放列表中匹配和替换旧IP的正则表达式
 # 这个正则会匹配以 http:// 开头的 IP:PORT
