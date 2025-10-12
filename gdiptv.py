@@ -5,11 +5,13 @@ import datetime
 import concurrent.futures
 import os
 import json
+import base64
+import urllib.parse
 
 # --- 全局配置 ---
 # 请将您的 FOFA API Token 填写在这里
 # 获取方式：登录 FOFA -> 用户中心 -> 我的 API Token
-FOFA_API_KEY = "cd379ca375a49aaf366c1ec867c4d20c" 
+FOFA_API_KEY = "b3f3d61ce850e02076fec41f70a203f6" 
 
 # --- 全局常量 ---
 now = (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('[%m/%d %H:%M]Updated.')
@@ -28,11 +30,12 @@ UNIFIED_IP_PATTERN = r"http://(\d+\.\d+\.\d+\.\d+:\d+)"
 def get_ips_from_fofa_by_api(query, group_name):
     """
     使用 FOFA API 查询服务器列表。
+    使用 FOFA 官方推荐的编码方式: base64(urlencode(query))
     
     Args:
         query (str): FOFA 查询语句
         group_name (str): 分组名称，用于日志打印
-
+    
     Returns:
         list: 唯一的 IP:Port 列表。
     """
@@ -43,11 +46,28 @@ def get_ips_from_fofa_by_api(query, group_name):
         print("  [错误] 请先在脚本顶部配置您的 FOFA_API_KEY！")
         return []
 
-    encoded_query = query.encode("utf-8").hex()
-    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_API_KEY}&qbase64={encoded_query}&size=500"
+    # 1. 将查询语句编码为字节流 (UTF-8)
+    query_bytes = query.encode('utf-8')
     
+    # 2. 对字节流进行 URL 编码
+    encoded_query_bytes = urllib.parse.quote_plus(query_bytes)
+    
+    # 3. 将 URL 编码后的字节流进行 Base64 编码
+    #    注意：FOFA 的 qbase64 参数是 Base64 编码的 URL 编码字符串
+    qbase64_value = base64.b64encode(encoded_query_bytes).decode('utf-8')
+    
+    # 4. 构建最终的 API URL
+    #    注意：API 参数是 email，不是 key
+    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_API_KEY}&qbase64={qbase64_value}&size=500"
+    
+    print(f"  [调试] 构造的API URL (Key已隐藏): {api_url.replace(FOFA_API_KEY, 'YOUR_API_KEY')}")
+
     try:
-        response = requests.get(api_url, timeout=20)
+        # 添加一个 User-Agent，模拟浏览器请求，避免被一些严格的防火墙拦截
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        response = requests.get(api_url, headers=headers, timeout=20)
         response.raise_for_status()
         result_data = response.json()
         
@@ -59,7 +79,7 @@ def get_ips_from_fofa_by_api(query, group_name):
         results = result_data.get("results", [])
         if not results:
              print(f"  [信息] 查询成功，但未返回结果。")
-             return []
+                 return []
 
         for item in results:
             if isinstance(item, list) and len(item) > 0 and isinstance(item[0], str):
@@ -70,7 +90,7 @@ def get_ips_from_fofa_by_api(query, group_name):
         if not ips_ports:
             print(f"  [信息] 未提取到有效的 IP:Port 格式。")
             return []
-            
+                
         unique_ips = sorted(list(ips_ports))
         print(f"  [成功] 共查询到 {len(unique_ips)} 个 IP。")
         return unique_ips
@@ -81,6 +101,21 @@ def get_ips_from_fofa_by_api(query, group_name):
     except json.JSONDecodeError as e:
         print(f"  [错误] 解析 JSON 数据失败: {e}")
         return []
+
+
+def find_valid_ip(ip_list):
+    """使用多线程验证IP列表，返回第一个有效的IP。"""
+    print(f"--- 开始验证，共 {len(ip_list)} 个IP待验证 ---")
+    final_valid_ip = "88.88.88.88:8888" # 默认值
+    with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
+        futures = [executor.submit(verify_single_ip, ip_port) for ip_port in ip_list]
+        for future in concurrent.futures.as_completed(futures):
+            result = future.result()
+            if result:
+                print(f"  [成功] 找到有效IP: {result}")
+                return result # 找到即返回
+    print(f"--- 验证结束，未找到有效IP ---")
+    return final_valid_ip # 所有IP都验证失败后返回默认值
 
 
 def verify_single_ip(ip_port):
@@ -202,6 +237,7 @@ if __name__ == "__main__":
     print(f"--- 程序启动于 {now} ---")
     print(f"--- 当前工作目录: {os.getcwd()} ---")
     
+    # 由于FOFA_KEY已经默认填入，这里的检查可以移除或修改，但保留也无害
     if FOFA_API_KEY == "YOUR_FOFA_API_KEY_HERE":
         print("="*50)
         print("!!! 错误：请先在脚本顶部设置您的 FOFA_API_KEY !!!")
@@ -213,20 +249,7 @@ if __name__ == "__main__":
     # 遍历所有 IP 任务组，直到找到可用的IP
     for group in IP_GROUPS:
         ips = get_ips_from_fofa_by_api(group["query"], group["name"])
-    
-    # 新增：打印调试信息
-    print(f"  [调试] 原始查询语句 (RAW_QUERY): {query}")
-    print(f"  [调试] FOFA_API_KEY (EMAIL): {FOFA_API_KEY}")
-    
-    encoded_query = query.encode("utf-8").hex() # 当前的编码逻辑
-    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_API_KEY}&qbase64={encoded_query}&size=500"
-    
-    # 新增：打印最终要请求的URL
-    # 注意：这里我们不打印完整URL，因为Key是敏感信息，只打印构造方式和查询部分
-    test_api_url = f"https://fofa.info/api/v1/search/all?email=YOUR_KEY&qbase64={encoded_query}&size=500"
-    print(f"  [调试] 构造的API URL (Key已隐藏): {test_api_url}")
-    
-    try:
+
         if not ips:
             continue # 如果当前组没有结果，继续下一个组
 
