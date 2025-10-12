@@ -1,190 +1,230 @@
 import requests
 import re
-import cv2  # 导入OpenCV库
+import cv2
 import datetime
+import concurrent.futures
+import os
+import json
 
-#取时间
+# --- 全局配置 ---
+# 请将您的 FOFA API Token 填写在这里
+# 获取方式：登录 FOFA -> 用户中心 -> 我的 API Token
+FOFA_API_KEY = "b3f3d61ce850e02076fec41f70a203f6" 
+
+# --- 全局常量 ---
 now = (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('[%m/%d %H:%M]Updated.')
-# 定义组播地址和端口 
-urls_udp = "/udp/239.77.0.1:5146"
-# 定义fofa链接
-fofa_url = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgcmVnaW9uPSJHdWFuZ2RvbmciICYmIG9yZz0iQ2hpbmFuZXQi'
-fofa_url_jm = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iSmlhbmdtZW4iICYmIG9yZz0iQ2hpbmFuZXQi'
-fofa_url_fs = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBwcm90b2NvbD0iaHR0cCIgJiYgY2l0eT0iRm9zaGFuIiAmJiBvcmc9IkNoaW5hbmV0Ig%3D%3D'
-fofa_url_mz = 'https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjaXR5PSJTaGVuemhlbiIgICYmIG9yZz0iQ2hpbmFuZXQi'
+VERIFY_UDP_PATH = "/udp/239.77.0.1:5146"
+TEST_UDP_PATH = "/udp/239.77.0.112:5146"
 
-# 尝试从fofa链接提取IP地址和端口号，并去除重复项
-def extract_unique_ip_ports(fofa_url):
+# 远程文件 URL (您的 GitHub Pages 文件)
+REMOTE_TXT_URL = 'https://xiaotan8.github.io/gdiptv.txt'
+REMOTE_M3U_URL = 'https://xiaotan8.github.io/gdiptv.m3u'
+
+# 用于在播放列表中匹配和替换旧IP的正则表达式
+# 这个正则会匹配以 http:// 开头的 IP:PORT
+UNIFIED_IP_PATTERN = r'http://(\d+\.\d+\.\d+\.\d+:\d+)'
+
+def get_ips_from_fofa_by_api(query, group_name):
+    """
+    使用 FOFA API 查询服务器列表。
+    
+    Args:
+        query (str): FOFA 查询语句
+        group_name (str): 分组名称，用于日志打印
+    
+    Returns:
+        list: 唯一的 IP:Port 列表。
+    """
+    print(f"\n--- 正在查询 [{group_name}] 的 IP ---")
+    print(f"查询语句: {query}")
+
+    if not FOFA_API_KEY or FOFA_API_KEY == "YOUR_FOFA_API_KEY_HERE":
+        print("  [错误] 请先在脚本顶部配置您的 FOFA_API_KEY！")
+        return []
+
+    encoded_query = query.encode('utf-8').hex()
+    api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_API_KEY}&qbase64={encoded_query}&size=500"
+    
     try:
-        response = requests.get(fofa_url)
-        html_content = response.text
-        # 使用正则表达式匹配IP地址和端口号
-        middle = re.findall(r'Array.*</script>', html_content)
-        if not middle:
-            print(f"未能提取到有效数据，FOFA URL: {fofa_url}")
+        response = requests.get(api_url, timeout=20)
+        response.raise_for_status()
+        result_data = response.json()
+        
+        if 'error' in result_data and result_data['error']:
+            print(f"  [错误] FOFA API 返回错误: {result_data.get('errmsg', '未知错误')}")
+            return []
+
+        ips_ports = set()
+        results = result_data.get('results', [])
+        if not results:
+             print(f"  [信息] 查询成功，但未返回结果。")
+             return []
+
+        for item in results:
+            if isinstance(item, list) and len(item) > 0 and isinstance(item[0], str):
+                ip_port_match = re.match(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+)', item[0])
+                if ip_port_match:
+                    ips_ports.add(ip_port_match.group(1))
+
+        if not ips_ports:
+            print(f"  [信息] 未提取到有效的 IP:Port 格式。")
+            return []
+            
+        unique_ips = sorted(list(ips_ports))
+        print(f"  [成功] 共查询到 {len(unique_ips)} 个 IP。")
+        return unique_ips
+
+    except requests.exceptions.RequestException as e:
+        print(f"  [错误] 请求 FOFA API 失败: {e}")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"  [错误] 解析 JSON 数据失败: {e}")
+        return []
+
+
+def verify_single_ip(ip_port):
+    """验证单个IP地址的视频流是否有效。"""
+    verify_url = f"http://{ip_port}{VERIFY_UDP_PATH}"
+    test_url = f"http://{ip_port}{TEST_UDP_PATH}"
+    
+    cap_verify = None
+    cap_test = None
+    try:
+        cap_verify = cv2.VideoCapture(verify_url)
+        if not cap_verify.isOpened() or not cap_verify.read()[0]:
             return None
-        ips_ports = re.findall(r'(\d+\.\d+\.\d+\.\d+:\d+)', middle[0])
-        return ips_ports if ips_ports else None
-    except requests.RequestException as e:
-        print(f"请求错误: {e}")
+
+        cap_test = cv2.VideoCapture(test_url)
+        if not cap_test.isOpened():
+            return None
+
+        fps = cap_test.get(cv2.CAP_PROP_FPS)
+        if fps <= 0 or fps >= 40:
+            return None
+            
+        return ip_port
+    except Exception:
+        return None
+    finally:
+        if cap_verify: cap_verify.release()
+        if cap_test: cap_test.release()
+
+def update_playlist_files(valid_ip):
+    """
+    使用找到的有效 IP 更新本地播放列表文件。
+    """
+    print(f"\n--- 正在使用有效 IP: {valid_ip} 更新播放列表文件 ---")
+
+    content_txt = get_remote_file_content(REMOTE_TXT_URL)
+    content_m3u = get_remote_file_content(REMOTE_M3U_URL)
+    
+    if not content_txt or not content_m3u:
+        print("  [错误] 无法获取远程文件内容，更新中止。")
+        return
+
+    # 统一替换所有旧IP为新的有效IP
+    # 使用 g<1> 保留原始的 http:// 部分
+    new_ip_str = f'http://{valid_ip}'
+    updated_content_txt = re.sub(UNIFIED_IP_PATTERN, new_ip_str, content_txt)
+    updated_content_m3u = re.sub(UNIFIED_IP_PATTERN, new_ip_str, content_m3u)
+    
+    # 替换更新时间
+    updated_content_txt = re.sub(r'\[\d+\/\d+ \d+\:\d+\]Updated\.', now, updated_content_txt)
+    updated_content_m3u = re.sub(r'\[\d+\/\d+ \d+\:\d+\]Updated\.', now, updated_content_m3u)
+    
+    # 统一更新所有频道的状态为正常
+    status_suffix = '正常' # 找到了IP，所以是正常
+    channel_status_pattern = re.compile(r'频道\[([^\]]+)\][^,\n]*')
+    updated_content_txt = channel_status_pattern.sub(f'频道[\\1]{status_suffix}', updated_content_txt)
+    updated_content_m3u = channel_status_pattern.sub(f'频道[\\1]{status_suffix}', updated_content_m3u)
+
+    # 保存文件
+    filenames = ['gdiptv.txt', 'gdiptv.m3u']
+    contents = [updated_content_txt, updated_content_m3u]
+
+    for filename, content in zip(filenames, contents):
+        if not content:
+            continue
+        try:
+            with open(filename, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"  [成功] 文件 {filename} 已更新。")
+        except IOError as e:
+            print(f"  [错误] 保存文件 {filename} 失败: {e}")
+
+def get_remote_file_content(url):
+    """从远程URL获取文件内容。"""
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        return response.text
+    except requests.exceptions.RequestException:
         return None
 
-# 检查视频流的可达性
-def check_video_stream_connectivity(ip_port, urls_udp):
-    try:
-        # 构造完整的视频URL
-        video_url = f"http://{ip_port}{urls_udp}"
-        # 用OpenCV读取视频
-        cap = cv2.VideoCapture(video_url)
-        cap2 = cv2.VideoCapture(f"http://{ip_port}/udp/239.77.0.112:5146")
-        # 检查视频是否成功打开
-        if not cap.isOpened():
-            print(f"视频URL：{video_url} 无效")
-            return None
-        else:
-            # 获取视频帧率
-            fps = cap.get(cv2.CAP_PROP_FPS)
-            fps2 = cap2.get(cv2.CAP_PROP_FPS)
-            # 读取视频的宽度和高度
-            width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            print(f"视频URL：{video_url} 的分辨率为 {width}x{height}","[广东珠江]帧率: {:.2f}".format(fps),"[广东体育]帧率: {:.2f}".format(fps2))
-            # 检查分辨率是否大于0
-            if width > 0 and height > 0 and fps < 40 and fps2 < 40:
-                return ip_port  # 返回有效的IP和端口
-            # 关闭视频流
-            cap.release()
-    except Exception as e:
-        print(f"访问 {ip_port} 失败: {e}")
-    return None
 
-# 更新文件中的IP地址和端口号
-def update_files(accessible_ip_port,ip_port_pattern,ip_port_repl):
-    global updated_content
-    global updated_content_3
-    group = re.findall('A|E|J|B',ip_port_pattern)[0]
-    #for file_info in files_to_update:
-    try:
-         # 读取原始文件内容
-        response = requests.get('https://xiaotan8.github.io/gdiptv.txt')
-        if updated_content:
-            file_content = updated_content
-        else:
-            file_content = response.text
-        # 替换文件中的IP地址和端口号
-        updated_content = re.sub(ip_port_pattern, ip_port_repl, file_content)
-        updated_content = re.sub(r'\[\d+\/\d+ \d+\:\d+\]Updated\.', now, updated_content)
-        #失效标记
-        if ip_port_repl == '88.88.88.88:8888':
-            updated_content = re.sub(f'频道.?{group}(失效|)',f'频道[{group}失效', updated_content)
-        else:
-            updated_content = re.sub(f'频道.?{group}(失效|)',f'频道[{group}', updated_content)
-        # 保存更新后的内容到新文件
-        with open('gdiptv.txt', 'w', encoding='utf-8') as file:
-            file.write(updated_content)
-        print(f"{group}：文件gdiptv.txt已更新并保存。")
-    except requests.RequestException as e:
-        print(f"无法更新文件gdiptv.txt，错误: {e}")
-        
-    try:
-         # 读取原始文件内容
-        response = requests.get('https://xiaotan8.github.io/gdiptv.m3u')
-        if updated_content_3:
-            file_content = updated_content_3
-        else:
-            file_content = response.text
-        # 替换文件中的IP地址和端口号
-        updated_content_3 = re.sub(ip_port_pattern, ip_port_repl, file_content)
-        updated_content_3 = re.sub(r'\[\d+\/\d+ \d+\:\d+\]Updated\.', now, updated_content_3)
-        #失效标记
-        if ip_port_repl == '88.88.88.88:8888':
-            updated_content_3 = re.sub(f'频道.?{group}(失效|)',f'频道[{group}失效', updated_content_3)
-        else:
-            updated_content_3 = re.sub(f'频道.?{group}(失效|)',f'频道[{group}', updated_content_3)
-        # 保存更新后的内容到新文件
-        with open('gdiptv.m3u', 'w', encoding='utf-8') as file:
-            file.write(updated_content_3)
-        print(f"{group}：文件gdiptv.m3u已更新并保存。")
-    except requests.RequestException as e:
-        print(f"无法更新文件gdiptv.m3u，错误: {e}")
-
-def findtheone(unique_ips_ports):
-    if unique_ips_ports:
-        print("提取到的唯一IP地址和端口号：")
-        for ip_port in unique_ips_ports:
-            print(ip_port)
-    
-    # 测试每个IP地址和端口号，直到找到一个可访问的视频流
-        valid_ip = None
-        for ip_port in unique_ips_ports:
-            valid_ip = check_video_stream_connectivity(ip_port, urls_udp)
-            if valid_ip:
-                break  # 找到有效的IP后，不再继续循环
-
-        if valid_ip:
-            print(f"找到可访问的视频流服务: {valid_ip}")
-
-        else:
-            valid_ip = '88.88.88.88:8888'
-            print("没有找到可访问的视频流服务。")
-    else:
-        print("没有提取到IP地址和端口号。")
-    return valid_ip
-
-
-# 提取唯一的IP地址和端口号
-
-# 定义需要更新的文件列表
-files_to_update = [
-    {'url': 'https://xiaotan8.github.io/gdiptv.txt', 'filename': 'gdiptv.txt'}
+# --- 新的 IP 任务组配置 ---
+# 定义多个查询组来获取不同地区的IP，以提高成功率。
+# 'name': 分组名称
+# 'query': FOFA API 的查询语句
+IP_GROUPS = [
+    {
+        'name': '广东-电信',
+        'query': '"udpxy" && protocol="http" && region="Guangdong" && org="Chinanet"'
+    },
+    {
+        'name': '广州-电信',
+        'query': '"udpxy" && protocol="http" && region="Guangzhou" && org="Chinanet"'
+    },
+    {
+        'name': '深圳-电信',
+        'query': '"udpxy" && protocol="http" && region="Shenzhen" && org="Chinanet"'
+    },
+    {
+        'name': '佛山-电信',
+        'query': '"udpxy" && protocol="http" && region="Foshan" && org="Chinanet"'
+    },
+    {
+        'name': '东莞-电信',
+        'query': '"udpxy" && protocol="http" && region="Dongguan" && org="Chinanet"'
+    },
+    # 您可以根据需要任意添加更多的组合，例如珠海、惠州、移动等
 ]
 
-#定义正则
-ip_port_pattern = r'((?<=\[A\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
-ip_port_pattern_fs = r'((?<=\[E\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
-ip_port_pattern_jm = r'((?<=\[J\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
-ip_port_pattern_mz = r'((?<=\[B\](\,|\n)http://)\d+\.\d+\.\d+\.\d+:\d+)'
 
+# --- 主执行逻辑 ---
+if __name__ == "__main__":
+    print("========== 广东IPTV源自动更新工具 (多分组查询版) ==========")
+    print(f"--- 程序启动于 {now} ---")
+    print(f"--- 当前工作目录: {os.getcwd()} ---")
+    
+    if FOFA_API_KEY == "YOUR_FOFA_API_KEY_HERE":
+        print("="*50)
+        print("!!! 错误：请先在脚本顶部设置您的 FOFA_API_KEY !!!")
+        print("="*50)
+        exit(1)
 
+    final_valid_ip = None
 
+    # 遍历所有 IP 任务组，直到找到可用的IP
+    for group in IP_GROUPS:
+        ips = get_ips_from_fofa_by_api(group['query'], group['name'])
 
+        if not ips:
+            continue # 如果当前组没有结果，继续下一个组
 
-# 更新文件中的IP地址和端口号
-updated_content = ''
-updated_content_3 = ''
-try:
-    unique_ips_ports = extract_unique_ip_ports(fofa_url)
-    print(unique_ips_ports)
-    valid_ip = findtheone(unique_ips_ports)
-    ip_port_repl = valid_ip
-    print(valid_ip)
-    update_files(valid_ip,ip_port_pattern,ip_port_repl)
-except requests.RequestException as e:
-    print(f"错误: {e}")
-try:
-    unique_ips_ports_fs = extract_unique_ip_ports(fofa_url_fs)
-    print(unique_ips_ports_fs)
-    valid_ip_fs = findtheone(unique_ips_ports_fs)
-    ip_port_repl_fs = valid_ip_fs
-    print(valid_ip_fs)
-    update_files(valid_ip_fs,ip_port_pattern_fs,ip_port_repl_fs)
-except requests.RequestException as e:
-    print(f"错误: {e}")
-try:
-    unique_ips_ports_jm = extract_unique_ip_ports(fofa_url_jm)
-    print(unique_ips_ports_jm)
-    valid_ip_jm = findtheone(unique_ips_ports_jm)
-    ip_port_repl_jm = valid_ip_jm
-    print(valid_ip_jm)
-    update_files(valid_ip_jm,ip_port_pattern_jm,ip_port_repl_jm)
-except requests.RequestException as e:
-    print(f"错误: {e}")
-try:
-    unique_ips_ports_mz = extract_unique_ip_ports(fofa_url_mz)
-    print(unique_ips_ports_mz)
-    valid_ip_mz = findtheone(unique_ips_ports_mz)
-    ip_port_repl_mz = valid_ip_mz
-    print(valid_ip_mz)
-    update_files(valid_ip_mz,ip_port_pattern_mz,ip_port_repl_mz)
-except requests.RequestException as e:
-    print(f"错误: {e}")
+        print(f"--- 在 [{group['name']}] 组中找到了IP，开始验证... ---")
+        final_valid_ip = find_valid_ip(ips)
+        
+        # 如果找到了有效IP，立即跳出循环，不查询后面的组了
+        if final_valid_ip and final_valid_ip != '88.88.88.88:8888':
+            print(f"--- 在 [{group['name']}] 组成功找到有效IP，停止查询其他组。 ---")
+            break
+
+    print("\n========== IP 查询和验证阶段结束 =========="")
+
+    # 最后，根据找到的IP更新文件
+    if final_valid_ip and final_valid_ip != '88.88.88.88:8888':
+        update_playlist_files(final_valid_ip)
+    else:
+        print("  [最终结果] 经过多组查询，未找到任何可用IP。播放列表将不会更新。")
+        # 您可以在这里选择将本地文件标记为失效，但此版本不做修改，保持原样。
