@@ -31,4 +31,4 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           IPTV_TXT_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/gdiptv.txt
           IPTV_M3U_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/gdiptv.m3u
-        run: python3 scripts/update_gdiptv.py
+        run: python3 gdiptv.py
