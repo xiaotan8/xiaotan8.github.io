@@ -22,7 +22,8 @@ REMOTE_M3U_URL = "https://xiaotan8.github.io/gdiptv.m3u"
 
 # 用于在播放列表中匹配和替换旧IP的正则表达式
 # 这个正则会匹配以 http:// 开头的 IP:PORT
-UNIFIED_IP_PATTERN = r'http://(\d+\.\d+\.\d+\.\d+:\d+)'
+UNIFIED_IP_PATTERN = r"http://(\d+\.\d+\.\d+\.\d+:\d+)"
+
 
 def get_ips_from_fofa_by_api(query, group_name):
     """
@@ -31,7 +32,7 @@ def get_ips_from_fofa_by_api(query, group_name):
     Args:
         query (str): FOFA 查询语句
         group_name (str): 分组名称，用于日志打印
-    
+
     Returns:
         list: 唯一的 IP:Port 列表。
     """
@@ -42,7 +43,7 @@ def get_ips_from_fofa_by_api(query, group_name):
         print("  [错误] 请先在脚本顶部配置您的 FOFA_API_KEY！")
         return []
 
-    encoded_query = query.encode('utf-8').hex()
+    encoded_query = query.encode("utf-8").hex()
     api_url = f"https://fofa.info/api/v1/search/all?email={FOFA_API_KEY}&qbase64={encoded_query}&size=500"
     
     try:
@@ -50,19 +51,19 @@ def get_ips_from_fofa_by_api(query, group_name):
         response.raise_for_status()
         result_data = response.json()
         
-        if 'error' in result_data and result_data['error']:
-            print(f"  [错误] FOFA API 返回错误: {result_data.get('errmsg', '未知错误')}")
+        if "error" in result_data and result_data["error"]:
+            print(f"  [错误] FOFA API 返回错误: {result_data.get("errmsg", "未知错误")}")
             return []
 
         ips_ports = set()
-        results = result_data.get('results', [])
+        results = result_data.get("results", [])
         if not results:
              print(f"  [信息] 查询成功，但未返回结果。")
              return []
 
         for item in results:
             if isinstance(item, list) and len(item) > 0 and isinstance(item[0], str):
-                ip_port_match = re.match(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+)', item[0])
+                ip_port_match = re.match(r"(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+)", item[0])
                 if ip_port_match:
                     ips_ports.add(ip_port_match.group(1))
 
@@ -124,29 +125,29 @@ def update_playlist_files(valid_ip):
 
     # 统一替换所有旧IP为新的有效IP
     # 使用 g<1> 保留原始的 http:// 部分
-    new_ip_str = f'http://{valid_ip}'
+    new_ip_str = f"http://{valid_ip}"
     updated_content_txt = re.sub(UNIFIED_IP_PATTERN, new_ip_str, content_txt)
     updated_content_m3u = re.sub(UNIFIED_IP_PATTERN, new_ip_str, content_m3u)
     
     # 替换更新时间
-    updated_content_txt = re.sub(r'\[\d+\/\d+ \d+\:\d+\]Updated\.', now, updated_content_txt)
-    updated_content_m3u = re.sub(r'\[\d+\/\d+ \d+\:\d+\]Updated\.', now, updated_content_m3u)
+    updated_content_txt = re.sub(r"\[\d+\/\d+ \d+\:\d+\]Updated\.", now, updated_content_txt)
+    updated_content_m3u = re.sub(r"\[\d+\/\d+ \d+\:\d+\]Updated\.", now, updated_content_m3u)
     
     # 统一更新所有频道的状态为正常
-    status_suffix = '正常' # 找到了IP，所以是正常
-    channel_status_pattern = re.compile(r'频道\[([^\]]+)\][^,\n]*')
-    updated_content_txt = channel_status_pattern.sub(f'频道[\\1]{status_suffix}', updated_content_txt)
-    updated_content_m3u = channel_status_pattern.sub(f'频道[\\1]{status_suffix}', updated_content_m3u)
+    status_suffix = "正常" # 找到了IP，所以是正常
+    channel_status_pattern = re.compile(r"频道\[([^\]]+)\][^,\n]*")
+    updated_content_txt = channel_status_pattern.sub(f"频道[\\1]{status_suffix}", updated_content_txt)
+    updated_content_m3u = channel_status_pattern.sub(f"频道[\\1]{status_suffix}", updated_content_m3u)
 
     # 保存文件
-    filenames = ['gdiptv.txt', 'gdiptv.m3u']
+    filenames = ["gdiptv.txt", "gdiptv.m3u"]
     contents = [updated_content_txt, updated_content_m3u]
 
     for filename, content in zip(filenames, contents):
         if not content:
             continue
         try:
-            with open(filename, 'w', encoding='utf-8') as f:
+            with open(filename, "w", encoding="utf-8") as f:
                 f.write(content)
             print(f"  [成功] 文件 {filename} 已更新。")
         except IOError as e:
@@ -164,28 +165,32 @@ def get_remote_file_content(url):
 
 # --- 新的 IP 任务组配置 ---
 # 定义多个查询组来获取不同地区的IP，以提高成功率。
-# 'name': 分组名称
-# 'query': FOFA API 的查询语句
+# "name": 分组名称
+# "query": FOFA API 的查询语句
 IP_GROUPS = [
     {
-        'name': '广东-电信',
-        'query': '"udpxy" && protocol="http" && region="Guangdong" && org="Chinanet"'
+        "name": "广州-电信",
+        "query": '"udpxy" && protocol="http" && region="Guangzhou" && org="Chinanet"'
     },
     {
-        'name': '广州-电信',
-        'query': '"udpxy" && protocol="http" && region="Guangzhou" && org="Chinanet"'
+        "name": "广州-联通",
+        "query": '"udpxy" && protocol="http" && region="Guangzhou" && org="ChinaUnicom"'
     },
     {
-        'name': '深圳-电信',
-        'query': '"udpxy" && protocol="http" && region="Shenzhen" && org="Chinanet"'
+        "name": "深圳-电信",
+        "query": '"udpxy" && protocol="http" && region="Shenzhen" && org="Chinanet"'
     },
     {
-        'name': '佛山-电信',
-        'query': '"udpxy" && protocol="http" && region="Foshan" && org="Chinanet"'
+        "name": "深圳-联通",
+        "query": '"udpxy" && protocol="http" && region="Shenzhen" && org="ChinaUnicom"'
     },
     {
-        'name': '东莞-电信',
-        'query': '"udpxy" && protocol="http" && region="Dongguan" && org="Chinanet"'
+        "name": "佛山-电信",
+        "query": '"udpxy" && protocol="http" && region="Foshan" && org="Chinanet"'
+    },
+    {
+        "name": "东莞-电信",
+        "query": '"udpxy" && protocol="http" && region="Dongguan" && org="Chinanet"'
     },
     # 您可以根据需要任意添加更多的组合，例如珠海、惠州、移动等
 ]
@@ -207,23 +212,23 @@ if __name__ == "__main__":
 
     # 遍历所有 IP 任务组，直到找到可用的IP
     for group in IP_GROUPS:
-        ips = get_ips_from_fofa_by_api(group['query'], group['name'])
+        ips = get_ips_from_fofa_by_api(group["query"], group["name"])
 
         if not ips:
             continue # 如果当前组没有结果，继续下一个组
 
-        print(f"--- 在 [{group['name']}] 组中找到了IP，开始验证... ---")
+        print(f"--- 在 [{group["name"]}] 组中找到了IP，开始验证... ---")
         final_valid_ip = find_valid_ip(ips)
         
         # 如果找到了有效IP，立即跳出循环，不查询后面的组了
-        if final_valid_ip and final_valid_ip != '88.88.88.88:8888':
-            print(f"--- 在 [{group['name']}] 组成功找到有效IP，停止查询其他组。 ---")
+        if final_valid_ip and final_valid_ip != "88.88.88.88:8888":
+            print(f"--- 在 [{group["name"]}] 组成功找到有效IP，停止查询其他组。 ---")
             break
 
-    print("\n========== IP 查询和验证阶段结束 =========="")
+    print("\n========== IP 查询和验证阶段结束 ==========")
 
     # 最后，根据找到的IP更新文件
-    if final_valid_ip and final_valid_ip != '88.88.88.88:8888':
+    if final_valid_ip and final_valid_ip != "88.88.88.88:8888":
         update_playlist_files(final_valid_ip)
     else:
         print("  [最终结果] 经过多组查询，未找到任何可用IP。播放列表将不会更新。")
