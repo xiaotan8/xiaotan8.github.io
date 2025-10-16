@@ -88,7 +88,7 @@ def update_txt_ips(content, group_name, new_ip_port):
                 line = re.sub(r"失效", "", line)
             else:
                 if "失效" not in line:
-                    line = line.replace("#genre#", "失效,#genre#")
+                    line = line.replace("#genre#", "失效#genre#")
             result.append(line)
             continue
 
