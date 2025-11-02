@@ -386,22 +386,22 @@ http://10.10.10.5/96.php?channel=096
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?channel=099
-#EXTINF:-1 tvg-name="ViuTV961" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV全運1台（mpd）
+#EXTINF:-1 tvg-name="ViuTV961" tvg-logo="https://static.viu.tv/resized-800/hhMXESoEt_QFTgnt.png" group-title="香港频道",ViuTV全運1台（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?channel=961
-#EXTINF:-1 tvg-name="ViuTV962" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV全運2台（mpd）
+#EXTINF:-1 tvg-name="ViuTV962" tvg-logo="https://static.viu.tv/resized-800/L4zhQiq9PosHpySh.png" group-title="香港频道",ViuTV全運2台（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?channel=962
-#EXTINF:-1 tvg-name="ViuTV963" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV全運3台（mpd）
+#EXTINF:-1 tvg-name="ViuTV963" tvg-logo="https://static.viu.tv/resized-800/uN0zgSSGHzkywbEA.png" group-title="香港频道",ViuTV全運3台（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?channel=963
-#EXTINF:-1 tvg-name="ViuTV964" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV全運4台（mpd）
+#EXTINF:-1 tvg-name="ViuTV964" tvg-logo="https://static.viu.tv/resized-800/ELCut1Yl_b7-tGP2.png" group-title="香港频道",ViuTV全運4台（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
@@ -410,6 +410,7 @@ http://10.10.10.5/96.php?channel=964
 http://10.10.10.5/now.php?id=332
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
 http://10.10.10.5/now.php?id=333
+
 
 
 
