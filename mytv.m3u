@@ -174,12 +174,6 @@ http://mytvsuper.27481716.xyz/mytvsuper/CWIN
 #KODIPROP:inputstream.adaptive.license_key=72de7d0a1850c8d40c5bdf9747a4ca7c:4967537ff0bc8209277160759de4adef
 http://mytvsuper.27481716.xyz/mytvsuper/C18
 
-#EXTINF:-1 tvg-id="C28" tvg-name="28 AI 智慧賽馬" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 28 AI 智慧賽馬
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1b778a3241e5fa3bb97d1cb9b57f9e09:3b1f318259fcf0dccd04742cd679fd25
-http://mytvsuper.27481716.xyz/mytvsuper/C28
-
 #EXTINF:-1 tvg-id="TVG" tvg-name="黄金翡翠台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="電影戲劇", 黄金翡翠台
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -545,3 +539,45 @@ http://mytvsuper.27481716.xyz/mytvsuper/TRUR
 
 #EXTINF:-1 tvg-id="NSWD" tvg-name="NewsWorld" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="其它頻道",NewsWorld
 http://mytvsuper.27481716.xyz/mytvsuper/NSWD
+
+#EXTINF:-1 tvg-id="OL00" tvg-name="全運800台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運800台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e8ca7903e25450d85cb32b3057948522:d5db5c03608f5f6c8a382c6abcb829e4
+http://mytvsuper.27481716.xyz/mytvsuper/OL00
+
+#EXTINF:-1 tvg-id="OL01" tvg-name="全運801台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運801台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0c79f7330982b6e508de3df47b88fbdc:db063550682430e8ca5857a85ccbc297
+http://mytvsuper.27481716.xyz/mytvsuper/OL01
+
+#EXTINF:-1 tvg-id="OL02" tvg-name="全運802台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運802台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=dddcd998a3107f7b350a7536c7fd30b1:15b343513bda8a5816b45295690c3792
+http://mytvsuper.27481716.xyz/mytvsuper/OL02
+
+#EXTINF:-1 tvg-id="OL03" tvg-name="全運803台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運803台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=b8d3124914a5cf9c913eccff19d53510:529601f9fca6d76bb429ef2d2bca3622
+http://mytvsuper.27481716.xyz/mytvsuper/OL03
+
+#EXTINF:-1 tvg-id="OL04" tvg-name="全運804台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運804台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=89db5bfd8f088f9e100ab81b2c2c0cda:e3465fb5fa8daa0f575f2258a7a30220
+http://mytvsuper.27481716.xyz/mytvsuper/OL04
+
+#EXTINF:-1 tvg-id="OL05" tvg-name="全運805台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運805台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=97a0b07f2c0739e2843b7a62e77dc452:165f65fd3be0c5f0f62b9647c13af521
+http://mytvsuper.27481716.xyz/mytvsuper/OL05
+
+#EXTINF:-1 tvg-id="OL06" tvg-name="全運806台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="體育運動", 全運806台
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e72be084c3c0b3ee2a6856220c060d94:42851811d34c03c744c265c270bd89e6
+http://mytvsuper.27481716.xyz/mytvsuper/OL06
