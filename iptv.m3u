@@ -380,12 +380,12 @@ https://mytv.860775.xyz/PHK
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
-http://10.10.10.5/96.php?channel=096
+https://pccw-live-cdn-viutv.akamaized.net/Content/DASH_VOS3/Live/channel(VOS_CH096)/manifest.mpd
 #EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv.png?raw=true" group-title="香港频道",ViuTV（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
-http://10.10.10.5/96.php?channel=099
+https://pccw-live-cdn-viutv.akamaized.net/Content/DASH_VOS3/Live/channel(VOS_CH099)/manifest.mpd
 #EXTINF:-1 tvg-name="ViuTV961" tvg-logo="https://static.viu.tv/resized-800/hhMXESoEt_QFTgnt.png" group-title="香港频道",ViuTV全運1台（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
