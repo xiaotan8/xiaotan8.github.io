@@ -407,7 +407,7 @@ http://10.10.10.5/96.php?channel=963
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"oB19xO31gklrfnPWfp5omQ","kid":"kbp1KkRhSMaEANeDdLF4tA"}],"type":"temporary"}
 http://10.10.10.5/96.php?channel=964
 #EXTINF:-1 tvg-name="NOW新闻台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch332_160_115" group-title="香港频道",NOW新闻台
-http://10.10.10.5/now.php?id=332
+https://pccw-live-cdn-01.akamaized.net/Content/HLS_VOS1/Live/channel(VOS_CH332N)/index.m3u8
 #EXTINF:-1 tvg-name="NOW財經台" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch333_160_115" group-title="香港频道",NOW財經台
 http://10.10.10.5/now.php?id=333
 
