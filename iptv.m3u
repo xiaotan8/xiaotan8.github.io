@@ -361,21 +361,26 @@ https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
 https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
 #EXTINF:-1 tvg-name="RTHK35" tvg-logo="https://iptv-pro.github.io/logo/RTHK35.png" group-title="香港频道",港台电视35
 https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
-#EXTINF:-1 tvg-name="凤凰卫视中文台" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/凤凰卫视中文台.png?raw=true" group-title="香港频道",凤凰卫视中文台
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "6xnH486jTckGReM/mDsVqw", "kid": "e8oHcbqSBe211GfOL98BYg"}], "type": "temporary"}
-https://mytv.860775.xyz/PCC
-#EXTINF:-1 tvg-name="凤凰卫视资讯台" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/凤凰卫视资讯台.png?raw=true" group-title="香港频道",凤凰卫视资讯台
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "7NyAZaRih7+1jp92Xk7sKw", "kid": "g/fTE638CluXi576BCHOJQ"}], "type": "temporary"}
-https://mytv.860775.xyz/PIN
-#EXTINF:-1 tvg-name="凤凰卫视香港台" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/凤凰卫视香港台.png?raw=true" group-title="香港频道",凤凰卫视香港台
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys": [{"kty": "oct", "k": "uGhfvs93LmQVRjCCnPMwow", "kid": "zeYuEFbrNhXat6Pv2D9etA"}], "type": "temporary"}
-https://mytv.860775.xyz/PHK
+#EXTINF:-1 tvg-name="中超3" tvg-logo="https://pic-hwcdn.utvlive.top/img/202605/27/14/07/0/20260527140702810vslqeczv.png" group-title="咪咕",中超3
+http://10.10.10.18:15678/play/1772760649841698006.m3u8
+#EXTINF:-1 tvg-name="中超2" tvg-logo="https://pic-hwcdn.utvlive.top/img/202605/27/14/06/5/2026052714065049565erb90j.png" group-title="咪咕",中超2
+http://10.10.10.18:15678/play/1772760526851688006.m3u8
+#EXTINF:-1 tvg-name="中超1" tvg-logo="https://pic-hwcdn.utvlive.top/img/202605/27/14/06/3/20260527140639835seck6whn.png" group-title="咪咕",中超1
+http://10.10.10.18:15678/play/1772704838341668006.m3u8
+#EXTINF:-1 tvg-name="UFC Live (English)" tvg-logo="https://pic-hwcdn.utvlive.top/img/202602/10/15/40/4/20260210154044078ccg2hcmk.jpg" group-title="咪咕",UFC Live (English)
+http://10.10.10.18:15678/play/1768293806808348006.m3u8
+#EXTINF:-1 tvg-name="UFC直播普通話解說" tvg-logo="https://pic-hwcdn.utvlive.top/img/202602/10/15/40/2/20260210154028383vhikxlds.jpg" group-title="咪咕",UFC直播普通話解說
+http://10.10.10.18:15678/play/1768208954278328006.m3u8
+#EXTINF:-1 tvg-name="中超4" tvg-logo="https://pic-hwcdn.utvlive.top/img/202605/27/14/07/1/202605271407144903qsy2dos.png" group-title="咪咕",中超4
+http://10.10.10.18:15678/play/1772760789771728006.m3u8
+#EXTINF:-1 tvg-name="HOY資訊台" tvg-logo="https://pic-hwcdn.utvlive.top/img/202308/11/10/11/5/20230811101154687eca5yaul.jpg" group-title="香港频道",HOY資訊台
+http://10.10.10.18:15678/play/1568275619470108006.m3u8
+#EXTINF:-1 tvg-name="鳳凰衛視-香港台" tvg-logo="https://pic-hwcdn.utvlive.top/img/202106/01/10/04/3/202106011004358163nfsj6of.png" group-title="香港频道",鳳凰衛視-香港台
+http://10.10.10.18:15678/play/1608285422787728006.m3u8
+#EXTINF:-1 tvg-name="鳳凰衛視-中文台" tvg-logo="https://pic-hwcdn.utvlive.top/img/202106/01/10/05/3/20210601100536624yc0nq7vd.png" group-title="香港频道",鳳凰衛視-中文台
+http://10.10.10.18:15678/play/1608285342287698006.m3u8
+#EXTINF:-1 tvg-name="鳳凰衛視-資訊台" tvg-logo="https://pic-hwcdn.utvlive.top/img/202306/02/11/47/2/2023060211472272631m1qqft.jpg" group-title="香港频道",鳳凰衛視-資訊台
+http://10.10.10.18:15678/play/1685677773164578006.m3u8
 #EXTINF:-1 tvg-name="ViuTV6" tvg-logo="https://github.com/fanmingming/live/blob/main/tv/viutv6.png?raw=true" group-title="香港频道",ViuTV6（mpd）
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
